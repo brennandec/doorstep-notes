@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:56:30.540Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "0d3495b",
+  "what": "Network off. Invented visit, record and masks on the device, then the offline draft. Raw model outputs as the page received them.",
+  "suggestionsAccepted": 3,
+  "proposedChips": [
+    "Bea\nsuggested",
+    "3/3/87\nsuggested",
+    "neighbour, also on my list\nsuggested"
+  ],
+  "maskedTextBeforeAnySuggestionAccepted": "Visit date: 12/11\nPresent: [Person 1], Bea\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+  "maskedTextSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] missed the benefits form deadline last wk, letter on the table; DOB on form [Date 1].\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] ([Detail 1]) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+  "finishedText": "Case Note\n\nOn 3/3/87, Maria Okonkwo-Reyes and Bea were present for a visit.  Evidence of mould was observed in the back bedroom, noted to be more pronounced near the window.  The landlord had not responded to two emailed inquiries. She missed the deadline for a benefits form last week, and a notification letter was observed on the table. The date of birth listed on the form is 3/3/87. It was agreed that a phone call to the landlord would be made on Monday. Maria Okonkwo-Reyes will submit the form by Friday, and Tomas Brandvold (neighbour, also on my list) has offered assistance with completing it. The potential risk of rent arrears due to a late submission of the form was discussed. A follow-up visit is scheduled for (place not put back).",
+  "flags": [
+    "Added by the model: a name that is not in your note or your list. The note shows (name not put back) until you press to put it back."
+  ],
+  "copyDisabled": true,
+  "modelOutputs": [
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+      "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nVisit date: 12/11\\nPresent: Maria O-R, Bea\\nSeen: Mould in ",
+      "output": "{\"candidates\":[{\"text\":\"Maria O-R\",\"kind\":\"name\"},{\"text\":\"Maria\",\"kind\":\"name\"},{\"text\":\"Bea\",\"kind\":\"name\"},{\"text\":\"Mon\",\"kind\":\"place\"},{\"text\":\"Maria missed the benefits form deadline last wk\",\"kind\":\"phrase\"},{\"text\":\"3/3/87\",\"kind\":\"dob\"},{\"text\":\"Tomas Brandvald\",\"kind\":\"name\"},{\"text\":\"neighbour, also on my list\",\"kind\":\"phrase\"}]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Visit date: 12/11\\nPresent: [Person 1], [Person 2]\\nSeen: Mould in back bedroom again, worse by the window; L",
+      "output": "Case Note\n\nOn [Date 1], [Person 1] and [Person 2] were present for a visit.  Evidence of mould was observed in the back bedroom, noted to be more pronounced near the window.  The landlord had not responded to two emailed inquiries. {He:Person 1} missed the deadline for a benefits form last week, and a notification letter was observed on the table. The date of birth listed on the form is [Date 1]. It was agreed that a phone call to the landlord would be made on Monday. [Person 1] will submit the form by Friday, and [Person 3] ([Detail 1]) has offered assistance with completing it. The potential risk of rent arrears due to a late submission of the form was discussed. A follow-up visit is scheduled for November 26th.\n\n\n\n"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nCase Note\\n\\nOn [Date 1], [Person 1] and [Person 2] were pr",
+      "output": "{\"candidates\": [\n  {\n    \"text\": \"[Date 1]\",\n    \"kind\": \"dob\"\n  },\n  {\n    \"text\": \"[Person 1]\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"[Person 2]\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"[Date 1]\",\n    \"kind\": \"dob\"\n  },\n  {\n    \"text\": \"[Person 1]\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Monday\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"Friday\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"[Person 3] ([Detail 1])\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"November 26th\",\n    \"kind\": \"place\"\n  }\n]}"
+    }
+  ],
+  "requestsOutsideThePage": 0
+}

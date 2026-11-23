@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-16",
+  "time": "2026-11-16T06:30:52.392Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "111f0f3",
+  "status": "pass",
+  "check": "H4: the draft online (the cloud) and offline (this device), in one Google Chrome session with the model and the real cloud.",
+  "hybridRun": "results/hybrid-run-2026-11-16-h20-2.json",
+  "offline": {
+    "network": "off",
+    "modeChosenByTheApp": "ONLY_ON_DEVICE (the browser reported offline)",
+    "status": "pass",
+    "mode": "ONLY_ON_DEVICE",
+    "inferenceSource": "ON_DEVICE",
+    "label": "on this device",
+    "seconds": 4.9,
+    "card": {
+      "verdict": "Nothing went to the cloud: 0 of 20 listed names.",
+      "rows": {
+        "Masked values in the text sent": "0 of 4",
+        "Single name parts of 3 letters or more": "checked, none found",
+        "The request": "none made, draft made on this device"
+      },
+      "kind": "offlineDevice"
+    }
+  },
+  "online": {
+    "network": "on",
+    "modeChosenByTheApp": "PREFER_IN_CLOUD",
+    "status": "pass",
+    "mode": "PREFER_IN_CLOUD",
+    "inferenceSource": "IN_CLOUD",
+    "label": "in the cloud + in the cloud",
+    "seconds": 3.9,
+    "card": {
+      "verdict": "No listed name left this device: 0 of 20.",
+      "rows": {
+        "Masked values in the text sent": "0 of 5",
+        "Single name parts of 3 letters or more": "checked, none found",
+        "The request": "sent to firebasevertexai.googleapis.com · answered 200"
+      },
+      "kind": "pass"
+    }
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-tYxTMKRp.js",
+    "buildTime": "2026-11-16T06:26:40.774Z"
+  }
+}

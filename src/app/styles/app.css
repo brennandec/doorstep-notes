@@ -1,0 +1,729 @@
+/* Paper, ink, one accent. System faces only. No gradients, no dark theme. */
+:root {
+  --paper: #FAF8F3;
+  --paper-2: #F1EEE6;
+  --ink: #1C1B19;
+  --ink-2: #5E5A52;
+  --hairline: #D9D4C7;
+  --accent: #1E6B52;
+  --accent-tint: #E3EBE5;
+  --failure: #B3261E;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, p { margin: 0; }
+
+.status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.status-bar .name { font-size: 18px; font-weight: 700; }
+.status-bar .tagline { color: var(--ink-2); }
+.status-bar .left { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 1rem; }
+.status-bar .states { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; margin: 0; padding: 0; list-style: none; }
+.status-bar .halves { flex-basis: 100%; margin: 0; color: var(--ink-2); }
+.state { display: inline-flex; align-items: center; gap: 0.4rem; }
+.state .state-label { color: var(--ink-2); }
+.icon { width: 24px; height: 24px; flex: none; }
+
+.standing { padding: 0.75rem 1.5rem; border-top: 1px solid var(--hairline); color: var(--ink-2); }
+.standing p + p { margin-top: 0.25rem; }
+
+.offline-line { margin: 0; border-bottom: 1px solid var(--hairline); }
+/* A plain paragraph in the zone: its text has the whole width and wraps, and is never cut (shell-and-offline R34.1). */
+.zone .offline-line { padding: 0.5rem 0; overflow-wrap: break-word; }
+
+.screen {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 0 1.5rem 3rem;
+}
+
+.zone { padding: 1.25rem 0; min-width: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+/* Nothing in a zone shrinks below its content, so no text is cut (shell-and-offline R34.2). */
+.zone > * { flex-shrink: 0; }
+.zone h2 { font-size: 22px; line-height: 1.3; }
+.zone-line { color: var(--ink-2); }
+
+.boundary { position: relative; height: 3.5rem; }
+.boundary .rule { position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--ink-2); }
+.boundary .label { position: absolute; white-space: nowrap; font-size: 16px; color: var(--ink-2); left: 0; display: inline-flex; align-items: center; gap: 0.35rem; }
+.boundary .label-device { top: 0; }
+.boundary .label-cloud { bottom: 0; }
+
+/* Side by side from 1100 px: the zones share the width 5 : 4 : 4 and zone 2 is never under 400 px (shell-and-offline R33). */
+@media (min-width: 1100px) {
+  .screen { grid-template-columns: minmax(320px, 5fr) 1px minmax(400px, 4fr) minmax(280px, 4fr); column-gap: 0; }
+  .zone { padding-top: 3rem; }
+  .zone-note { padding-right: 1.5rem; gap: 0.5rem; }
+  .zone-note textarea.note-area { height: 7.5rem; min-height: 6rem; }
+  .zone-note textarea.list-area { height: 4.5rem; min-height: 4rem; }
+  .zone-leaves { padding-left: 1rem; padding-right: 0.75rem; }
+  .zone-finished { padding-left: 0; }
+  .boundary { height: auto; }
+  .boundary .rule { top: 0; bottom: 0; left: 0; right: auto; width: 1px; height: auto; }
+  .boundary .label { top: 0.75rem; bottom: auto; }
+  .boundary .label-device { right: 0.75rem; left: auto; }
+  .boundary .label-cloud { left: 0.75rem; right: auto; }
+}
+
+label.field-label { font-weight: 700; }
+textarea {
+  width: 100%;
+  min-height: 11rem;
+  padding: 0.6rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  resize: vertical;
+}
+textarea.note-area { font-size: 20px; }
+textarea.list-area { min-height: 6rem; }
+
+.btn {
+  min-height: 48px;
+  height: 48px;
+  padding: 0 1.1rem;
+  font-family: var(--sans);
+  font-size: 18px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn.primary { background: var(--accent); color: var(--paper); border-color: var(--ink); }
+.btn[disabled] { color: var(--ink-2); background: var(--paper-2); cursor: not-allowed; }
+.btn.primary[disabled] { color: var(--ink-2); background: var(--paper-2); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.model-size { margin: 0; }
+.model-download { display: flex; flex-direction: column; gap: 0.35rem; width: 100%; }
+progress.model-bar { width: 100%; height: 0.75rem; }
+.device-still { margin: 0.75rem 0 0; }
+.device-still img { display: block; width: 100%; height: auto; border: 1px solid var(--hairline); }
+.device-still figcaption { margin-top: 0.35rem; font-size: 16px; color: var(--ink-2); }
+
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+.mark {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0 0.6rem;
+  min-height: 28px;
+  font-size: 16px;
+  color: var(--ink);
+  border: 1px dashed var(--ink-2);
+  border-radius: 10px;
+}
+
+.model-line { color: var(--ink-2); }
+.model-download { margin-top: 0.75rem; max-width: 20rem; width: 100%; align-self: flex-start; }
+.model-download .model-progress { margin: 0; }
+.model-bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  margin-top: 0.35rem;
+  border: 0;
+  background: var(--hairline);
+  accent-color: var(--accent);
+}
+.model-bar::-webkit-progress-bar { background: var(--hairline); }
+.model-bar::-webkit-progress-value { background: var(--accent); }
+.model-bar::-moz-progress-bar { background: var(--accent); }
+.first-plane .offline-line { border-bottom: 0; margin-top: 0.75rem; overflow-wrap: break-word; }
+.record dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; }
+.record dt { font-weight: 700; }
+.record dd { margin: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--accent-tint);
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+}
+
+.outgoing {
+  scroll-margin-top: 1rem;
+  margin: 0;
+  min-height: 11rem;
+  max-height: 12rem;
+  overflow-y: auto;
+  padding: 0.75rem;
+  font-family: var(--mono);
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1px dashed var(--hairline);
+}
+.send-notice { color: var(--ink-2); font-size: 16px; }
+.egress-line {
+  /* H35b D7: the line flows after the controls in every state, so it never lies over a button, notice or the outgoing text. */
+  position: static;
+  bottom: auto;
+  margin-top: 0;
+  padding: 0.75rem 0;
+  background: var(--paper);
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 18px;
+}
+/* While the block holds the "Not sent" line above is what she must read in full; the line follows it directly. */
+.egress-line[data-kind="blocked"] { padding: 0.5rem 0; gap: 0.25rem; }
+/* So that the "Not sent" line and the egress line are both in the first screen at 1280 x 800 while the block holds,
+   the outgoing text takes less height (it still scrolls) and the block line flows as text, not as a wrapping row of
+   separate pieces (session H02, judge: Design 4). */
+.zone-leaves:has([data-block-line]) .outgoing { min-height: 0; max-height: 5.5rem; }
+.egress-card { display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem; border: 1px solid var(--hairline); border-radius: 10px; background: var(--paper); }
+.egress-verdict { display: flex; gap: 0.3rem; align-items: center; }
+.egress-icon { flex: none; display: inline-flex; }
+.egress-icon .icon { width: 18px; height: 18px; }
+.egress-headline { font-size: 18px; font-weight: 600; line-height: 1.4; }
+.egress-rows { width: 100%; border-collapse: collapse; font-size: 16px; }
+.egress-rows th, .egress-rows td { padding: 0.25rem 0; border-top: 1px solid var(--hairline); vertical-align: top; font-weight: 400; }
+.egress-rows th { text-align: left; padding-right: 0.75rem; color: var(--ink-2); }
+.egress-rows td { text-align: right; overflow-wrap: anywhere; }
+.egress-standing { margin: 0 0 0.25rem; font-size: 16px; color: var(--ink-2); }
+.egress-scanned, .egress-near { margin: 0 0 0.25rem; font-size: 16px; color: var(--ink-2); }
+.egress-line.fail .egress-verdict { color: var(--failure); }
+.error { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; color: var(--failure); }
+.sheet-notes li.error { list-style: none; margin-left: -1rem; }
+
+.sheet {
+  position: relative;
+  min-height: 16rem;
+  padding: 2.5rem 1.25rem 1.25rem;
+  font-family: var(--serif);
+  font-size: 18px;
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  box-shadow: 0 2px 8px rgba(28, 27, 25, 0.16);
+}
+/* H53 (2026-11-20): the marks used to be absolutely positioned at the card's top-right, so the "names put back on this
+   device" pill sat OVER the note's first line — measured on the real-cloud take at 1280 as 13.0 CSS px of vertical
+   overlap and 232.7 horizontal, 40 of the badge's 81 rows over live text. A judge saw half the first line hidden. They
+   now sit in the card's flow above the text, the way the test-double mark already did, and the card reserves their
+   height so nothing can land on the text.
+   The clearance is the mark's margin-bottom plus the text's half-leading, NOT the card's padding: the first correction
+   set margin-bottom 0.5rem, and 0.5rem is 9px here because html { font-size: 18px }, so the real gap measured 12 CSS px
+   at 1280, 1440 and 1920 — under the desk's 14px floor. 1rem = 18px plus 3px half-leading gives 21 CSS px, measured on
+   the real-cloud build at bea7568's successor at all three widths. */
+.sheet > .source-label, .sheet > .source-labels { position: static; display: flex; width: fit-content; max-width: 100%; margin: 0 0 1rem auto; }
+.sheet:has(> .source-label), .sheet:has(> .source-labels) { padding-top: 1.5rem; }
+/* The test-double mark has two facts and wraps to two lines, so it sits in the flow above the text and never covers it. */
+.sheet:has(> .source-label.test-double) { padding-top: 0.75rem; }
+.sheet > .source-label.test-double { position: static; display: flex; width: fit-content; max-width: 100%; margin: 0 0 0.75rem auto; padding-top: 0.2rem; padding-bottom: 0.2rem; border-radius: 14px; }
+.sheet .sheet-text { white-space: pre-wrap; }
+.sheet .sheet-empty { color: var(--ink-2); }
+.sheet .sheet-short { margin: 1rem 0 0; font-family: var(--sans); font-size: 16px; color: var(--ink-2); }
+.sheet .sheet-notes { margin-top: 1rem; padding-top: 0.75rem; border-top: 1px solid var(--hairline); font-family: var(--sans); font-size: 16px; }
+.sheet .sheet-notes-title { margin: 0 0 0.25rem; font-weight: 700; }
+.sheet .sheet-notes ul { margin: 0; padding-left: 1.25rem; }
+.no-draft { display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+.no-draft p { margin: 0; }
+
+.source-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 28px;
+  padding: 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 16px;
+  border-radius: 999px;
+}
+.source-label.device { color: var(--ink); background: var(--paper); border: 1.5px solid var(--ink); }
+.source-label.cloud { color: var(--paper); background: var(--ink); border: 1.5px solid var(--ink); border-radius: 6px; }
+.source-label .icon { width: 20px; height: 20px; }
+.source-labels { display: inline-flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.fade { opacity: 1; transition: opacity 120ms linear; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+/* Capture and record: camera control, record editor, inline controls. */
+.file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+.file-btn { box-sizing: border-box; }
+.file-input:focus-visible + .file-btn,
+.file-btn:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn.inline { height: auto; min-height: 44px; min-width: 44px; padding: 0 0.8rem; font-size: 16px; }
+.chip .btn.inline { border: none; background: transparent; padding: 0 0.4rem; height: 44px; }
+.hint, .working, .photo-line { margin: 0; color: var(--ink-2); }
+.record-row { display: flex; flex-direction: column; gap: 0.25rem; margin-top: 0.75rem; }
+.record-missing { margin-top: 0.75rem; color: var(--ink); }
+.record-missing[hidden] { display: none; }
+.record-missing ul { list-style: none; margin: 0; padding: 0; }
+.record-label { font-weight: 700; }
+.record-input, .record-area {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+}
+.tag-add { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.tag-add .record-input { width: auto; flex: 1 1 10rem; }
+
+/* Masking: chips, tappable words, the live region (masking R5). Every target is at least 44 px. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.mask-view { position: relative; }
+.mask-text { white-space: pre-wrap; font-size: 20px; line-height: 1.5; }
+/* Ordinary words read as text (masking R14): no underline, box, border or background at rest.
+   A word shows that it can be masked when the pointer is on it or it has keyboard focus.
+   Its target is the height of the text line, not 44 px (R14.5, OPEN-QUESTIONS). */
+.word {
+  min-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.word:hover, .word:focus-visible { text-decoration: underline; }
+.word.likely { text-decoration: underline dotted; text-decoration-color: var(--ink); text-underline-offset: 0.2em; }
+.likely-line { margin: 0 0 0.75rem; font-size: 16px; }
+.likely-keeps { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.75rem; }
+.keep-likely { min-height: 44px; height: auto; padding: 0.45rem 1.1rem; }
+.likely-word {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.chip-wrap { position: relative; display: inline-flex; align-items: center; gap: 0.25rem; vertical-align: middle; }
+.chip-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  width: 18rem;
+  max-width: 80vw;
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  white-space: normal;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+}
+.chip-panel-line { margin: 0; }
+.chip-panel-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.mask-chip {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mask-chip .icon { width: 20px; height: 20px; }
+.mask-chip .chip-state { color: var(--ink-2); }
+.mask-chip.listed, .mask-chip.near { background: var(--accent-tint); border: 1.5px solid var(--accent); }
+.mask-chip.proposed { background: transparent; border: 1.5px dashed var(--ink); }
+.mask-chip.masked { background: transparent; border: 1.5px solid var(--ink); }
+.mask-chip.manual {
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-bottom-width: 3px;
+  min-height: 48px;
+  padding: 0 1.1rem;
+}
+.mask-chip.purpose { background: transparent; border: 2px solid var(--ink); }
+.mask-chip.off { background: transparent; border: 1.5px dotted var(--ink-2); }
+.chip-purpose, .chip-unmask {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.8rem;
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Second reader panel (second-reader R2). Same parts as the rest: drawn buttons, chips, hairlines. */
+.reader-panel { display: flex; flex-direction: column; gap: 0.75rem; padding-top: 1rem; border-top: 1px solid var(--hairline); }
+.reader-panel h3 { margin: 0; font-size: 20px; }
+.reader-help, .reader-standing { color: var(--ink-2); font-size: 16px; }
+.reader-guesses { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.reader-guess { padding: 0.75rem; border: 1px solid var(--hairline); background: var(--paper); }
+.reader-who { margin: 0 0 0.5rem; }
+.reader-words { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.reader-words-label { color: var(--ink-2); font-size: 16px; }
+.reader-quote.tag-only { font-size: 16px; color: var(--ink-2); }
+
+/* The line of five steps (shell-and-offline R20.1). Ink only: it adds no colour. */
+.steps { display: flex; flex-wrap: nowrap; gap: 0.25rem 0.75rem; margin: 0; padding: 0; list-style: none; font-size: 16px; }
+.step { display: inline-flex; align-items: center; gap: 0.2rem; color: var(--ink); white-space: nowrap; }
+.step.todo { color: var(--ink-2); }
+.step.current { font-weight: 700; }
+.step .icon { width: 18px; height: 18px; }
+/* H35b D1: below 640 px the five steps wrap, tighter, and every word stays whole. */
+@media (max-width: 639px) { .steps { flex-wrap: wrap; gap: 0.25rem 0.5rem; } }
+/* H35b D1, D4: the one filled button of a cold open stands in its own row under the steps. */
+.first-run-row { display: flex; }
+.example-record-origin { margin: 0; color: var(--ink-2); font-size: 16px; }
+/* H35b D7: 8 px between the date reading and its two controls. */
+.date-block { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+/* H35b: what the device half did on the author's computer, for a judge whose computer has no device model. */
+.author-device-panel { padding: 0.75rem; border: 1px solid var(--hairline); border-radius: 10px; background: var(--paper); }
+.author-device-panel h3 { margin: 0 0 0.5rem; font-size: 18px; }
+.author-device-panel ul { margin: 0; padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; font-size: 16px; }
+
+/* Folded note and client list (shell-and-offline R20.3). */
+.fold-line { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+/* The record's title and its "invented example" mark share a line, which keeps the masks in view (shell-and-offline R24.5). */
+.record > .record-title { display: inline-block; margin-right: 0.75rem; }
+/* A folded record field: the label and its text on one line, cut with an ellipsis (shell-and-offline R24.1). */
+.record-fold { flex-wrap: nowrap; }
+.record-fold .fold-text { flex: 1 1 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.record-fold .btn { flex: none; margin-left: auto; }
+
+/* Kept on this device: the clear controls and the question each one asks (shell-and-offline R27.4). Ink and paper only. */
+.kept-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0.25rem 0; }
+.kept-warning { color: var(--ink); border-left: 3px solid var(--ink); padding-left: 0.75rem; }
+.clear-panel { flex-basis: 100%; border: 1px solid var(--hairline); border-radius: 10px; background: var(--paper-2); padding: 0.75rem 1rem; }
+.clear-panel .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+.kept-footer { margin-top: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.kept-footer p { margin: 0; }
+
+/* Sentences of the outgoing text that can be rewritten (drafting R10.1). No new colour. */
+.sentence { cursor: pointer; }
+.sentence:hover { text-decoration: underline; }
+.sentence.selected { background: var(--paper); outline: 2px solid var(--ink); outline-offset: 1px; }
+.rewrite-controls { display: flex; flex-direction: column; gap: 0.5rem; }
+.rewrite-selected, .rewrite-wait, .rewrite-line, .rewrite-skipped { margin: 0; font-size: 16px; color: var(--ink-2); }
+.rewrite-result { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-size: 16px; }
+
+/* The ledger fold (egress-check R10). */
+.ledger-panel { display: flex; flex-direction: column; gap: 0.5rem; padding-top: 0.75rem; border-top: 1px solid var(--hairline); }
+.ledger-panel h3 { margin: 0; font-size: 18px; }
+.ledger-explain, .ledger-not-connected, .ledger-message { margin: 0; font-size: 16px; color: var(--ink-2); }
+.ledger-text { margin: 0; max-height: 6rem; overflow: auto; font-family: var(--mono); font-size: 16px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Small print folds behind the native details element (shell-and-offline R30). */
+details.fold { margin: 0.25rem 0; }
+details.fold > summary { cursor: pointer; color: var(--ink-2); min-height: 24px; }
+details.fold > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+details.fold[open] > summary { margin-bottom: 0.25rem; }
+
+/* Titles inside zone 1 sit close to what they head, so the chips stay in the first screen (shell-and-offline R24.5, R33). */
+.record-title, .mask-title { margin: 0.25rem 0 0.25rem; font-size: 20px; line-height: 1.3; }
+
+.notices { margin-top: 0.5rem; }
+.notices-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); text-decoration: underline; }
+.step.stopped { color: var(--ink); font-weight: 700; }
+.block-last { white-space: nowrap; }
+.block-line { display: block; margin-top: 0.5rem; font-weight: 600; color: var(--ink); }
+.try-listed { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; margin-top: 0.5rem; }
+.try-listed-help { color: var(--ink-2); font-size: 16px; }
+.egress-seeded { margin-top: 0.25rem; font-size: 16px; color: var(--ink-2); }
+.ledger-entries { display: flex; flex-direction: column; gap: 0.5rem; }
+.ledger-entry { width: 100%; border-collapse: collapse; font-size: 16px; border: 1px solid var(--hairline); }
+.ledger-entry th { width: 5.5rem; padding: 0.15rem 0.5rem; text-align: left; font-weight: 600; color: var(--ink-2); vertical-align: top; }
+.ledger-entry td { padding: 0.15rem 0.5rem; font-family: var(--mono); overflow-wrap: anywhere; }
+.ledger-entry tr + tr th, .ledger-entry tr + tr td { border-top: 1px solid var(--hairline); }
+.reader-panel .actions { align-items: center; }
+.reader-prepared { flex: 1 1 8rem; min-width: 8rem; margin: 0; font-size: 16px; color: var(--ink-2); }
+.zone-leaves .actions { align-items: center; }
+.leaves-reader-prepared { flex: 1 1 11rem; min-width: 10rem; margin: 0; font-size: 16px; color: var(--ink-2); }
+.control-reason { margin: 0; font-size: 16px; color: var(--ink-2); }
+.refused-line { margin: 0; font-size: 16px; scroll-margin: 0.5rem 0; }
+.block-line > svg { display: inline-block; vertical-align: middle; margin-right: 0.35rem; }
+
+/* Cold first screen. Two planes from 1100 px. The sentence is the one serif line.
+   From 1024 px the five steps are one path: the app's step mark on a single hairline.
+   Below that they stay a tight column, and the mark is not drawn.
+   Narrow padding keeps Send and Finished inside 844 px. */
+.first-screen {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 4.5rem);
+  padding-bottom: 1.5rem;
+}
+.first-planes { display: grid; grid-template-columns: 1fr; }
+.first-plane { min-width: 0; padding: 1.5rem 0; }
+.first-plane + .first-plane { border-top: 1px solid var(--hairline); }
+.first-plane-label { margin: 0; font-size: 16px; color: var(--ink-2); }
+.first-sentence {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 0.75rem;
+}
+.first-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+.first-left { margin: 0.75rem 0 0; }
+.first-steps {
+  list-style: none;
+  margin: 0;
+  padding: 1.25rem 0 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-top: 1px solid var(--hairline);
+}
+.first-step { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.75rem; align-items: baseline; }
+.first-step-name { font-weight: 700; }
+/* The mark stays out of the narrow column, so 390 px keeps the two-cell row. */
+.first-step .step-shape,
+.first-step .icon-check { display: none; }
+@media (max-width: 1023px) {
+  .first-screen { min-height: 0; padding-bottom: 0.75rem; }
+  .first-plane { padding: 0.5rem 0; }
+  .first-sentence { margin-top: 0.35rem; }
+  .first-actions { margin-top: 0.75rem; }
+  .first-left { margin-top: 0.35rem; }
+  .first-steps { padding-top: 0.5rem; gap: 0.35rem; justify-content: flex-start; }
+}
+@media (min-width: 1024px) {
+  #app:has(> .first-screen) {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-screen {
+    flex: 1 1 auto;
+    min-height: 0;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  .first-steps {
+    --rail-gap: 1.25rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    flex: none;
+    justify-content: start;
+    align-items: start;
+    gap: var(--rail-gap);
+    margin-top: 1.5rem;
+    padding-top: 0;
+    border-top: 0;
+  }
+  /* One hairline through the mark centres, from the first step to the last. */
+  .first-steps::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 11.5px;
+    left: calc((100% - 4 * var(--rail-gap)) / 10);
+    right: calc((100% - 4 * var(--rail-gap)) / 10);
+    height: 1px;
+    background: var(--hairline);
+  }
+  .first-step {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: center;
+    text-align: center;
+    color: var(--ink-2);
+  }
+  .first-step.current { color: var(--ink); }
+  .first-step-name { font-weight: 400; }
+  .first-step.current .first-step-name { font-weight: 700; }
+  .first-step .step-shape,
+  .first-step .icon-check {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: var(--paper);
+    border-radius: 50%;
+  }
+}
+@media (min-width: 1100px) {
+  .first-planes { grid-template-columns: 1fr 1fr; }
+  .first-plane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20rem;
+    padding: 2.5rem 2rem 2rem 0;
+  }
+  .first-plane + .first-plane { border-top: 0; border-left: 1px solid var(--hairline); padding-left: 2rem; }
+}
+
+/* Masks step. Two columns from 1024 px. Edit opens the record rows. */
+.screen.masks-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+.masks-step .steps { padding-bottom: 0.25rem; border-bottom: 1px solid var(--hairline); }
+.masks-columns { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+.masks-col { min-width: 0; }
+.masks-col h2 { margin: 0 0 0.75rem; font-size: 22px; line-height: 1.3; }
+.masks-people, .masks-stands, .masks-clue, .masks-meta { margin: 0.75rem 0 0; }
+.masks-line { margin: 0.75rem 0 0; }
+.masks-label { font-weight: 700; }
+.masks-hit { font-weight: 700; background: var(--accent-tint); }
+.masks-leaving { line-height: 1.6; }
+/* Tags in this paragraph sit in the line. The stroke is a shadow so it does not
+   grow the line box. The 44 px chip stays on the record and the editor. */
+.masks-leaving .chip-wrap { display: inline; vertical-align: baseline; }
+.masks-leaving .mask-chip {
+  display: inline-block;
+  box-sizing: border-box;
+  appearance: none;
+  height: 1.6em;
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0 0.3em;
+  font: inherit;
+  line-height: 1.6;
+  vertical-align: baseline;
+  border: 0;
+  border-radius: 0.2em;
+  outline: 1px solid var(--ink);
+  outline-offset: -1px;
+}
+.masks-leaving .mask-chip.listed,
+.masks-leaving .mask-chip.near { outline-color: var(--accent); }
+.masks-leaving .mask-chip.proposed { outline-style: dashed; }
+.masks-leaving .mask-chip.off { outline-style: dotted; outline-color: var(--ink-2); }
+.masks-exact { margin: 0.75rem 0 0; white-space: pre-wrap; font-family: var(--mono); font-size: 16px; }
+@media (min-width: 1024px) {
+  .masks-columns { grid-template-columns: 1fr 1fr; column-gap: 2rem; }
+  .masks-col + .masks-col { border-left: 1px solid var(--hairline); padding-left: 1.5rem; }
+}
+
+/* Send step. The listed-name block sits under the text that would leave. */
+.screen.send-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+.send-step .steps { padding-bottom: 0.25rem; border-bottom: 1px solid var(--hairline); }
+.send-col { min-width: 0; max-width: 40rem; }
+.send-col h2 { margin: 0 0 0.75rem; font-size: 22px; line-height: 1.3; }
+.send-text { margin: 0; white-space: pre-wrap; line-height: 1.6; }
+.send-meta { margin: 0.75rem 0 0; }
+.send-col .actions { margin-top: 1rem; }
+
+/* Finished slot. Five headings, then the receipt card. */
+.screen.finished-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+.finished-step .steps { padding-bottom: 0.25rem; border-bottom: 1px solid var(--hairline); }
+.case-note { min-width: 0; max-width: 40rem; }
+.case-note h2 { margin: 0 0 0.75rem; font-size: 22px; line-height: 1.3; }
+.case-part h3, .receipt-card h3 { margin: 1rem 0 0.25rem; font-size: 18px; line-height: 1.3; font-weight: 700; }
+.case-part p, .receipt-card p { margin: 0.25rem 0 0; line-height: 1.6; }
+.receipt-card { margin-top: 1rem; padding-top: 0.25rem; border-top: 1px solid var(--hairline); }
+.case-note .actions { margin-top: 1rem; }
+.xray-bar { margin: 0; }
+.xray { min-width: 0; max-width: 40rem; }
+.xray h2 { margin: 0 0 0.75rem; font-size: 22px; line-height: 1.3; }
+.xray-entry { width: 100%; border-collapse: collapse; margin: 0 0 1rem; }
+.xray-entry th, .xray-entry td {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 0.25rem 0.75rem 0.25rem 0;
+  vertical-align: top;
+}
+.xray-entry th { font-weight: 700; width: 8rem; }
+.about-page { max-width: 40rem; padding: 1.5rem 1.5rem 3rem; }
+.about-page h1 { font-family: var(--serif); font-size: 2rem; font-weight: 400; line-height: 1.2; margin: 1.25rem 0 0.5rem; }
+.about-page h2 { font-size: 22px; line-height: 1.3; margin: 1.5rem 0 0.75rem; }
+.about-page h3 { font-size: 18px; line-height: 1.3; margin: 1.25rem 0 0.35rem; }
+.about-page p { margin: 0.35rem 0 0; line-height: 1.6; }

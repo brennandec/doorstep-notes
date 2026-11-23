@@ -1,0 +1,63 @@
+# Capture and record: tasks
+
+Each test is written before or with its code. Run the whole suite after each task with `perl -e 'alarm 300; exec @ARGV' npm test`, then the type check and the build. REAL BROWSER tasks say BUNDLED or DEVICE MODEL (browser document) and stay unticked unless a session is told to run them. Invented people only.
+
+- [x] 1. Read https://firebase.google.com/docs/ai-logic/hybrid/web/generate-structured-output again and write what it says about the schema option, or that it could not be read, into docs/sdk-facts.md with the date. Serves R3.1.
+- [x] 2. Types and schema check: `VisitRecord`, `PersonTag`, `JobResult`, `StructureJob`, `InventedVisit`; unit tests for good, partial and bad records. Serves R4.2.
+- [x] 3. Invented visit in `src/app/example/inventedVisit.ts`: the note, the 12-name list and the prepared record from the requirements; unit tests for 12 entries, each line parsing with the masking parser (masking task 1), and the note holding a listed name, an other name, a near variant and an unlisted name. Serves R10.
+- [x] 4. Storage for note and photo in `src/storage/notes.ts` and `records.ts`; unit test saves and reads back the invented note and a small invented PNG with a fetch that throws. Serves R1.1, R2.2, R5.3.
+- [x] 5. Photo type check; unit test: JPEG and PNG accepted, GIF, PDF and HEIC refused with the exact line including "Convert it to JPEG or PNG first." Cut order: photo input is cut last. Serves R2.1.
+- [x] 6. Device model wrapper in `src/inference/deviceModel.ts`: availability with the prompt's options, `initialize()` from a press only, progress; unit tests with a fake `LanguageModel` for call order and the four states. Serves R6.1, R6.2, R6.4.
+- [x] 7. Create options builder; unit tests: text-only inputs for a typed note, text plus image with a photo, `en` languages, system prompt as an `initialPrompts` system entry. Serves R4.5, R4.6.
+- [x] 8. REAL BROWSER, DEVICE MODEL. Structured-output syntax check: one prompt with a two-field schema in `ONLY_ON_DEVICE` through the fixture; write `results/device-structured-output.json` with the option names, whether the reply parsed, date and browser, or a miss with its reason. Serves R3.2. Ran 2026-11-13 in Google Chrome 157.0.8103.79 (results/device-structured-output.json): pass.
+- [x] 9. Structure job real implementation behind the interface, using the option names from task 8 or, if task 8 is a miss, the documented names with a comment and a docs/sdk-facts.md line saying the syntax is not checked in a real browser; unit tests with a fake SDK: `mode` is `ONLY_ON_DEVICE`, an `IN_CLOUD` result is discarded, the real job is chosen when the device is `available` and `AI_SERVICE_ENABLED` is off, a download in progress waits. Serves R3.3, R4.1, R4.4, R4.7, R4.8.
+- [x] 10. Structure double for unit tests, returning the prepared invented record with `connected: false`; unit test that it makes no request and that `makeKit` never chooses it. Serves R11.
+- [x] 11. Length line and best-effort guard; unit tests: the model's length error maps to the exact line; with no `results/device-token-limit.json` the guard is off; with an invented results file the guard counts note, schema text, system prompt and the photo amount. Serves R7.1, R7.2, R7.4.
+- [x] 12. Language line; unit test with an invented Welsh sentence. Serves R8.
+- [x] 13. Zone 1 parts: note area, camera control, "Make the record", record editor with chips, the device model line with no version or steps, progress text; unit tests on the DOM. Serves R1.1, R5.1, R5.2, R6.2, R6.3.
+- [x] 14. REAL BROWSER, BUNDLED. Request recorder during typing, adding an invented photo and loading the invented visit: zero requests carry any part of the note, the photo's base64 text or any of the 12 names. Serves R1.2, R2.2. Ran 2026-11-13 (results/real-browser-2026-11-13.json).
+- [x] 15. REAL BROWSER, BUNDLED, H6. The bundled browser reports the model `unavailable`: the line shows with no version or steps, hand entry builds a full record, the prepared invented record loads with one press. Serves R5.2, R6.3. Ran 2026-11-13 (results/real-browser-2026-11-13.json).
+- [x] 16. REAL BROWSER, DEVICE MODEL. Token limit: find the largest invented note accepted with the schema and system prompt, with and without an invented photo; write `results/device-token-limit.json`, or a miss with its reason. Serves R7.3. Ran 2026-11-13 in Google Chrome 157.0.8103.79 (results/device-token-limit.json): pass.
+- [x] 17. REAL BROWSER, DEVICE MODEL, H1. Network off, the invented note becomes a record and masks, every result labelled "on this device"; write `results/h1.json`; with Chrome or the model absent write a failure with its reason. Serves R9.1. Ran 2026-11-13 in Google Chrome 157.0.8103.79, network off (results/h1.json): pass. Screenshots docs/screens/08-device-record.png and 09-device-masks.png.
+- [x] 18. REAL BROWSER, DEVICE MODEL, H8. Cold start to first record with the model downloaded, using the script of measurement task 8 (one run serves both); write `results/cold-start.json` with seconds, date, browser and machine; over 60 seconds or the model absent is a failure with its reason. Serves R9.2. Ran 2026-11-13 in Google Chrome 157.0.8103.79 (results/cold-start.json): pass, with the script of measurement task 8.
+- [x] 19. Figure display for H8: "on the author's computer" with date and browser from the file, or "not measured"; unit tests with and without an invented results file. Serves R9.3.
+- [x] 20. Ruling 24, names the model adds. A name in the record that is in neither the rough note nor the client list is marked "added by the model" in the record view and is never restored into the finished note without a press. Test first with a double that returns a surname the note does not contain. Serves ruling 24.
+- [x] 21. Browser facts 1, 2 and 5 (docs/decisions/2026-11-13-browser-on-this-computer.md). Compare `inferenceSource` against the SDK export `InferenceSource`, not against upper-case text; pass the record schema as `onDeviceParams.promptOptions.responseConstraint`; the structuring prompt states the exact output wanted. Unit tests against the double; the real call is covered by the DEVICE MODEL tasks, which now run for real.
+
+## Second review (2026-11-13): new tasks
+
+Source: `docs/decisions/2026-11-13-second-review-after-the-first-build.md`. Each test is written before or with its code. Run the whole suite after each task with `perl -e 'alarm 300; exec @ARGV' npm test`, then the type check and the build. REAL BROWSER tasks stay unticked unless a session is told to run them. Invented people only.
+
+Retired by the second review: the part of task 2 and task 9 that treats the record's visit date as a date the model fills in (replaced by tasks 22 to 26, U1); the part of shell-and-offline task 28 where the first press fills the prepared record when no device model is present (replaced by task 28 below, U8).
+
+- [x] 22. Test first, then code: the date field is the note's words as written. Unit tests assert the schema description text, that the field is a string, the structuring prompt's instructions about dates, weekdays and relative days, and that a fake reply of "2023-12-11" for the note "12/11" is not accepted as the date. Serves R12.1, R12.2 (U1).
+- [x] 23. Test first, then code: the date-token guard. A unit test table of date-like tokens (day and month with `/`, `-` and `.`, ISO date, four-digit year, month name, weekday and short form, today, tomorrow, yesterday); a bad date field is replaced by the first date words of the note with the exact line of R12.3; a bad token in another field is marked "not in your note" and left out of the outgoing text while marked. Serves R12.3 (U1).
+- [x] 24. Test first, then code: `readNoteDate` in `src/record/noteDate.ts`. Unit tests with an injected clock set to 2026-11-13: "12/11" in `en-GB` and `en-US`, "26/11" in both, "12/11/2025" with no assumed year, "Mon" with no reading. Serves R12.4 (U1, V1).
+- [x] 25. Test first, then code: the date line in the record view with the words, the reading, "Confirm" and "Correct" and the three states of R12.5. Unit tests on the DOM, including that the words are never overwritten and both controls are at least 44 px high. Serves R12.5 (U1).
+- [x] 26. Test first: the year audit. A helper `unmarkedYears(text, note)` and a unit test that runs the invented visit through a double answering with "2023-12-11" and asserts no unmarked year in the record view or the outgoing text, for `en-GB` and `en-US`. Serves R12.6 (U1, V1).
+- [x] 27. REAL BROWSER, DEVICE MODEL, V1. Invented visit in Google Chrome with the built-in model: the date field is the note's words, the reading names the current year and says "assumed", and no unmarked year appears in the record view or the outgoing text. Write `results/date-check.json`, or a miss with its reason. Serves R12.7 (V1). Ran 2026-11-13 in Google Chrome 157.0.8103.79 (results/date-check.json): pass. Date field "12/11"; reading "read as 11 December 2026, assumed" (browser locale en-US); no unmarked year in the record view or the outgoing text. The record-view audit leaves out the measured-figures block (OPEN-QUESTIONS, session C05). Check: `tests/e2e/device/dateCheck.spec.ts`.
+- [x] 28. Test first, then code: the first control. A unit test of the state table of R13 (no note; note with the model `available`, `downloading`, `downloadable`, `unavailable`): label, filled or outlined, enabled or disabled with its words, one filled control in zone 1, hand entry opening with the prepared invented record when the example is loaded. Serves R13.1 to R13.4 (U8).
+- [ ] 29. REAL BROWSER, BUNDLED, U8. At 1440 x 900 with a note present: the computed background of the first control is the accent, opacity is 1, it is enabled; with the bundled browser's model state it reads "Enter the record by hand" and one press opens hand entry. Serves R13.5 (U8).
+
+## Third review (2026-11-13): new tasks
+
+Source: `docs/decisions/2026-11-13-third-review-the-finished-note.md`. Each test is written before or with its code. Run the whole suite after each task with `perl -e 'alarm 300; exec @ARGV' npm test`, then the type check and the build. Invented people only.
+
+Retired by the third review: none.
+
+- [x] 30. Test first, then code: day first when the note shows it. Unit tests (Y3): "12/11" with "26/11" in the same note reads as 12 November under `en-US` and `en-GB`; "12/11" alone follows the locale; "14.30" is not evidence; the reading says "assumed" until confirmed; the controller passes the rough note to the reading. Serves R14.1 to R14.4 (X4).
+
+## Session H03 (2026-11-14): handwriting photo
+
+- [x] 31. Test first, then code: a handwriting fixture of an invented person and its printed twin (`tests/fixtures/handwriting/`, built by `npm run fixture:handwriting`), unit tests in `tests/unit/handwritingFixture.test.ts` (PNG validity, manifest, invented names, differs from printed, the call shape through `src/firebase/structureSdk.ts`, no request). Serves R2.3 and browser document fact 6.
+- [x] 32. REAL BROWSER, DEVICE MODEL. `tests/e2e/device/handwriting.spec.ts` (`npm run e2e:handwriting`): the handwriting page alone, added with the camera control, made a record labelled "on this device", shown on the screen, with words of the page in it and no request. Ran 2026-11-13 local time, 2026-11-14 UTC, in Google Chrome 157.0.8103.79 (results/handwriting.json): pass. Picture docs/screens/15-handwriting-record.png. The printed page also made a record. The fixture is a handwriting typeface, not a person's own hand. Serves R2.3.
+
+## Session H24 (2026-11-14): what the record left out
+
+- [x] 33. Test first, then code: `findMissingSentences` in `src/record/noteCoverage.ts` and the list with Add to Seen; unit tests in `tests/unit/noteCoverage.test.ts`, `tests/unit/recordMissingScreen.test.ts` and additions to `structureJob.test.ts` and `keptStore.test.ts`. Serves R15.
+- [x] 34. REAL BROWSER, BUNDLED. `tests/e2e/bundled/recordMissing.spec.ts`: a kept device record with three missing sentences shows three lines under the masking controls, and Add to Seen moves one into Seen. Serves R15. Ran 2026-11-14 (results/record-missing-2026-11-14-h24.json): pass.
+
+## Chain R17, session A (2026-11-19)
+
+- [x] 35. Test first, then code: the bound on the download press. Tests in `tests/unit/deviceInitBound.test.ts`; code in `src/firebase/deviceInit.ts`, `DEVICE_INITIALIZE_TIMEOUT_MS` and its source line in `src/constants.ts`. Serves R19.
+- [x] 36. Tests only: the hanging first check leaves the first control usable and opens the no-model path, added to `tests/unit/h51eFirstCheckBound.test.ts` without editing its existing cases or the two values. Serves R20.

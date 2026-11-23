@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:54:35.387Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "0d3495b",
+  "what": "Network off. Invented visit, record and masks on the device, then the offline draft. Raw model outputs as the page received them.",
+  "suggestionsAccepted": 3,
+  "proposedChips": [
+    "Bea\nsuggested",
+    "3/3/87\nsuggested",
+    "26/11\nsuggested"
+  ],
+  "maskedTextBeforeAnySuggestionAccepted": "Visit date: 12/11\nPresent: [Person 1], Bea\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+  "maskedTextSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] missed the benefits form deadline last wk, letter on the table; DOB on form [Date 1].\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit [Place 1].\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+  "finishedText": "Case Note\n\nA visit was undertaken on 12/11 with Maria Okonkwo-Reyes and Bea present. Mould was observed in the back bedroom, with an increase in severity noted near the window. Communication with the landlord has been unsuccessful, as she has not responded to two emails. The benefits form deadline was missed by Maria Okonkwo-Reyes last week, and the letter is present. The date of birth listed on the form is 3/3/87. It was agreed that a call to the landlord will be made on Monday. Maria Okonkwo-Reyes will submit the form on Friday, with assistance offered by a neighbor, Tomas Brandvold. A risk of rent arrears due to the form being late has been identified. A follow-up visit to 26/11 is planned.",
+  "flags": [],
+  "copyDisabled": false,
+  "modelOutputs": [
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+      "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nVisit date: 12/11\\nPresent: Maria O-R, Bea\\nSeen: Mould in ",
+      "output": "{\"candidates\": [\n  {\n    \"text\": \"Maria O-R\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Bea\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Tomas Brandvald\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Mon\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"Fri\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"3/3/87\",\n    \"kind\": \"dob\"\n  },\n  {\n    \"text\": \"26/11\",\n    \"kind\": \"place\"\n  }\n]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Visit date: 12/11\\nPresent: [Person 1], [Person 2]\\nSeen: Mould in back bedroom again, worse by the window; L",
+      "output": "Case Note\n\nA visit was undertaken on 12/11 with [Person 1] and [Person 2] present. Mould was observed in the back bedroom, with an increase in severity noted near the window. Communication with the landlord has been unsuccessful, as {he:Person 1} has not responded to two emails. The benefits form deadline was missed by [Person 1] last week, and the letter is present. The date of birth listed on the form is [Date 1]. It was agreed that a call to the landlord will be made on Monday. [Person 1] will submit the form on Friday, with assistance offered by a neighbor, [Person 3]. A risk of rent arrears due to the form being late has been identified. A follow-up visit to [Place 1] is planned.\n\n\n\n"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nCase Note\\n\\nA visit was undertaken on 12/11 with [Person 1",
+      "output": "{\"candidates\": [ {\"text\": \"[Person 1]\", \"kind\": \"name\"}, {\"text\": \"[Person 2]\", \"kind\": \"name\"}, {\"text\": \"{he:Person 1}\", \"kind\": \"name\"}, {\"text\": \"[Date 1]\", \"kind\": \"dob\"}, {\"text\": \"[Place 1]\", \"kind\": \"place\"}, {\"text\": \"[Person 3]\", \"kind\": \"name\"} ]}"
+    }
+  ],
+  "requestsOutsideThePage": 0
+}

@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-16",
+  "time": "2026-11-16T06:30:52.392Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "111f0f3",
+  "status": "pass",
+  "check": "H2 part B: a full run against the real cloud service with invented people, every request recorded.",
+  "hybridRun": "results/hybrid-run-2026-11-16-h20-2.json",
+  "assertions": {
+    "noListedNameOtherNameSurfaceFormMaskedOriginalNoteLineOrImageByteInAnyRequest": true,
+    "zeroOutsideRequestsWhileOffline": true,
+    "everyOutsideHostOnTheAllowList": true,
+    "noMarkdownTagOrTokenInEitherDraft": true,
+    "cloudDraftAnsweredInTheCloud": true
+  },
+  "leakChecks": [
+    {
+      "step": 3,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 5,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 6,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 1,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 7,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 1,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 4,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 10,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 8,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 9,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    }
+  ],
+  "problems": [],
+  "requests": {
+    "outside": [
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeDebugToken",
+        "bodyBytes": 54,
+        "sha256": "a51235b9ee700675c4df311f2bef9f2b13c9117fbf3259c44bb5d01f4f8a57dc",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1352,
+        "sha256": "7028e433e67a7e548dc5f77581501f3c434027ce90db8c7bf4cd508512527547",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1314,
+        "sha256": "2b6696a439d6503772c7b3c6708830e72d4696e320a855b5cb92c679d2deeba2",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 2544,
+        "sha256": "b72f88188270f6b835551db88609147ccd17648ae10ecd58ecdede820e20e857",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 31,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 3,
+    "appCheckExchanges": 1,
+    "stoppedAtCap": false
+  },
+  "cloudCalls": {
+    "generateContent": 3,
+    "appCheckExchanges": 1
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-tYxTMKRp.js",
+    "buildTime": "2026-11-16T06:26:40.774Z"
+  }
+}

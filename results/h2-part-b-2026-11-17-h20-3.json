@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-17",
+  "time": "2026-11-17T00:45:33.622Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "2e28a76",
+  "status": "fail",
+  "check": "H2 part B: a full run against the real cloud service with invented people, every request recorded.",
+  "hybridRun": "results/hybrid-run-2026-11-17-h20-3.json",
+  "assertions": {
+    "noListedNameOtherNameSurfaceFormMaskedOriginalNoteLineOrImageByteInAnyRequest": true,
+    "zeroOutsideRequestsWhileOffline": false,
+    "everyOutsideHostOnTheAllowList": true,
+    "noMarkdownTagOrTokenInEitherDraft": true,
+    "cloudDraftAnsweredInTheCloud": false
+  },
+  "leakChecks": [
+    {
+      "step": 3,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    }
+  ],
+  "problems": [
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed"
+  ],
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 26,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "cloudCalls": {
+    "generateContent": 0,
+    "appCheckExchanges": 0
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-CZ4Xy2Nz.js",
+    "buildTime": "2026-11-17T00:44:44.473Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-21",
+  "time": "2026-11-21T17:23:11.652Z",
+  "browser": "Google Chrome 158.0.8127.36",
+  "status": "pass",
+  "reason": "Fresh Chrome profile. availability() only. create() was not called. No download was started.",
+  "profile": "fresh",
+  "headless": true,
+  "pageOrigin": "http://127.0.0.1",
+  "profileFilesBeforeLaunch": 0,
+  "availability": "downloadable",
+  "createCalled": false,
+  "downloadStarted": false,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+  "hardwareConcurrency": 28,
+  "deviceMemoryGb": 32,
+  "profileVolumeFreeBytes": 448308248576,
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "floorSource": "docs/sdk-facts.md item 5, read 2026-11-12"
+}

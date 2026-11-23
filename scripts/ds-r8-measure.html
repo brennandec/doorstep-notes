@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ds-r8</title>
+<script type="module">
+import { prepareRewrite, runRewrite } from "/src/drafting/rewriteFlow.ts";
+import { makeLedger } from "/src/egress/ledger.ts";
+import { makeRewriteJob } from "/src/inference/rewrite/rewrite.real.ts";
+import { expandShorthand, inventedFacts, replyPasses } from "/src/inference/rewrite/shorthand.ts";
+import { rewriteSdk } from "/src/firebase/rewriteSdk.ts";
+
+const values = { listedNames: [], surfaceForms: [], sentOnPurpose: [] };
+
+window.__dsr8 = async (note, saved) => {
+  let cloudMs = 0;
+  let cloudCalls = 0;
+  let cloudError = "";
+  const modes = [];
+  const sdk = {
+    async generate(call) {
+      modes.push(call.mode);
+      if (call.mode === "ONLY_ON_DEVICE") {
+        return { text: saved, inferenceSource: "on_device" };
+      }
+      if (location.search.includes("dry=1")) throw new Error("dry");
+      const started = performance.now();
+      try {
+        const out = await rewriteSdk.generate(call);
+        cloudMs += Math.round(performance.now() - started);
+        cloudCalls += 1;
+        return out;
+      } catch (error) {
+        cloudMs += Math.round(performance.now() - started);
+        const name = error instanceof Error ? error.name : "Error";
+        const message = error instanceof Error ? error.message.replace(/https?:\/\/\S+/g, "") : "";
+        cloudError = `${name}: ${message}`.slice(0, 120);
+        throw error;
+      }
+    },
+  };
+  const prep = prepareRewrite({ sentence: note, kind: "shorter", cloud: true, values });
+  const out = await runRewrite(prep, {
+    rewrite: makeRewriteJob({ sdk, cloudEnabled: true, state: async () => "available" }),
+    ledger: makeLedger(),
+    device: "available",
+  });
+  const value = out.status === "rewritten" ? out.value : "";
+  const expanded = expandShorthand(note);
+  return {
+    status: out.status,
+    source: out.status === "rewritten" ? out.source : out.status,
+    value,
+    cloudMs,
+    cloudCalls,
+    canSend: prep.preview.canSend,
+    passes: value !== "" && replyPasses(note, value),
+    spelled: value === expanded,
+    invented: value === "" ? -1 : inventedFacts(note, value).length,
+    modes,
+    cloudError,
+  };
+};
+</script>

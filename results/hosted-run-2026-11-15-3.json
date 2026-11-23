@@ -1,0 +1,354 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T03:23:38.298Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "c17673e",
+  "status": "fail",
+  "what": "One run against the hosted page in Google Chrome with the built-in model and the real cloud, invented visit",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "served": {
+    "indexHtmlSha256": "e4d9b227dcd20139329d223aba1713fdc5584bfa7814f437c18977c6719bc781",
+    "swJsSha256": "bccb01aadacb28b4fc51e5cdf097a3ac5fb0e3cac201a8d9498c8b035b582b47",
+    "configServed": true,
+    "siteKeyServed": true
+  },
+  "debugTokenGlobal": "undefined",
+  "serviceWorker": {
+    "registered": true,
+    "active": true,
+    "cachedFiles": 11,
+    "note": "registered",
+    "build": "production"
+  },
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": true,
+    "exchanges": [
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 992
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 993
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 992
+      }
+    ]
+  },
+  "cloudCalls": {
+    "generateContent": 2,
+    "cap": 4,
+    "stoppedAtCap": false
+  },
+  "steps": [
+    {
+      "step": 1,
+      "what": "page load",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Device model: ready, Cloud: connected",
+      "presses": 0,
+      "seconds": 0.3,
+      "outsideRequests": 0
+    },
+    {
+      "step": 2,
+      "what": "Make the record, Mask, accept every device suggestion",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "on this device",
+      "presses": 4,
+      "seconds": 14.1,
+      "outsideRequests": 0
+    },
+    {
+      "step": 3,
+      "what": "Ask a second reader, Send",
+      "mode": "ONLY_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud",
+      "presses": 2,
+      "seconds": 8.4,
+      "outsideRequests": 14
+    },
+    {
+      "step": 4,
+      "what": "Draft, Send",
+      "mode": "PREFER_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud + in the cloud",
+      "presses": 2,
+      "seconds": 4.5,
+      "outsideRequests": 4
+    },
+    {
+      "step": 5,
+      "what": "end state",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "online; ready; connected",
+      "presses": 0,
+      "seconds": 0,
+      "outsideRequests": 0
+    }
+  ],
+  "observed": {
+    "network": "online",
+    "device": "ready",
+    "cloud": "connected"
+  },
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/webworker.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10400,
+        "sha256": "c467059e3186d195b7793ca3817ad3a22cefbd78a7a695adea902f11c22ecbe0",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2349,
+        "sha256": "fcfff2a6c151a946a9ac6654724e2065929d59282c6426f3d522680eb9f53149",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1919,
+        "sha256": "f73327ca5ebec23f883dd2bd6d5bb22b89b5495ecaaf35ede21afe9a1e500173",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10909,
+        "sha256": "42e417d50d2ab730fcf19aa2a87a8aa9e9dd391e8ad35adb5d11d0b2dcf0eb40",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2373,
+        "sha256": "c47e7b1f6ef566499f4541411acca0fc1c89feedff6b1d2de757d88f1ef20b19",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1869,
+        "sha256": "a5d7e8ececb1ed25863ee9752ec76f555ca7d0bdc074a1e5c818f3d6a215800b",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1424,
+        "sha256": "9746249051c12a4c09278f52fc11cbc2c8ad09be5bf85b2f295858cb23bcde29",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 11728,
+        "sha256": "10df8805b0fe47bb2cea338230a8b36a04d6d69275d1381d33c7b62bf93a3d29",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2456,
+        "sha256": "fc6808cc2cb4df31db3c5c968a274117932a1e506daa6601dcb6d7981bdc9d5b",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1882,
+        "sha256": "7abc576fa7429461b9abe43e148eb3097a7d9261ca6494b02d572cef4769b63b",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 865,
+        "sha256": "75b4728f81001b045902477cb4af640480d53143f2fe051397275820a287acf1",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 26,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 2,
+    "appCheckExchanges": 3,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "leakChecks": [
+    {
+      "step": 2,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [
+          {
+            "line": "my list) offered to help with the form.",
+            "maskedContext": "rson 1] missed the benefits form deadline last wk, letter on the table.\\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\\nRisks: rent arrears if form is late.\\nNext steps: revisit 26/11.\\n\\nInstructions: Read the record above as someone who knows the area would. Say who it could "
+          }
+        ],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [
+          {
+            "line": "my list) offered to help with the form.",
+            "maskedContext": "rson 1] missed the benefits form deadline last wk, letter on the table.\\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\\nRisks: rent arrears if form is late.\\nNext steps: revisit 26/11.\\n\\nInstructions: Write a formal case note from the record above, in plain sentences. No Markd"
+          }
+        ],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "problems": [
+    "step 4: the finished note, a flag or a button shows token syntax ({)."
+  ]
+}

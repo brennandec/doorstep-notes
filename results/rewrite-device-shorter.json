@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T01:38:39.480Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "inventedVisit": true,
+  "sentenceBefore": "[Person 1] missed the benefits form deadline last wk, letter on the table.",
+  "sentenceBeforeChars": 74,
+  "pressSeconds": 1,
+  "lineShown": null,
+  "label": "on this device",
+  "outgoingChangedByThePress": true,
+  "outgoingCharsBefore": 650,
+  "outgoingCharsAfter": 633,
+  "listedWordsInOutgoingAfter": [],
+  "sentenceAfter": "[Person 1] missed benefits form deadline; letter present.",
+  "sentenceAfterChars": 57,
+  "observation": "The sentence became shorter.",
+  "requestsSinceThePress": {
+    "total": 0,
+    "outsideThePage": 0,
+    "toCloudModelHost": 0
+  }
+}

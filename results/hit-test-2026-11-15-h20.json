@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-15T05:21:45.605Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "what": "elementFromPoint at the centre of #draft and #send, page at the top, before and after Shorter (rewrite hook, no cloud call). Invented visit.",
+  "sizes": {
+    "1440x900": {
+      "before": {
+        "draft": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        },
+        "send": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        }
+      },
+      "after": {
+        "draft": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        },
+        "send": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        }
+      }
+    },
+    "1280x800": {
+      "before": {
+        "draft": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        },
+        "send": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        }
+      },
+      "after": {
+        "draft": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        },
+        "send": {
+          "inViewport": true,
+          "ok": true,
+          "hit": "span"
+        }
+      }
+    }
+  }
+}

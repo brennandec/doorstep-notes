@@ -1,0 +1,9 @@
+{
+  "command": "npm test",
+  "when": "2026-11-23",
+  "checkout": "clean, no local Firebase config",
+  "files": 263,
+  "passed": 2975,
+  "skipped": 2,
+  "failed": 0
+}

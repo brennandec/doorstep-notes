@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-20T19:20:55.762Z",
+  "browser": "Chromium (Playwright bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs, counted in this file, on the day in date, with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 40,
+  "capInForce": "CLOUD_CALL_BUDGET (40)",
+  "total": 37,
+  "appCheckExchanges": 0,
+  "stoppedAtBudget": false,
+  "specs": {
+    "ds-r8-measure": {
+      "calls": 7,
+      "tests": {
+        "n=9": 1,
+        "n=10": 1,
+        "n=19": 1,
+        "n=21": 1,
+        "n=23": 1,
+        "n=26": 1,
+        "n=29": 1
+      }
+    },
+    "ds-r12": {
+      "calls": 30,
+      "tests": {
+        "n=1": 1,
+        "n=2": 1,
+        "n=3": 1,
+        "n=4": 1,
+        "n=5": 1,
+        "n=6": 1,
+        "n=7": 1,
+        "n=8": 1,
+        "n=9": 1,
+        "n=10": 1,
+        "n=11": 1,
+        "n=12": 1,
+        "n=13": 1,
+        "n=14": 1,
+        "n=15": 1,
+        "n=16": 1,
+        "n=17": 1,
+        "n=18": 1,
+        "n=19": 1,
+        "n=20": 1,
+        "n=21": 1,
+        "n=22": 1,
+        "n=23": 1,
+        "n=24": 1,
+        "n=25": 1,
+        "n=26": 1,
+        "n=27": 1,
+        "n=28": 1,
+        "n=29": 1,
+        "n=30": 1
+      }
+    }
+  }
+}

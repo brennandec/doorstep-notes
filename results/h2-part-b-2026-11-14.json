@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:04:16.615Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "099c9c2",
+  "status": "fail",
+  "check": "H2 part B: a full run against the real cloud service with invented people, every request recorded.",
+  "hybridRun": "results/hybrid-run-2026-11-14.json",
+  "assertions": {
+    "noListedNameOtherNameSurfaceFormMaskedOriginalNoteLineOrImageByteInAnyRequest": true,
+    "zeroOutsideRequestsWhileOffline": false,
+    "everyOutsideHostOnTheAllowList": true,
+    "noMarkdownTagOrTokenInEitherDraft": true,
+    "cloudDraftAnsweredInTheCloud": false
+  },
+  "leakChecks": [
+    {
+      "step": 3,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "problems": [
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed"
+  ],
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 19,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "cloudCalls": {
+    "generateContent": 0,
+    "appCheckExchanges": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-19T11:36:39.679Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs, counted in this file, on the day in date, with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 40,
+  "capInForce": "CLOUD_CALL_BUDGET (40)",
+  "total": 1,
+  "appCheckExchanges": 1,
+  "stoppedAtBudget": false,
+  "specs": {
+    "h51gCloudAfterDevice.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "A cloud draft after the device model was fetched, in one page: HTTP 200, labelled in the cloud": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-14T12:50:48.800Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "what": "One loop of the second reader on the invented visit, through the page and the real service: ask and send, mask the words of one guess, ask again and send. Invented people only. Hosts and counts only; no URL is written.",
+  "job": "second reader",
+  "mode": "ONLY_IN_CLOUD",
+  "readerModelAsked": "gemini-3.8-flash",
+  "generateContentCalls": 2,
+  "stoppedAtCap": false,
+  "capOfThisSession": 4,
+  "maskedByHerBetweenPasses": "Bea",
+  "guessesQuotingThoseWordsInPass1": [
+    "A household member or individual present during the home visit."
+  ],
+  "guessesQuotingThoseWordsInPass2": [],
+  "passes": [
+    {
+      "pass": 1,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1357,
+      "modelCallSha256": "06b21bfe333bc28169f65c56ab705bc6080a8970e993e17c9174e217b295d726",
+      "requestsByHost": {
+        "127.0.0.1:4311": 6,
+        "www.google.com": 2,
+        "content-firebaseappcheck.googleapis.com": 1,
+        "www.gstatic.com": 3,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A household member or individual present during the home visit.",
+          "why": "Identified directly by first name as one of the attendees present during the visit.",
+          "kind": "name",
+          "quotes": [
+            "Bea"
+          ],
+          "chips": [
+            "Bea"
+          ]
+        },
+        {
+          "description": "The professional conducting the visit and liaising with housing providers.",
+          "why": "Referred to by their professional role in managing the case and contacting housing authorities.",
+          "kind": "role",
+          "quotes": [
+            "worker"
+          ],
+          "chips": [
+            "worker"
+          ]
+        },
+        {
+          "description": "The property owner or housing provider responsible for property maintenance.",
+          "why": "Identified by their role as the person responsible for the property and mould repairs.",
+          "kind": "role",
+          "quotes": [
+            "landlord"
+          ],
+          "chips": [
+            "landlord"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 2
+      },
+      "source": "in the cloud",
+      "readerError": null
+    },
+    {
+      "pass": 2,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1364,
+      "modelCallSha256": "9ed8cec4fec42049e9358594446b4d5c40dfabb33bd5c1a287cac80f81ce1163",
+      "requestsByHost": {
+        "127.0.0.1:4311": 2,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A local resident living in rented housing who receives support services, struggles with damp housing conditions, and is at risk of falling behind on rent payments.",
+          "why": "The notes document a home visit addressing housing conditions such as mould, tenancy issues involving a landlord, and completing crucial benefits paperwork to avoid arrears.",
+          "kind": "role",
+          "quotes": [
+            "Mould in the back bedroom",
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "Mould in the back bedroom",
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ]
+        },
+        {
+          "description": "A local social worker or housing officer conducting home visits and liaising with landlords.",
+          "why": "This professional monitors the resident's living conditions, agrees to contact the landlord on Monday, and schedules follow-up visits.",
+          "kind": "role",
+          "quotes": [
+            "worker",
+            "Worker rings the landlord",
+            "Revisit"
+          ],
+          "chips": [
+            "worker",
+            "Worker rings the landlord",
+            "Revisit"
+          ]
+        },
+        {
+          "description": "The property owner or social landlord responsible for managing and repairing the property.",
+          "why": "They are the party responsible for the property maintenance and rent collection, to be contacted regarding the bedroom mould and tenancy status.",
+          "kind": "role",
+          "quotes": [
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "landlord",
+            "Rent arrears"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 3
+      },
+      "source": "in the cloud",
+      "readerError": null
+    }
+  ],
+  "checks": {
+    "everyCallAnswered200": true,
+    "modelWasTheReadersModel": true,
+    "maskedWordsNotQuotedInPass2": true,
+    "maskedWordsNotSentInPass2": true,
+    "cardCountsMaskedValue": true,
+    "noListedNameInAnyRequest": true
+  },
+  "miss": null,
+  "observation": "Both passes answered 200 and no guess in pass 2 quotes the words she masked."
+}

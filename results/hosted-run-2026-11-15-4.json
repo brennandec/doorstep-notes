@@ -1,0 +1,433 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T04:29:02.204Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "20b331e",
+  "status": "pass",
+  "what": "One run against the hosted page in Google Chrome with the built-in model and the real cloud, invented visit",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "served": {
+    "indexHtmlSha256": "e24b7165e7d33f9631811f934df18c3670f35e4421561d18bc16919b6bcbf8d0",
+    "swJsSha256": "5db71ff38b3a65d521f1276b6415acefd63199923073a3b999df42454c9bdc6b",
+    "configServed": true,
+    "siteKeyServed": true
+  },
+  "debugTokenGlobal": "undefined",
+  "serviceWorker": {
+    "registered": true,
+    "active": true,
+    "cachedFiles": 11,
+    "note": "registered",
+    "build": "production"
+  },
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": true,
+    "exchanges": [
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 992
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 993
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 992
+      }
+    ]
+  },
+  "cloudCalls": {
+    "generateContent": 2,
+    "cap": 4,
+    "stoppedAtCap": false
+  },
+  "cloudReplies": [
+    {
+      "step": "step 3: second reader",
+      "readable": true,
+      "groups": [
+        "{\"guesses\":[{\"who\":\"Tenant facing rent arrears\",\"description",
+        "{\"who\":\"Neighbour on caseload\",\"description\":\"A neighbouring",
+        "{\"who\":\"Property owner or landlord\",\"description\":\"The landl"
+      ],
+      "groupCount": 3,
+      "pronouns": {
+        "he": 0,
+        "she": 0,
+        "him": 0,
+        "her": 0,
+        "his": 0,
+        "hers": 0,
+        "himself": 0,
+        "herself": 0
+      },
+      "length": 1030
+    },
+    {
+      "step": "step 4: draft",
+      "readable": true,
+      "groups": [
+        "[Person 1]",
+        "[Person 2]",
+        "[Person 1]",
+        "[Person 1]",
+        "[Date 1]",
+        "[Person 1]",
+        "[Person 3]",
+        "{him:Person 1}"
+      ],
+      "groupCount": 8,
+      "pronouns": {
+        "he": 0,
+        "she": 0,
+        "him": 0,
+        "her": 0,
+        "his": 0,
+        "hers": 0,
+        "himself": 0,
+        "herself": 0
+      },
+      "length": 689
+    }
+  ],
+  "cloudReplyTokensNamingThePreviousTag": [
+    {
+      "step": "step 3: second reader",
+      "total": 0,
+      "byRole": {
+        "he": 0,
+        "she": 0,
+        "they": 0,
+        "him": 0,
+        "her": 0,
+        "them": 0,
+        "his": 0,
+        "hers": 0,
+        "their": 0
+      }
+    },
+    {
+      "step": "step 4: draft",
+      "total": 0,
+      "byRole": {
+        "he": 0,
+        "she": 0,
+        "they": 0,
+        "him": 0,
+        "her": 0,
+        "them": 0,
+        "his": 0,
+        "hers": 0,
+        "their": 0
+      }
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "what": "page load",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Device model: ready, Cloud: connected",
+      "presses": 0,
+      "seconds": 0.3,
+      "outsideRequests": 0
+    },
+    {
+      "step": 2,
+      "what": "Make the record, Mask, accept every device suggestion",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "on this device",
+      "presses": 5,
+      "seconds": 12.8,
+      "outsideRequests": 0
+    },
+    {
+      "step": 3,
+      "what": "Ask a second reader, Send",
+      "mode": "ONLY_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud",
+      "presses": 2,
+      "seconds": 10.4,
+      "outsideRequests": 14
+    },
+    {
+      "step": 4,
+      "what": "Draft, Send",
+      "mode": "PREFER_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud + in the cloud",
+      "presses": 2,
+      "seconds": 6.1,
+      "outsideRequests": 4
+    },
+    {
+      "step": 5,
+      "what": "end state",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "online; ready; connected",
+      "presses": 0,
+      "seconds": 0,
+      "outsideRequests": 0
+    }
+  ],
+  "observed": {
+    "network": "online",
+    "device": "ready",
+    "cloud": "connected"
+  },
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/webworker.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10483,
+        "sha256": "502649be20ee42699028b8b3a044d1be01f6739084c512b9a382148652d132d8",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2349,
+        "sha256": "6a6dc8792315ad6c3020fdb4ca2f43c479e3f1adf593c0b5f52c6b09625349ee",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1938,
+        "sha256": "622687fdae4b4c621dd3b24ef2402bf9734594a6f09a4aa1c79cdb879f1f2f8f",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 11049,
+        "sha256": "8a37b879d9c367af518fe9c44a660934a62737a5979aafb119d86603ffa09168",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2373,
+        "sha256": "3c38dd46a0174d04f178f3e59e5a13235624303f345990c96fbe8f61ff09e7de",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1888,
+        "sha256": "e9c71a21ee62ba52db98ccdb77c254ffd865404d34d8cea32ec017a25d773cb8",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1446,
+        "sha256": "60b288aa52469e3242ca9ced7d9cb4dfcfcc740731acd28fe8517ebaf28fb02e",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 11670,
+        "sha256": "a0709f9e8473783964af874b4ccec251976431bef1b4fe9d87f18706e41ebbdb",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2456,
+        "sha256": "4062ed1bb5f1b69f1a3308c43b87992922b0476f87d07947612d97765318934e",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1902,
+        "sha256": "aba0e8385cb47bfddf41a6781a09009139fc3e3f79ff3cdad01c6943d6724710",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 887,
+        "sha256": "3333cd22ef1a4040c42c8e56876ee3ba174d1134b27786adc1576dcc93f700bd",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 26,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 2,
+    "appCheckExchanges": 3,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "leakChecks": [
+    {
+      "step": 2,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [
+          {
+            "line": "my list) offered to help with the form.",
+            "maskedContext": "efits form deadline last wk, letter on the table; DOB on form [Date 1].\\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\\nRisks: rent arrears if form is late.\\nNext steps: revisit 26/11.\\n\\nInstructions: Read the record above as someone who knows the area would. Say who it could "
+          }
+        ],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [
+          {
+            "line": "my list) offered to help with the form.",
+            "maskedContext": "efits form deadline last wk, letter on the table; DOB on form [Date 1].\\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\\nRisks: rent arrears if form is late.\\nNext steps: revisit 26/11.\\n\\nInstructions: Write a formal case note from the record above, in plain sentences. No Markd"
+          }
+        ],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "problems": []
+}

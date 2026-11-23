@@ -1,0 +1,302 @@
+{
+ "started": "2026-11-13T05:56:12.434Z",
+ "mode": "headless",
+ "steps": [
+  {
+   "at": "05:56:15Z",
+   "k": "availability before",
+   "v": "downloadable"
+  },
+  {
+   "at": "05:56:15Z",
+   "k": "create() called from a click",
+   "v": "ok"
+  },
+  {
+   "at": "05:56:15Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": null
+   }
+  },
+  {
+   "at": "05:56:25Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.0503997802734375
+   }
+  },
+  {
+   "at": "05:56:35Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.080841064453125
+   }
+  },
+  {
+   "at": "05:56:45Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.1229248046875
+   }
+  },
+  {
+   "at": "05:56:55Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.1631317138671875
+   }
+  },
+  {
+   "at": "05:57:05Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.201446533203125
+   }
+  },
+  {
+   "at": "05:57:15Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.24005126953125
+   }
+  },
+  {
+   "at": "05:57:25Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.2769775390625
+   }
+  },
+  {
+   "at": "05:57:35Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.3015289306640625
+   }
+  },
+  {
+   "at": "05:57:45Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.3293304443359375
+   }
+  },
+  {
+   "at": "05:57:55Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.351776123046875
+   }
+  },
+  {
+   "at": "05:58:05Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.385986328125
+   }
+  },
+  {
+   "at": "05:58:15Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.422393798828125
+   }
+  },
+  {
+   "at": "05:58:25Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.4545135498046875
+   }
+  },
+  {
+   "at": "05:58:35Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.487152099609375
+   }
+  },
+  {
+   "at": "05:58:45Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.522552490234375
+   }
+  },
+  {
+   "at": "05:58:55Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.56103515625
+   }
+  },
+  {
+   "at": "05:59:05Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.5942840576171875
+   }
+  },
+  {
+   "at": "05:59:15Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.6253509521484375
+   }
+  },
+  {
+   "at": "05:59:25Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.663330078125
+   }
+  },
+  {
+   "at": "05:59:35Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.7061767578125
+   }
+  },
+  {
+   "at": "05:59:45Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.7481231689453125
+   }
+  },
+  {
+   "at": "05:59:55Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.787567138671875
+   }
+  },
+  {
+   "at": "06:00:05Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.834014892578125
+   }
+  },
+  {
+   "at": "06:00:15Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.876251220703125
+   }
+  },
+  {
+   "at": "06:00:25Z",
+   "k": "state",
+   "v": {
+    "state": "creating",
+    "loaded": 0.8997650146484375
+   }
+  },
+  {
+   "at": "06:00:45Z",
+   "k": "state",
+   "v": {
+    "state": "ready",
+    "loaded": 1
+   }
+  },
+  {
+   "at": "06:00:45Z",
+   "k": "prompt: one word",
+   "v": {
+    "seconds": 0.2,
+    "result": "ready.\n"
+   }
+  },
+  {
+   "at": "06:00:47Z",
+   "k": "prompt: tidy the note",
+   "v": {
+    "seconds": 1.7,
+    "result": "I visited Mrs. Okafor at her flat on Tuesday at 3 PM with her son Daniel, and she's been without hot water since Friday. She missed her benefits appointment on Monday because the bus was delayed. I will call the landlord tomorrow to resolve the boiler issue and reschedule her appointment; our next visit will be on Monday at 10 AM, and I noted dampness in the kitchen near the window.\n\n\n\n"
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "prompt: structured record (responseConstraint)",
+   "v": {
+    "seconds": 3.2,
+    "result": "{\"visit_day\": \"Tuesday\", \"people_present\": [\"Mrs. Okafor\", \"Daniel Okafor\"], \"seen\": [\"Boiler out since Friday\", \"No hot water\", \"Missed benefits appointment on Monday due to bus delay\", \"Kitchen damp near window\"], \"agreed\": [\"Call landlord tomorrow\", \"Rebook benefits appointment\"], \"next_steps\": [\"Call landlord tomorrow\", \"Rebook benefits appointment\", \"Next visit Monday 10am\"]}"
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "measureInputUsage of the note",
+   "v": {
+    "seconds": 0,
+    "result": "no measureInputUsage"
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "session numbers",
+   "v": {
+    "seconds": 0,
+    "result": {
+     "contextWindow": 9216,
+     "contextUsage": 504
+    }
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "params",
+   "v": {
+    "seconds": 0,
+    "result": "no params()"
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "availability with image input",
+   "v": {
+    "seconds": 0,
+    "result": "available"
+   }
+  },
+  {
+   "at": "06:00:50Z",
+   "k": "availability after",
+   "v": {
+    "seconds": 0,
+    "result": "available"
+   }
+  }
+ ],
+ "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+ "minutesToReady": 4.5,
+ "finished": "2026-11-13T06:00:50.622Z"
+}

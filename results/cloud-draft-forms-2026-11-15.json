@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T03:53:21.219Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "1fdf861",
+  "status": "pass",
+  "what": "The same invented record drafted in the cloud 10 times. The forms of each reply are measured; nothing about the model is asserted. The reply text is never kept.",
+  "cloudCalls": {
+    "generateContent": 10,
+    "cap": 12,
+    "stoppedAtCap": false
+  },
+  "observed": {
+    "recordLabel": "on this device",
+    "suggestionsAccepted": 1
+  },
+  "totals": {
+    "draftsAsked": 10,
+    "draftsBack": 10,
+    "repliesRead": 10,
+    "repliesWithAGroup": 10,
+    "groupsInReplies": 71,
+    "pronounsOutsideGroups": {
+      "he": 0,
+      "she": 0,
+      "him": 0,
+      "her": 0,
+      "his": 0,
+      "hers": 0,
+      "himself": 0,
+      "herself": 0
+    },
+    "repliesWithAPronounOutsideGroups": 0,
+    "replyLength": {
+      "min": 345,
+      "max": 733,
+      "mean": 525
+    },
+    "shownSheetsWithABracketCharacter": 1,
+    "bracketCharactersInShownSheets": 2,
+    "draftsWithABracketCharacterUnderTheNote": 0,
+    "labelsInTheCloud": 10
+  },
+  "drafts": [
+    {
+      "draft": 1,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 1",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "{he:Person 1}",
+          "[Person 3]"
+        ],
+        "groupCount": 5,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 478
+      },
+      "label": "in the cloud",
+      "sheetLength": 484,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 3.6
+    },
+    {
+      "draft": 2,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 2",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{her:Person 1}",
+          "{him:Person 1}"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 605
+      },
+      "label": "in the cloud",
+      "sheetLength": 594,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4.1
+    },
+    {
+      "draft": 3,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 3",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 1}"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 733
+      },
+      "label": "in the cloud",
+      "sheetLength": 742,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4
+    },
+    {
+      "draft": 4,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 4",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "{their:Person 3}"
+        ],
+        "groupCount": 5,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 345
+      },
+      "label": "in the cloud",
+      "sheetLength": 348,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 3.8
+    },
+    {
+      "draft": 5,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 5",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "{them:Person 1}",
+          "{he:Person 1}",
+          "[Person 1]",
+          "[Person 3]"
+        ],
+        "groupCount": 6,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 531
+      },
+      "label": "in the cloud",
+      "sheetLength": 525,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4.4
+    },
+    {
+      "draft": 6,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 6",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 1]"
+        ],
+        "groupCount": 7,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 539
+      },
+      "label": "in the cloud",
+      "sheetLength": 566,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4.4
+    },
+    {
+      "draft": 7,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 7",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "{it:Mould}",
+          "[Person 1]",
+          "{he:Person 1}",
+          "[Person 3]"
+        ],
+        "groupCount": 6,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 459
+      },
+      "label": "in the cloud",
+      "sheetLength": 465,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 1,
+        "}": 1
+      },
+      "sheetBracketTotal": 2,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4.8
+    },
+    {
+      "draft": 8,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 8",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "{she:Person 1}",
+          "[Person 3]",
+          "[Person 2]",
+          "{him:Person 2}"
+        ],
+        "groupCount": 8,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 499
+      },
+      "label": "in the cloud",
+      "sheetLength": 480,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [
+        "No pronouns are on the list for Bea, so they/them was used."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 3.8
+    },
+    {
+      "draft": 9,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 9",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 3}"
+        ],
+        "groupCount": 7,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 535
+      },
+      "label": "in the cloud",
+      "sheetLength": 558,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 4.2
+    },
+    {
+      "draft": 10,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 10",
+        "readable": true,
+        "groups": [
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{him:Person 2}"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 521
+      },
+      "label": "in the cloud",
+      "sheetLength": 515,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "linesUnderTheNote": [
+        "No pronouns are on the list for Bea, so they/them was used."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 688,
+      "seconds": 3.8
+    }
+  ],
+  "problems": []
+}

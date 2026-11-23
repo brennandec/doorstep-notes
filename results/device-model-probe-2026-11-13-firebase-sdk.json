@@ -1,0 +1,74 @@
+{
+ "started": "2026-11-13T06:02:22.207Z",
+ "requests": [
+  {
+   "url": "https://probe.test/",
+   "served": "probe page"
+  },
+  {
+   "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js",
+   "served": "local file firebase-app.js"
+  },
+  {
+   "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-ai.js",
+   "served": "local file firebase-ai.js"
+  },
+  {
+   "url": "https://firebasevertexai.googleapis.com/v1beta/projects/placeholder-project/models/gemini-3.5-flash-lite:generateContent",
+   "method": "POST",
+   "served": "REFUSED",
+   "bodyBytes": 127
+  }
+ ],
+ "result": {
+  "stage": "done",
+  "steps": {
+   "initializeDeviceModel": {
+    "progressCalls": 0,
+    "ms": 1581
+   },
+   "ONLY_ON_DEVICE text": {
+    "text": "Ready.\n",
+    "source": "on_device",
+    "ms": 8105
+   },
+   "PREFER_ON_DEVICE text": {
+    "text": "Here are a few options, from slightly more formal to very simple:\n\n* **The tenant hasn't had hot water since Friday.** (Good, straightforward)\n* **No hot water has been working in the tenant's apartment since Friday.** (More descriptive)\n* **The water isn't hot for the tenant. It stopped working on Friday.** (Very simple and clear)\n* **The tenant is without hot water since Friday.** (Fine, but a bit less common)\n\n\nI'd recommend **\"The tenant hasn't had hot water since Friday.\"** It's clear, concise, and easy to understand.\n\n\n\n",
+    "source": "on_device",
+    "ms": 2837
+   },
+   "ONLY_ON_DEVICE structured (promptOptions.responseConstraint)": {
+    "text": "{\n  \"visit_day\": \"Tue\",\n  \"people_present\": [\n    \"Mrs Okafor\",\n    \"Daniel\"\n  ],\n  \"seen\": [\n    \"Boiler out since Fri, no hot water.\",\n    \"Missed benefits appt Mon bc bus didn't come.\",\n    \"Kitchen damp near window\"\n  ],\n  \"agreed\": [\n    \"Ring landlord tomorrow\",\n    \"Rebook appt\"\n  ],\n  \"next_steps\": [\n    \"Visit Mon 10am\"\n  ]\n}",
+    "parses": true,
+    "keys": [
+     "visit_day",
+     "people_present",
+     "seen",
+     "agreed",
+     "next_steps"
+    ],
+    "source": "on_device",
+    "ms": 3393
+   },
+   "ONLY_ON_DEVICE system prompt (createOptions.initialPrompts)": {
+    "text": "YES.",
+    "source": "on_device",
+    "ms": 154
+   },
+   "ONLY_ON_DEVICE image (inlineData PNG drawn on a canvas)": {
+    "text": "12/11 visit flat 3. Mould in back bedroom.\nLandlord not replied to 2 emails.\nAgreed: ring landlord Monday.",
+    "source": "on_device",
+    "pngBase64Chars": 46744,
+    "ms": 1189
+   },
+   "ONLY_IN_CLOUD text (expected to fail: every outside request is refused in this probe)": {
+    "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/placeholder-project/models/gemini-3.5-flash-lite:generateContent: Failed to fetch (AI/error)",
+    "ms": 41
+   }
+  }
+ },
+ "secondsLaunchToPage": 5.4,
+ "secondsClickToAllDone": 17.4,
+ "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+ "finished": "2026-11-13T06:02:44.976Z"
+}

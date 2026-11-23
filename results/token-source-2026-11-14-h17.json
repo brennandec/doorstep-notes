@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:40:46.546Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "0d3495b",
+  "what": "Network off. Invented visit, record and masks on the device, then the offline draft. No suggestion was accepted. Raw model outputs as the page received them.",
+  "proposedChips": [
+    "Bea\nsuggested",
+    "3/3/87\nsuggested"
+  ],
+  "maskedTextBeforeAnySuggestionAccepted": "Visit date: 12/11\nPresent: [Person 1], Bea\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+  "finishedText": "Case Note\n\nA visit was undertaken on 12/11 with Maria Okonkwo-Reyes, Bea. Mould was noted in the back bedroom, with an increase in severity observed near the window. Communication with the landlord had not been received following two emailed requests. Maria Okonkwo-Reyes missed the deadline for a benefits form last week; the letter indicating this was observed. The date of birth provided on the form was 3/3/87. It was agreed that a call would be made to the landlord on Monday. Maria Okonkwo-Reyes will post the form on Friday, with assistance offered by Tomas Brandvold, a neighbour. A potential risk of rent arrears was identified should the form be submitted late. A follow-up appointment is scheduled for 26/11.",
+  "flags": [
+    "The draft used no pronoun tokens, so no pronouns were changed."
+  ],
+  "modelOutputs": [
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+      "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nVisit date: 12/11\\nPresent: Maria O-R, Bea\\nSeen: Mould in ",
+      "output": "{\"candidates\": [\n  {\n    \"text\": \"Maria O-R\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Bea\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Maria\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Tomas Brandvald\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"3/3/87\",\n    \"kind\": \"dob\"\n  }\n]}"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Visit date: 12/11\\nPresent: [Person 1], Bea\\nSeen: Mould in back bedroom again, worse by the window; Landlord",
+      "output": "Case Note\n\nA visit was undertaken on 12/11 with [Person 1], Bea. Mould was noted in the back bedroom, with an increase in severity observed near the window. Communication with the landlord had not been received following two emailed requests. [Person 1] missed the deadline for a benefits form last week; the letter indicating this was observed. The date of birth provided on the form was 3/3/87. It was agreed that a call would be made to the landlord on Monday. [Person 1] will post the form on Friday, with assistance offered by [Person 3], a neighbour. A potential risk of rent arrears was identified should the form be submitted late. A follow-up appointment is scheduled for 26/11.\n\n\n\n"
+    },
+    {
+      "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"List what could identify someone in this note:\\n\\nCase Note\\n\\nA visit was undertaken on 12/11 with [Person 1",
+      "output": "{\"candidates\": [{\"text\": \"[Person 1]\", \"kind\": \"name\"}, {\"text\": \"Bea\", \"kind\": \"name\"}, {\"text\": \"12/11\", \"kind\": \"dob\"}, {\"text\": \"3/3/87\", \"kind\": \"dob\"}, {\"text\": \"Monday\", \"kind\": \"place\"}, {\"text\": \"Friday\", \"kind\": \"place\"}, {\"text\": \"26/11\", \"kind\": \"dob\"}]}"
+    }
+  ],
+  "requestsOutsideThePage": 0
+}

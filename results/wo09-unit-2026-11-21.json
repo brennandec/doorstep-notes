@@ -1,0 +1,29 @@
+{
+  "id": "wo09-unit-2026-11-21",
+  "date": "2026-11-21T22:17:10Z",
+  "what": "Unit suite and typecheck after the second reader is offered on the masks step. The 10 real-service runs were not executed.",
+  "base": "00fd7d9293f7604a254690992116805023505c2c",
+  "command": "npx vitest run",
+  "include": "tests/unit/**/*.test.ts",
+  "files": 258,
+  "passed": 2917,
+  "failed": 0,
+  "skipped": 2,
+  "durationSeconds": 8.38,
+  "typecheck": "tsc --noEmit",
+  "typecheckExit": 0,
+  "generateContentCalls": 0,
+  "realServiceRuns": 0,
+  "placeClue": "back bedroom",
+  "relationClue": "her sister",
+  "unitBar": "Two fixture guesses that quote the place clue count as 2. After one mask of that clue, keepEvidence leaves 0. A guess that quotes only the relation clue still counts as 1.",
+  "acceptance": {
+    "executed": false,
+    "runsPlanned": 10,
+    "callCap": 20,
+    "bar": "The first guess quotes a place or relation clue in at least 8 of 10. After one press masks that clue, the same clue is quoted in 0 of 10.",
+    "reason": "The day's cloud allowance had 3 calls left. The 10 runs wait for 2026-11-22 and a fresh allowance of 40 calls. This plate may use at most 20 of those. A second plate holds 12. The release check keeps the rest."
+  },
+  "stretchNotBuilt": "keep hiding this for this client",
+  "claimsRow": "none. No scanned surface gained a number, and the 8 of 10 bar was not measured."
+}

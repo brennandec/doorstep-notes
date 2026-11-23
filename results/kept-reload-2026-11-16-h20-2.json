@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-16",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "status": "pass",
+  "check": "shell-and-offline 55 (L1): invented visit, record by hand entry, one mask added, a draft with the test double, network cut, page reloaded",
+  "restored": {
+    "noteChars": 441,
+    "listChars": 384,
+    "chips": 4,
+    "outgoingChars": 3949,
+    "step": "send"
+  },
+  "screen": "docs/screens/12-after-reload-offline.png"
+}

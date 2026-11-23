@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-16",
+  "time": "2026-11-16T04:50:10.595Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "79e2c90",
+  "status": "pass",
+  "purpose": "Order H42c N3 pre-deploy measurement: 12 real cloud drafts across 4 fixture notes x 3 drafts each (temperature: 0).",
+  "fixtures": [
+    {
+      "id": "inventedVisit",
+      "label": "inventedVisit"
+    },
+    {
+      "id": "handwriting-manifest",
+      "label": "tests/fixtures/handwriting/manifest.json"
+    },
+    {
+      "id": "synthetic-n001",
+      "label": "results/synthetic-set.json#n001"
+    },
+    {
+      "id": "synthetic-n002",
+      "label": "results/synthetic-set.json#n002"
+    }
+  ],
+  "summary": {
+    "totalDrafts": 12,
+    "n4LabelFreeCount": 12,
+    "n5InventedAttributionCount": 0,
+    "n6HedgedPronounPairCount": 0,
+    "n7RestoredPairAndTokenLeakCounts": {
+      "hedgedPronounPairs": 0,
+      "tokenSyntaxLeaks": 0
+    },
+    "missedVisitDraftCount": 6,
+    "missedVisitFabricatedPresenceCount": 0,
+    "wrongPersonPronounDraftCount": 0,
+    "wrongPersonWarningDraftCount": 0,
+    "silentWrongPersonPronounCount": 0
+  },
+  "samples": [
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "[Person 1] and [Person 2] were present at the visit on 12/11. Mould was seen in the back bedroom again, and it was worse by the window. It was agreed that I ring landlord Mon, {she:Person 1} posts form Fri, and [Person 3], a neighbour also on my list, offered to help with the form. The risks are rent arrears if the form is late. The next steps are to revisit 26/11.",
+      "restoredDraft": "Maria Okonkwo-Reyes and Bea were present at the visit on 12/11. Mould was seen in the back bedroom again, and it was worse by the window. It was agreed that I ring landlord Mon, she posts form Fri, and Tomas Brandvold, a neighbour also on my list, offered to help with the form. The risks are rent arrears if the form is late. The next steps are to revisit 26/11.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "[Person 1] and [Person 2] were present at the visit on 12/11. Mould was seen in the back bedroom again, and it is worse by the window. It was agreed that I ring landlord Mon, {she:Person 1} posts form Fri, and [Person 3] (neighbour, also on my list) offered to help with the form. The risks are rent arrears if form is late. The next steps are to revisit 26/11.",
+      "restoredDraft": "Maria Okonkwo-Reyes and Bea were present at the visit on 12/11. Mould was seen in the back bedroom again, and it is worse by the window. It was agreed that I ring landlord Mon, she posts form Fri, and Tomas Brandvold (neighbour, also on my list) offered to help with the form. The risks are rent arrears if form is late. The next steps are to revisit 26/11.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "[Person 1] and [Person 2] were present at the visit on 12/11. Mould was seen in the back bedroom again, and it was worse by the window. It was agreed that I ring landlord Mon, {she:Person 1} posts form Fri, and [Person 3] offered to help [Person 1] with the form. The risks are rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "restoredDraft": "Maria Okonkwo-Reyes and Bea were present at the visit on 12/11. Mould was seen in the back bedroom again, and it was worse by the window. It was agreed that I ring landlord Mon, she posts form Fri, and Tomas Brandvold offered to help Maria Okonkwo-Reyes with the form. The risks are rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present. The heating was on now and post was piled by the door. It was agreed that {she:Person 1} posts the benefits form Mon. There were no risks. The next step is I ring Fri to check it went.",
+      "restoredDraft": "On 12/11, Odalys Brennan-Webb and Ione were present. The heating was on now and post was piled by the door. It was agreed that she posts the benefits form Mon. There were no risks. The next step is I ring Fri to check it went.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present. The heating was on now, and post was piled by the door. It was agreed that {she:Person 1} posts the benefits form Mon. There are no risks. Next steps are that I ring Fri to check it went.",
+      "restoredDraft": "On 12/11, Odalys Brennan-Webb and Ione were present. The heating was on now, and post was piled by the door. It was agreed that she posts the benefits form Mon. There are no risks. Next steps are that I ring Fri to check it went.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present. The heating was on now, and post was piled by the door. {they:Person 1} agreed that [Person 1] posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "restoredDraft": "On 12/11, Odalys Brennan-Webb and Ione were present. The heating was on now, and post was piled by the door. She agreed that Odalys Brennan-Webb posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 1,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present as it was a missed visit. [Place 1] was seen with the curtains shut. There were no agreements made and no risks identified. The next step is rebooking.",
+      "restoredDraft": "On 06/01, nobody answered because no household member was present as it was a missed visit. Flat 25, Eddlecombe House was seen with the curtains shut. There were no agreements made and no risks identified. The next step is rebooking.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 2,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present as it was a missed visit. [Place 1] was seen with the curtains shut. Nothing was agreed and there were no risks. The next steps are rebooking.",
+      "restoredDraft": "On 06/01, nobody answered because no household member was present as it was a missed visit. Flat 25, Eddlecombe House was seen with the curtains shut. Nothing was agreed and there were no risks. The next steps are rebooking.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 3,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present during the missed visit. [Place 1] was seen with curtains shut. There was no agreement. There were no risks. The next step is rebooking.",
+      "restoredDraft": "On 06/01, nobody answered because no household member was present during the missed visit. Flat 25, Eddlecombe House was seen with curtains shut. There was no agreement. There were no risks. The next step is rebooking.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 1,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], [Place 2], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooked for Thursday; Text sent to confirm\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present as it was a missed visit. [Place 1] and [Place 2] were seen, and curtains were shut. Nothing was agreed. There were no risks. Rebooked for Thursday; Text sent to confirm.",
+      "restoredDraft": "On 13/06, nobody answered because no household member was present as it was a missed visit. Flat 23 and Eddlecombe House were seen, and curtains were shut. Nothing was agreed. There were no risks. Rebooked for Thursday; Text sent to confirm.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 2,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], [Place 2], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooked for Thursday; Text sent to confirm\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present as it was a missed visit. [Place 1] and [Place 2] were seen, and curtains were shut. No agreements were made and there were no risks. Next steps are that the appointment is rebooked for Thursday and a text was sent to confirm.",
+      "restoredDraft": "On 13/06, nobody answered because no household member was present as it was a missed visit. Flat 23 and Eddlecombe House were seen, and curtains were shut. No agreements were made and there were no risks. Next steps are that the appointment is rebooked for Thursday and a text was sent to confirm.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 3,
+      "outgoingSent": "Visit date: [Date 1]\nPresent: no household member present (no answer / missed visit)\nSeen: [Place 1], [Place 2], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rebooked for Thursday; Text sent to confirm\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:, and never write the words 'Visit date' (with or without a colon); when Visit date: is none, do not mention a visit date. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write an untagged pronoun such as he, she, they, him, her, or them for a person, when two people appear in one action (such as [Person 3] offered to help [Person 1]) repeat the second person's tag instead of a pronoun, never write hedged pronoun pairs or alternatives joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I', 'my', or an unstated subject before a visit action (such as 'went to', 'rang', 'checked', 'left', or 'told by') as the worker, never as a tagged [Person N]. Follow the Present: line strictly: if Present: lists any [Person N] or other attendee (and does not say no household member present), state that every person listed in Present: was present at the visit and never say nobody or no household member was present; ONLY when the Present: line states no household member present (no answer / missed visit) was nobody home, in which case state that nobody answered because no household member was present and never state that any [Person N] or household member visited, went to the address, or was present. Use only facts in the record: never invent a speaker or owner, never write passive fillers such as 'it was noted that' or 'it was reported that', never add or substitute reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, confirmed, claimed, indicated, or informed unless that exact word is in the record (for example, keep 'told' as 'told' when the record says 'told'), and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On [Date 1], nobody answered because no household member was present as it was a missed visit. [Place 1] and [Place 2] were seen, and curtains were shut. Nothing was agreed. There were no risks. Rebooked for Thursday and text sent to confirm.",
+      "restoredDraft": "On 13/06, nobody answered because no household member was present as it was a missed visit. Flat 23 and Eddlecombe House were seen, and curtains were shut. Nothing was agreed. There were no risks. Rebooked for Thursday and text sent to confirm.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null,
+      "missedVisitFabricatedPresence": null,
+      "hasWrongPersonPronoun": false,
+      "wrongPersonPronounHits": [],
+      "hasWrongPersonWarning": false,
+      "silentWrongPersonPronoun": false
+    }
+  ]
+}

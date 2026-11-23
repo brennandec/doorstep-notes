@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T07:42:07.163Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "unit": "characters",
+  "bound": 28224,
+  "photoAmount": 745,
+  "noteCharsWithoutPhoto": 27375,
+  "noteCharsWithPhoto": 26630,
+  "schemaChars": 581,
+  "systemPromptChars": 451,
+  "taskSentenceChars": 183,
+  "contextWindowDocumented": 9216,
+  "searchClosedWithin": 1500,
+  "searchClosed": true,
+  "photo": "one invented picture of printed text, 900 by 260 pixels, PNG; handwriting and larger photos are not measured",
+  "text": "the invented visit repeated; another kind of text may use more or fewer tokens per character",
+  "how": "bisection on note length through the Firebase SDK, ONLY_ON_DEVICE, with the structure job's own system prompt, schema and task sentence",
+  "requestsOutsideThePage": 0,
+  "probes": {
+    "withoutPhoto": [
+      {
+        "chars": 60000,
+        "accepted": false,
+        "error": "QuotaExceededError",
+        "seconds": 6.3
+      },
+      {
+        "chars": 2000,
+        "accepted": true,
+        "seconds": 4.2
+      },
+      {
+        "chars": 31000,
+        "accepted": false,
+        "error": "QuotaExceededError",
+        "seconds": 0.1
+      },
+      {
+        "chars": 16500,
+        "accepted": true,
+        "seconds": 6.5
+      },
+      {
+        "chars": 23750,
+        "accepted": true,
+        "seconds": 6.7
+      },
+      {
+        "chars": 27375,
+        "accepted": true,
+        "seconds": 7.5
+      },
+      {
+        "chars": 29188,
+        "accepted": false,
+        "error": "QuotaExceededError",
+        "seconds": 0.1
+      },
+      {
+        "chars": 28282,
+        "accepted": false,
+        "error": "QuotaExceededError",
+        "seconds": 6.7
+      }
+    ],
+    "withPhoto": [
+      {
+        "chars": 1000,
+        "accepted": true,
+        "seconds": 6.7
+      },
+      {
+        "chars": 16188,
+        "accepted": true,
+        "seconds": 6.2
+      },
+      {
+        "chars": 23782,
+        "accepted": true,
+        "seconds": 5.6
+      },
+      {
+        "chars": 27579,
+        "accepted": false,
+        "error": "QuotaExceededError",
+        "seconds": 6.5
+      },
+      {
+        "chars": 25681,
+        "accepted": true,
+        "seconds": 5.2
+      },
+      {
+        "chars": 26630,
+        "accepted": true,
+        "seconds": 7
+      }
+    ]
+  }
+}

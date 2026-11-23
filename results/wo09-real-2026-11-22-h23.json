@@ -1,0 +1,488 @@
+{
+  "date": "2026-11-22T10:57:28.199Z",
+  "what": "Ten invented visits on the dev build. Each ask is sent by hand. One press masks the quoted clue, then the reader is asked again. Hosts, statuses, sizes and hashes only.",
+  "runsAsked": 10,
+  "runsRecorded": 10,
+  "generateContentCalls": 20,
+  "callCap": 20,
+  "stoppedAtCap": false,
+  "stoppedBecause": null,
+  "firstGuessQuotedPlaceOrRelation": 10,
+  "secondAskQuotedMaskedClue": 0,
+  "sharedLedger": {
+    "budget": 40,
+    "total": 20
+  },
+  "runs": [
+    {
+      "run": 1,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the primary tenant who attended the visit and offered assistance with forms",
+        "why": "She is specifically referenced by family relationship as being present in the property.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A resident or family member present at the address during the visit",
+        "why": "She is directly named as one of the people present during the visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 2,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the person being visited or supported.",
+        "why": "Mentioned as being present at the property alongside the other attendees.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A household member, co-tenant, or family member present during the home visit",
+        "why": "She is specifically referred to by first name as being present during the support visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 3,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "Sister of the primary client who was present at the residence",
+        "why": "Identified through her specific family relationship to the person being visited",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A resident, family member, or associate present during the visit.",
+        "why": "Named explicitly as being present at the property during the caseworker visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 4,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the resident or Bea",
+        "why": "Identified by her family relationship to one of the individuals present.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A resident, relative, or friend present during the home visit",
+        "why": "Identified by first name as being present during the support worker's visit",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 5,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "Sister of the primary subject of the visit",
+        "why": "Mentioned as being present during the visit and related to the person receiving support.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "An individual present in the home during the visit, likely a tenant, partner, or family member.",
+        "why": "Directly mentioned by name as being present during the home visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 6,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the primary person being visited",
+        "why": "Identified as a family member present in the home who offered support.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A household member or associate present during the visit",
+        "why": "She is specifically identified by first name as one of the individuals present at the home visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 7,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the person receiving the visit",
+        "why": "She was observed at the property and is described by her family relationship.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A person living in or connected to the household",
+        "why": "Named directly as present at the address during the visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 8,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the person being visited",
+        "why": "The notes specifically mention the presence of her sister during the visit",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A household member or resident present during the home visit",
+        "why": "She is directly named as one of the individuals present during the caseworker visit",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 9,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "The sister of the person being visited or residing there.",
+        "why": "Identified by familial relationship as being present in the home.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A resident, family member, or associate present at the address during the visit",
+        "why": "Named directly as being present at the property during the official visit.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    },
+    {
+      "run": 10,
+      "device": "can be downloaded",
+      "keepBeforeAsk": 0,
+      "likelyBeforeAsk": 0,
+      "firstWait": "answered",
+      "firstQuotesClue": true,
+      "firstGuess": {
+        "description": "Sister of the individual being visited who attended and offered support with paperwork.",
+        "why": "Referred to directly by her familial relationship to the client.",
+        "kind": "relation",
+        "quotes": [
+          "Her sister"
+        ]
+      },
+      "firstError": "",
+      "maskedPhraseIsPlace": false,
+      "maskedPhraseIsRelation": true,
+      "secondWait": "answered",
+      "secondAsked": true,
+      "secondQuotedMaskedClue": false,
+      "sentStillHeldClue": false,
+      "secondGuess": {
+        "description": "A household member or acquaintance present during the home visit.",
+        "why": "She is directly named as one of the individuals present at the property.",
+        "kind": "name",
+        "quotes": [
+          "Bea"
+        ]
+      },
+      "calls": [
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "91d161af9caed69ecdebc1bfcc290965ccf34292b0ad9e24bef0ca6f86e3108c"
+        },
+        {
+          "status": 200,
+          "host": "firebasevertexai.googleapis.com",
+          "bytes": 1379,
+          "sha256": "044e3ed6e07e188d5b74af9ea0653d424ef8a68cf1f5b16acd10ac7bfe045b3e"
+        }
+      ],
+      "callsUsed": 2,
+      "sharedDelta": 2
+    }
+  ]
+}

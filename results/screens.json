@@ -1,0 +1,193 @@
+{
+  "script": "tests/e2e (takeScreen)",
+  "note": "Written by the real-browser checks of V8. Invented people only.",
+  "screens": {
+    "01-first-run": {
+      "date": "2026-11-14T13:51:46.768Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/01-first-run.png",
+      "kind": "DEVICE MODEL"
+    },
+    "02-note-record-masks": {
+      "date": "2026-11-14T12:08:48.041Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 477,
+      "file": "docs/screens/02-note-record-masks.png",
+      "kind": "BUNDLED"
+    },
+    "03-outgoing-egress-pass": {
+      "date": "2026-11-14T12:08:48.228Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/03-outgoing-egress-pass.png",
+      "kind": "BUNDLED"
+    },
+    "04-egress-fail-seeded": {
+      "date": "2026-11-14T12:08:44.276Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/04-egress-fail-seeded.png",
+      "kind": "BUNDLED"
+    },
+    "05-finished-note": {
+      "date": "2026-11-14T16:16:28.474Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/05-finished-note.png",
+      "kind": "DEVICE MODEL"
+    },
+    "06-offline": {
+      "date": "2026-11-13T10:19:00.800Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/06-offline.png",
+      "kind": "BUNDLED"
+    },
+    "07-stacked-1024": {
+      "date": "2026-11-14T12:08:59.794Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "scrollY": 0,
+      "file": "docs/screens/07-stacked-1024.png",
+      "kind": "BUNDLED"
+    },
+    "08-device-record": {
+      "date": "2026-11-14T19:02:55.955Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 529,
+      "file": "docs/screens/08-device-record.png",
+      "kind": "DEVICE MODEL"
+    },
+    "09-device-masks": {
+      "date": "2026-11-14T19:02:57.881Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 529,
+      "file": "docs/screens/09-device-masks.png",
+      "kind": "DEVICE MODEL"
+    },
+    "10-whole-journey-device": {
+      "date": "2026-11-14T13:52:40.549Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/10-whole-journey-device.png",
+      "kind": "DEVICE MODEL"
+    },
+    "11-whole-journey-all-accepted": {
+      "date": "2026-11-13T15:05:03.821Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 178,
+      "file": "docs/screens/11-whole-journey-all-accepted.png",
+      "kind": "DEVICE MODEL"
+    },
+    "12-after-reload-offline": {
+      "date": "2026-11-14T12:08:58.318Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/12-after-reload-offline.png",
+      "kind": "BUNDLED"
+    },
+    "13-egress-fail-card": {
+      "date": "2026-11-14T12:08:44.360Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/13-egress-fail-card.png",
+      "kind": "BUNDLED"
+    },
+    "14-send-blocked": {
+      "date": "2026-11-14T13:15:24.561Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/14-send-blocked.png",
+      "kind": "BUNDLED"
+    },
+    "16-shorter-real-service": {
+      "date": "2026-11-14T19:02:10.812Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 0,
+      "file": "docs/screens/16-shorter-real-service.png",
+      "kind": "BUNDLED"
+    },
+    "17-second-reader-real-service": {
+      "date": "2026-11-14T16:16:14.386Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 797,
+      "file": "docs/screens/17-second-reader-real-service.png",
+      "kind": "DEVICE MODEL"
+    },
+    "18-second-reader-ask-again": {
+      "date": "2026-11-14T19:02:35.942Z",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scrollY": 680,
+      "file": "docs/screens/18-second-reader-ask-again.png",
+      "kind": "BUNDLED"
+    }
+  }
+}

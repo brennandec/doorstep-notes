@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "spec": "tests/e2e/bundled/recordMissing.spec.ts",
+  "linesBefore": [
+    "Landlord not replied to 2 emails.",
+    "Maria missed the benefits form deadline last wk, letter on the table.",
+    "DOB on form 3/3/87."
+  ],
+  "linesAfter": [
+    "Landlord not replied to 2 emails.",
+    "Maria missed the benefits form deadline last wk, letter on the table."
+  ],
+  "nonLocalRequests": 0,
+  "screenshot": "test-results/record-missing-h24.png",
+  "file": "<repo>/results/record-missing-2026-11-16-h24-3.json"
+}

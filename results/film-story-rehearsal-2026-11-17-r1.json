@@ -1,0 +1,337 @@
+{
+  "status": "pass",
+  "rehearsal": true,
+  "film": "After the Last Door",
+  "date": "2026-11-17",
+  "time": "2026-11-17T05:09:36.421Z",
+  "takeSuffix": "r1",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "build": "dist-e2e (mode=e2e), served from DOORSTEP_FILM_BUILD_ROOT",
+  "buildRoot": "<local>/film-voice/after-the-last-door/build-181bb27",
+  "buildStamp": {
+    "what": "Local test build (dist-e2e, vite --mode e2e) of the Doorstep repository at release 13, for the After the Last Door product take. Invented people only.",
+    "repository": "<repo>",
+    "commit": "181bb27ecfaf5dbae6d8835f1f2731a9a7935278",
+    "sourceArchive": {
+      "path": "<local>/film-voice/after-the-last-door/build-181bb27.tar",
+      "sha256": "45d8420cba1d143318bcc948b43b327873a10c7d048e9355d1a85e93baf31d86",
+      "made": "git archive --format=tar 181bb27",
+      "commitIdInArchive": "181bb27ecfaf5dbae6d8835f1f2731a9a7935278 (git get-tar-commit-id)"
+    },
+    "command": "npx vite build --mode e2e --outDir dist-e2e (the build:e2e script of package.json at 181bb27), run in build-181bb27/ with node_modules linked to the repository's node_modules",
+    "builtAt": "2026-11-17T05:01:54Z",
+    "mainChunk": "assets/index-tqSaXbwr.js",
+    "indexHtmlSha256": "82bdc21071f51fafa8c17c9103bb929fed1369cfdd9f42a33f477a9b8704ecd3",
+    "mainChunkSha256": "9397bdac7a0e0fc7e35b0810487036f40f0998a34c154e1bdae3d8c4b2ed3ef8",
+    "swJsSha256": "3f9628b0cfe8602b267b60edd69f2c2c6c23b7c85b67091037e08e56fe27f56f",
+    "note": "The page bundles results/*.json for its figure lines (src/app/figures.ts import.meta.glob), so a bundle built from the committed tree of 181bb27 differs from bundles built from a working tree holding later results files (hosted release 13 served assets/index-CfAYCUbs.js; take h42-6 loaded assets/index-BRkCmbAA.js). The application source is the same commit."
+  },
+  "specCommit": "2fd112086cb14976e38ac80d4634c6ecee53dcaa",
+  "specFiles": [
+    {
+      "path": "tests/e2e/device/filmStoryTake.spec.ts",
+      "sha256": "fd471e8bddde8c333410189b5024f9ebf9886419540faac43673fd6f59169fc1",
+      "committedAsIs": false
+    },
+    {
+      "path": "tests/e2e/device/storyTake.ts",
+      "sha256": "586428ff76d760fa6c0eae9b8bf3a2ddbc6741adabcf3ffe0afc7512b2339aa9",
+      "committedAsIs": false
+    }
+  ],
+  "address": "http://127.0.0.1:4311",
+  "check": "Rehearsal of the story take: steps 0 to 5 offline on the device model, cap 0, no cloud call. Invented people only.",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoSize": {
+    "width": 3840,
+    "height": 2160
+  },
+  "deviceScaleFactor": 2,
+  "keyDelayMs": 55,
+  "ledgerBefore": {
+    "file": "results/e2e-cloud-on-2026-11-17-h23.json",
+    "total": 29,
+    "budget": 40
+  },
+  "instrumentation": {
+    "outputLogger": "a LanguageModel output logger installed as an init script. It logs each session.prompt output and changes nothing.",
+    "networkOff": "offline = Playwright context.setOffline (emulated), on the walk page after it was ready and connected",
+    "clientList": "the 12 invented names were put into the client list box on the preflight page, outside the recorded walk, and kept in this browser's own store; the walk page opens with them",
+    "noStyleInjected": "no style, zoom or script is added to the page beyond the debug token global and the output logger"
+  },
+  "problems": [],
+  "steps": [
+    {
+      "step": 0,
+      "label": "her client list kept in this browser; page ready and connected",
+      "time": "2026-11-17T05:09:56.246Z",
+      "secondsFromStart": 5.7,
+      "inferenceSource": "none",
+      "shown": {
+        "listNames": 12,
+        "listFirstLine": "Maria Okonkwo-Reyes; Maria O-R, Mari; she/her",
+        "statusBar": {
+          "network": "online",
+          "deviceModel": "ready",
+          "cloud": "connected"
+        }
+      }
+    },
+    {
+      "step": 1,
+      "label": "offline (emulated)",
+      "time": "2026-11-17T05:10:02.280Z",
+      "secondsFromStart": 11.7,
+      "inferenceSource": "none",
+      "shown": {
+        "zones": [
+          "Your note",
+          "What leaves",
+          "Finished note"
+        ],
+        "boundary": "this device the cloud",
+        "statusBar": {
+          "network": "offline",
+          "deviceModel": "ready",
+          "cloud": "unreachable"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "label": "the seven-line note typed key by key",
+      "time": "2026-11-17T05:10:29.953Z",
+      "secondsFromStart": 39.4,
+      "inferenceSource": "none",
+      "shown": {
+        "typedChars": 441,
+        "lines": 7,
+        "typingSeconds": 27.6,
+        "phraseWindowS": [
+          21.6,
+          23.8
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "label": "Make the record",
+      "time": "2026-11-17T05:10:37.857Z",
+      "secondsFromStart": 47.3,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "recordTitle": "Record",
+        "recordLabel": "on this device",
+        "structureReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+      }
+    },
+    {
+      "step": 4,
+      "label": "no line left out: skipped",
+      "time": "2026-11-17T05:10:37.862Z",
+      "secondsFromStart": 47.3,
+      "inferenceSource": "none",
+      "shown": {
+        "path": "complete",
+        "addedLines": []
+      }
+    },
+    {
+      "step": 5,
+      "label": "Mask: the device pass suggested more; \"Bea suggested\" accepted",
+      "time": "2026-11-17T05:10:49.975Z",
+      "secondsFromStart": 59.4,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "suggestionsLabel": "on this device",
+        "listedChip": "[Person 1] on your list",
+        "proposed": [
+          "Bea suggested",
+          "3/3/87 suggested"
+        ],
+        "dobAccepted": true,
+        "leftNotAccepted": []
+      }
+    }
+  ],
+  "crops": [
+    {
+      "crop": 1,
+      "beat": "B6",
+      "fromS": 5.7,
+      "toS": 9.2,
+      "words": "Your note · What leaves · Finished note | this device the cloud",
+      "boxVideoPx": {
+        "x": 0,
+        "y": 0,
+        "width": 3840,
+        "height": 2160
+      },
+      "inView": true
+    },
+    {
+      "crop": 2,
+      "beat": "B6",
+      "fromS": 9.2,
+      "toS": 11.7,
+      "words": "Network: offline · Device model: ready",
+      "boxVideoPx": {
+        "x": 2582,
+        "y": 18,
+        "width": 771,
+        "height": 54
+      },
+      "inView": true
+    },
+    {
+      "crop": 3,
+      "beat": "B7",
+      "fromS": 21.6,
+      "toS": 23.8,
+      "words": "Maria missed the benefits form deadline",
+      "boxVideoPx": {
+        "x": 54,
+        "y": 773,
+        "width": 1381,
+        "height": 270
+      },
+      "inView": true
+    },
+    {
+      "crop": 4,
+      "beat": "B7",
+      "fromS": 44.3,
+      "toS": 47.3,
+      "words": "Record · on this device",
+      "boxVideoPx": {
+        "x": 54,
+        "y": 987,
+        "width": 464,
+        "height": 59
+      },
+      "inView": true
+    },
+    {
+      "crop": 5,
+      "beat": "B8",
+      "fromS": 50.4,
+      "toS": 53.4,
+      "words": "[Person 1] on your list",
+      "boxVideoPx": {
+        "x": 208,
+        "y": 1036,
+        "width": 376,
+        "height": 88
+      },
+      "inView": true
+    },
+    {
+      "crop": 6,
+      "beat": "B8",
+      "fromS": 53.4,
+      "toS": 58.4,
+      "words": "Bea suggested",
+      "boxVideoPx": {
+        "x": 603,
+        "y": 1036,
+        "width": 279,
+        "height": 88
+      },
+      "inView": true
+    }
+  ],
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "gates": null,
+  "keep": false,
+  "missed": [],
+  "headed": false,
+  "served": {
+    "configStatus200": true,
+    "configParses": true,
+    "sixKeys": true,
+    "indexHtmlSha256": "82bdc21071f51fafa8c17c9103bb929fed1369cfdd9f42a33f477a9b8704ecd3",
+    "swJsSha256": "3f9628b0cfe8602b267b60edd69f2c2c6c23b7c85b67091037e08e56fe27f56f"
+  },
+  "deviceModelAvailability": "available",
+  "loadedRelease": {
+    "loadedScript": "assets/index-tqSaXbwr.js",
+    "networkScript": "assets/index-tqSaXbwr.js",
+    "reloaded": false,
+    "matches": true
+  },
+  "maskView": {
+    "suggestionsLabel": "on this device",
+    "chips": [
+      "[Person 1] on your list",
+      "Bea suggested",
+      "[Person 1] on your list",
+      "3/3/87 suggested",
+      "[Person 1] on your list",
+      "[Person 3] near a listed name"
+    ],
+    "proposed": [
+      "Bea suggested",
+      "3/3/87 suggested"
+    ],
+    "maskText": "Visit date: 12/11 Present: [Person 1] on your list , Bea suggested Seen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] on your list missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87 suggested . Agreed: I ring landlord Mon; [Person 1] on your list posts form Fri; [Person 3] near a listed name (neighbour, also on my list) offered to help with the form. Risks: rent arrears if form is late. Next steps: revisit 26/11."
+  },
+  "requestsOutsideThePageWhileOffline": 0,
+  "rehearsalEnd": "stopped after step 5, still offline, by design",
+  "leakChecks": [],
+  "videos": [
+    {
+      "path": "<local>/film-voice/after-the-last-door/rehearsal/rehearsal-r1/page@56cde7c9fa2c72fd4795356616581643.webm",
+      "sha256": "36e8db1e715178ab09f1db9b0322053dc9341af2f60f253be15ba029dced5325",
+      "bytes": 26945783
+    }
+  ],
+  "videoCheck": {
+    "frames": [
+      {
+        "atS": 1,
+        "width": 3840,
+        "height": 2160,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 31.7,
+        "width": 3840,
+        "height": 2160,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 63,
+        "width": 3840,
+        "height": 2160,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      }
+    ],
+    "fills": true,
+    "checkerAborted": 0,
+    "durationS": 63.3
+  },
+  "elapsedS": 77,
+  "ledgerAfter": {
+    "total": 29
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-tqSaXbwr.js",
+    "buildTime": "2026-11-17T05:01:54.503Z"
+  }
+}

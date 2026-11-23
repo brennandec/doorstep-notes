@@ -1,0 +1,16 @@
+# Hosted cloud: tasks (session H19)
+
+Each test is written before the code it covers. Real-browser specs are not run in this session (no browser, no cloud call).
+
+- [x] 1. Test first, then code: `cloudService()` with stubs. One start for three callers, the debug path in a debug build, `ReCaptchaEnterpriseProvider` and `useLimitedUseAppCheckTokens: true` in a production build with a site key, no start and no module load in a production build without one, a failed start tried again. Test: `tests/unit/cloudService.test.ts` (8 tests, passed). Serves R1.1, R2.1, R2.3, R3.1, R3.3.
+- [x] 2. Test first, then code: the site key from the config (`readSiteKey`, `loadFirebaseConfig` returns it), placeholder and empty values are no key, and the example config carries a placeholder. Test: `tests/unit/siteKey.test.ts` (5 tests, passed). Serves R2.2.
+- [x] 3. Test first, then code: the three SDK wrappers use `cloudService()` and import neither `firebase/app` nor `firebase/app-check`; the debug code moves to `appCheckDebug.ts`. Test: `tests/unit/cloudWrappers.test.ts` (6 tests), `tests/unit/firebaseWrappers.test.ts`, `deviceApp.test.ts`, `cloudDraftResult.test.ts` (moved to the new layout). Serves R1.1, R3.1.
+- [x] 4. Test first, then code: the production bundle holds no debug token name, no `debug-provider-placeholder` and not the local token value; the e2e bundle still holds the debug path. `stripAppCheckDebug`. Test: `tests/unit/productionBundle.test.ts` (6 tests, passed; it builds both bundles under `test-results/`). Serves R1.2, R1.3, R1.4.
+- [x] 5. Test first, then code: the derived cloud state and its words for each state, the status bar rendering them, the controller showing a change after a call. Test: `tests/unit/cloudStatus.test.ts` (9 tests, passed). Serves R4.
+- [x] 6. Wire `main.ts`: config and site key read before the jobs are built, the cloud switch from the derived state, the bar updated after each call. The four real-service specs and the device fixture (when it carries a debug token) serve the e2e build; those specs were not run. Test: `tests/unit/cloudStatus.test.ts` (reads `main.ts`). Serves R2.3, R4.
+- [x] 7. Whole suite, typecheck, production build, e2e build. The new tests failed on the old code (first run: 13 failed, 4 passed, before any code); `dist/` after the production build holds no debug token name, no placeholder and not the local token value.
+
+## Order H52 (2026-11-19): a refused cloud call is visible
+
+- [x] 8. Test first, then code. Serves R4.1 and R5.1 to R5.6. Tests: `tests/unit/h52RefusalVisible.test.ts` (the refusal line under the actions row with the exact string, absent when not refused, a status line and not an alert; the controller scrolls the refusal line only when it is outside the viewport and never focuses it) and `tests/e2e/bundled/h52RefusalVisible.spec.ts` (BUNDLED, 0 real cloud calls: App Check exchange forced to 403, walk to Send, the refusal line under Send inside the viewport at 320 x 640, 390 x 844 and 1440 x 900 with no scrolling by the test). The spec fails on the old code (the refusal 2,921 px and the error line 2,360 px above the viewport top at 390 x 844) and passes after. `h43Offline.spec.ts` and `h43Offline.test.ts` keep passing unchanged.
+

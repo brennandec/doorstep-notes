@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-14T12:09:07.714Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs in the session of chain H11 (2026-11-14), with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 40,
+  "total": 9,
+  "appCheckExchanges": 9,
+  "stoppedAtBudget": false,
+  "specs": {
+    "cloudDraft.spec.ts": {
+      "calls": 3,
+      "tests": {
+        "One real cloud draft: status 200, not the test double": 3
+      },
+      "outcome": "passed",
+      "kind": "cloud-path"
+    },
+    "secondReaderReal.spec.ts": {
+      "calls": 3,
+      "tests": {
+        "Second reader against the real service: bytes left, status 200, in the cloud, shown on the screen": 3
+      },
+      "outcome": "passed",
+      "kind": "cloud-path"
+    },
+    "shorterReal.spec.ts": {
+      "calls": 3,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 3
+      },
+      "outcome": "passed",
+      "kind": "cloud-path"
+    },
+    "blockClear.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "egress.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "fifthReview.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "flow.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "fourthReview.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "install.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "interface.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "layout.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "screens.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "secondReview.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "secondReviewHooked.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    },
+    "sixthReview.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "sixthReviewSeeded.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "thirdReview.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "no-cloud"
+    },
+    "sixthReviewStandIn.spec.ts": {
+      "calls": 0,
+      "tests": {},
+      "outcome": "passed",
+      "kind": "stand-in"
+    }
+  }
+}

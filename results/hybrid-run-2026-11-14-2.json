@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:27:26.449Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "dcdadeb",
+  "status": "fail",
+  "what": "One run in Google Chrome with the built-in model and the real cloud, invented visit. On this device: record, masks, offline draft, Shorter. In the cloud: second reader, online draft. Invented people only.",
+  "problems": [
+    "step 4: Shorter offline was labelled \"not shown\", not on this device.",
+    "step 5: the device draft holds a tag",
+    "step 8: the cloud draft holds a tag",
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "what": "page load",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Device model: ready, Cloud: connected",
+      "presses": 0,
+      "seconds": 0,
+      "outsideRequests": 0,
+      "extra": {
+        "screen": "docs/screens/01-first-run.png",
+        "scrollY": 0
+      }
+    },
+    {
+      "step": 2,
+      "what": "network off, invented visit",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "invented example",
+      "presses": 1,
+      "seconds": 0,
+      "outsideRequests": 0
+    },
+    {
+      "step": 3,
+      "what": "record, masks, suggestions accepted",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "record: on this device; suggestions: on this device",
+      "presses": 4,
+      "seconds": 13.3,
+      "outsideRequests": 0,
+      "extra": {
+        "suggestionsAccepted": 2
+      }
+    },
+    {
+      "step": 4,
+      "what": "Shorter on one sentence, offline",
+      "mode": "PREFER_ON_DEVICE",
+      "inferenceSource": "not shown",
+      "label": "not shown",
+      "presses": 2,
+      "seconds": 0.1,
+      "outsideRequests": 0,
+      "extra": {
+        "sentenceChars": 73,
+        "shownChars": 73,
+        "line": "The sentence could not be rewritten. It is unchanged.",
+        "pageWaitedForSend": false
+      }
+    },
+    {
+      "step": 5,
+      "what": "Draft and Send offline",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "on this device",
+      "presses": 1,
+      "seconds": 6,
+      "outsideRequests": 0,
+      "extra": {
+        "shortLine": "Shorter draft made on this device.",
+        "card": {
+          "verdict": "Nothing went to the cloud: 0 of 20 listed names.",
+          "rows": {
+            "Masked values in the text sent": "0 of 4",
+            "Single name parts of 3 letters or more": "checked, none found",
+            "The request": "none made, draft made on this device"
+          },
+          "kind": "offlineDevice"
+        },
+        "draftChars": 674
+      }
+    },
+    {
+      "step": 6,
+      "what": "second reader, pass 1",
+      "mode": "ONLY_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud",
+      "presses": 2,
+      "seconds": 10.5,
+      "outsideRequests": 7,
+      "extra": {
+        "card": {
+          "verdict": "No listed name left this device: 0 of 20.",
+          "rows": {
+            "Masked values in the text sent": "0 of 4",
+            "Single name parts of 3 letters or more": "checked, none found",
+            "The request": "sent to firebasevertexai.googleapis.com · answered 200"
+          },
+          "kind": "pass"
+        },
+        "guessesShown": 3,
+        "passLine": "This pass left this device. Host: firebasevertexai.googleapis.com. Sent to the model: 1,439 bytes in one request. Including the App Check exchange: 1,493 bytes in 2 requests. Read by model: gemini-3.8-flash. Hash of the bytes begins 94c0b8cfedca.",
+        "error": null
+      }
+    },
+    {
+      "step": 7,
+      "what": "chip pressed, ask again",
+      "mode": "ONLY_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud",
+      "presses": 3,
+      "seconds": 11.2,
+      "outsideRequests": 1,
+      "extra": {
+        "pressedChip": "Bea",
+        "card": {
+          "verdict": "No listed name left this device: 0 of 20.",
+          "rows": {
+            "Masked values in the text sent": "0 of 5",
+            "Single name parts of 3 letters or more": "checked, none found",
+            "The request": "sent to firebasevertexai.googleapis.com · answered 200"
+          },
+          "kind": "pass"
+        }
+      }
+    },
+    {
+      "step": 8,
+      "what": "Draft and Send online",
+      "mode": "PREFER_IN_CLOUD",
+      "inferenceSource": "IN_CLOUD",
+      "label": "in the cloud + in the cloud",
+      "presses": 2,
+      "seconds": 6,
+      "outsideRequests": 1,
+      "extra": {
+        "card": {
+          "verdict": "No listed name left this device: 0 of 20.",
+          "rows": {
+            "Masked values in the text sent": "0 of 4",
+            "Single name parts of 3 letters or more": "checked, none found",
+            "The request": "sent to firebasevertexai.googleapis.com · answered 200"
+          },
+          "kind": "pass"
+        },
+        "draftChars": 607,
+        "deviceModelAfterTheAnswer": {
+          "sessionsMade": 1,
+          "prompts": 1,
+          "meaning": "findNames on the cloud draft runs on the device when these are above zero"
+        },
+        "screen": "docs/screens/05-finished-note.png"
+      }
+    },
+    {
+      "step": 9,
+      "what": "Save ledger",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Written to the test double. Not connected.",
+      "presses": 2,
+      "seconds": 0.1,
+      "outsideRequests": 0,
+      "extra": {
+        "wordsShown": "Written to the test double. Not connected."
+      }
+    }
+  ],
+  "secondsFromInventedVisitToOfflineNote": 19.4,
+  "secondsFromInventedVisitToCloudNote": 47.1,
+  "observed": {
+    "statusBarAtLoad": {
+      "network": "online",
+      "deviceModel": "ready",
+      "cloud": "connected"
+    },
+    "requestsOutsideThePageWhileOffline": 0
+  },
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeDebugToken",
+        "bodyBytes": 54,
+        "sha256": "a51235b9ee700675c4df311f2bef9f2b13c9117fbf3259c44bb5d01f4f8a57dc",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api2/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1439,
+        "sha256": "94c0b8cfedca9a77be58377842055f1c7387bd5537c2d225b3d0068ab19ed0ad",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1446,
+        "sha256": "e8a78d2b0b5a6fcbba93354fbe820c8fcdfcf56e10e71cb40797ec1d3289b56a",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 880,
+        "sha256": "21c85161a0978c8e4067a76c4b47e1e8fd81885ae3fe64436e6956eac9a858a8",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 27,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 3,
+    "appCheckExchanges": 1,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "cloudCalls": {
+    "generateContent": 3,
+    "cap": 4,
+    "appCheckExchanges": 1,
+    "note": "App Check exchanges are counted apart from the cloud model calls."
+  }
+}

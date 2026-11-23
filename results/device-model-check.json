@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T07:57:53.730Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "chromeVersion": "157.0.8103.79",
+  "deviceModelState": "available",
+  "sessionFromClick": "created",
+  "sessionSeconds": 4.2,
+  "statusBarWords": "ready",
+  "headless": true,
+  "launchSeconds": 0.6,
+  "steps": [
+    "The browser reported the device model as ready, with no Chrome flag set.",
+    "A model session was made from one press, with no download."
+  ],
+  "userAgent": "Mozilla/5.0 (system removed) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "requestsOutsideThePage": 0,
+  "note": "The download was done earlier by the product owner (docs/decisions/2026-11-13-browser-on-this-computer.md). This check starts no download."
+}

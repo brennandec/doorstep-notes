@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T13:33:22.583Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "shot10": {
+    "status": "pass",
+    "file": "docs/screens/10-whole-journey-device.png",
+    "scrollY": 0,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "recordLabel": "on this device",
+    "proposalLabel": "on this device",
+    "inView": {
+      "steps": "in view",
+      "firstChip": "in view",
+      "outgoing": "in view",
+      "egressLine": "in view",
+      "finishedNote": "out of view (top 178, bottom 906)"
+    }
+  },
+  "shot11": {
+    "status": "pass",
+    "file": "docs/screens/11-whole-journey-all-accepted.png",
+    "scrollY": 178,
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "finishedNoteBox": {
+      "top": 46,
+      "bottom": 451,
+      "viewportHeight": 900
+    },
+    "suggestionsAccepted": 2
+  },
+  "y1": {
+    "status": "pass",
+    "suggestionsAccepted": 2,
+    "tagsInFinishedNote": [],
+    "unexplainedTags": [],
+    "addedByTheModelNotes": "",
+    "presentLineFound": true,
+    "presentLineAsWritten": "Present: Maria Okonkwo-Reyes, Bea.",
+    "recordLabel": "on this device"
+  }
+}

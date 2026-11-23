@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T02:33:35.862Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "021dbe2",
+  "status": "fail",
+  "what": "One run against the hosted page in Google Chrome with the built-in model and the real cloud, invented visit",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "served": {
+    "indexHtmlSha256": "ac948cfa0cb2204a97a292970cc6208ba810de13db45bd70af3a4815d0caabc7",
+    "swJsSha256": "b8225327b79ba14c675928b8d961492ac4eb07509b96d59c89b532acc170de9c",
+    "configServed": true,
+    "siteKeyServed": true
+  },
+  "debugTokenGlobal": "not read",
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": false,
+    "exchanges": [],
+    "recaptchaCallPosts": 0,
+    "hostsUsed": []
+  },
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 4,
+    "stoppedAtCap": false
+  },
+  "steps": [],
+  "observed": {},
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 11,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "leakChecks": [],
+  "problems": [
+    "The run stopped: page.evaluate: Target page, context or browser has been closed",
+    "the debug token global in the page was \"not read\", not \"undefined\".",
+    "no request to the App Check host ended \":exchangeRecaptchaEnterpriseToken\".",
+    "the reCAPTCHA script was not loaded.",
+    "0 generateContent request(s) left; 2 to 4 were expected.",
+    "step 3 was not answered in the cloud.",
+    "step 4 was not answered in the cloud.",
+    "the walk did not reach its end."
+  ]
+}

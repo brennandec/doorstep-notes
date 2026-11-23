@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T16:36:52.940Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "dae3e84",
+  "status": "fail",
+  "check": "H22: the film's run. One walk through Dana's evening in Google Chrome with the built-in model and the real cloud, on the e2e build, with video. Invented people only.",
+  "headed": false,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoSize": {
+    "width": 1920,
+    "height": 1080
+  },
+  "problems": [
+    "step 3: the device pass did not propose the date of birth.",
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed",
+    "generateContent count 0 is not between 1 and 4.",
+    "only 3 of the 7 steps were recorded."
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "label": "The first screen",
+      "time": "2026-11-14T16:36:07.915Z",
+      "secondsFromStart": 3.9,
+      "inferenceSource": "none",
+      "shown": {
+        "boundary": "this device the cloud",
+        "zones": [
+          "Your note",
+          "What leaves",
+          "Finished note"
+        ],
+        "statusBar": {
+          "network": "online",
+          "deviceModel": "ready",
+          "cloud": "connected"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "label": "Network off; invented visit; the record and the chips",
+      "time": "2026-11-14T16:36:42.369Z",
+      "secondsFromStart": 38.4,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "network": "offline",
+        "cloudWordWhileOffline": "unreachable",
+        "recordLabel": "on this device",
+        "chipsLabel": "on this device",
+        "chipsSource": "ON_DEVICE",
+        "chipsShown": [
+          "[Person 1] on your list",
+          "Bea suggested",
+          "[Person 1] on your list",
+          "[Person 3] near a listed name",
+          "26/11 suggested"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "label": "The device pass proposes Bea and the date of birth; both accepted",
+      "time": "2026-11-14T16:36:43.925Z",
+      "secondsFromStart": 39.9,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "suggestionsOffered": [
+          "Bea suggested",
+          "26/11 suggested"
+        ],
+        "beaProposed": true,
+        "dateOfBirthProposed": false,
+        "accepted": 2,
+        "whatLeavesHoldsBea": false,
+        "whatLeavesHoldsDateOfBirth": false
+      }
+    }
+  ],
+  "walkNotes": [
+    "Step 4 is done with the network on: Send is off while the network is off, so it could not come back. Draft is pressed online, which shows the text and waits for Send. Step 5 presses Send.",
+    "The record and the masking view are both opened in step 2. Step 3 accepts the suggestions."
+  ],
+  "figures": {
+    "hash": null,
+    "byteCounts": {
+      "sentToTheModel": null,
+      "sentToTheModelRequests": null,
+      "includingTheAppCheckExchange": null,
+      "includingTheAppCheckExchangeRequests": null
+    },
+    "shownBy": "the second reader's pass 1 line on this walk. Pass 2 is under pass2.",
+    "pass1": null,
+    "pass2": null,
+    "egressCard": null
+  },
+  "observed": {
+    "requestsOutsideThePageWhileOffline": 0
+  },
+  "leakChecks": [
+    {
+      "step": 2,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 22,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 4,
+    "appCheckExchanges": 0,
+    "note": "App Check exchanges are counted apart from the cloud model calls. There was no probe."
+  },
+  "videoDir": "<local>/doorstep-film-h/raw-h22",
+  "rawFilesBeforeTheRun": 0,
+  "mainPageVideo": "<local>/doorstep-film-h/raw-h22/page@5e230c8924797df1ae7b7546328bc0b4.webm",
+  "videos": [
+    {
+      "path": "<local>/doorstep-film-h/raw-h22/page@5e230c8924797df1ae7b7546328bc0b4.webm",
+      "sha256": "7a38e493ec6d9ee54204372b271516625ad404d5930d27b196e571fa6822957a",
+      "bytes": 7711980
+    }
+  ]
+}

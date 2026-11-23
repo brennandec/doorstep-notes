@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T03:11:11.177Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "665f65b",
+  "status": "fail",
+  "what": "One run against the hosted page in Google Chrome with the built-in model and the real cloud, invented visit",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "served": {
+    "indexHtmlSha256": "",
+    "swJsSha256": "",
+    "configServed": false,
+    "siteKeyServed": false
+  },
+  "debugTokenGlobal": "not read",
+  "serviceWorker": null,
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": false,
+    "exchanges": []
+  },
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 4,
+    "stoppedAtCap": false
+  },
+  "steps": [],
+  "observed": null,
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 22,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "leakChecks": [],
+  "problems": [
+    "apiRequestContext.get: Invalid URL",
+    "the debug token global was not undefined.",
+    "the App Check token exchange was missing or not status 200.",
+    "the reCAPTCHA script was not loaded.",
+    "generateContent calls were 0, not between 2 and 4.",
+    "step 3 was not in the cloud.",
+    "step 4 was not in the cloud."
+  ]
+}

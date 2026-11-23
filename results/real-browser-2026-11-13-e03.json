@@ -1,0 +1,206 @@
+{
+  "kind": "BUNDLED",
+  "date": "2026-11-13",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "playwright": "1.65.0",
+  "headless": true,
+  "deviceModel": "not used",
+  "summary": {
+    "passed": 8,
+    "failed": 1,
+    "missed": 0,
+    "total": 9
+  },
+  "checks": [
+    {
+      "id": "seeded-leak-the-line-fails-in-the-failure-colour-in-words-with-the-crossed-octagon",
+      "title": "Seeded leak: the line fails in the failure colour, in words, with the crossed octagon",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "detail": {
+        "text": "Egress check failed. Found 1 of 20 listed names in the text sent: Priya Halloran. Mask them before you send again. 0 of 2 masked values in the text sent. Each listed name was also checked by its single parts of 3 letters or more. Not connected: no request was made. This check ran on the text built for the test double. This checks listed names and masked values only. Other details in the text can still identify a person. What this check scans",
+        "colours": {
+          "headline": "rgb(179, 38, 30)",
+          "masked": "rgb(179, 38, 30)",
+          "icon": "rgb(179, 38, 30)"
+        }
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "without-the-seed-the-same-run-passes-the-control-for-the-seeded-leak",
+      "title": "Without the seed the same run passes (the control for the seeded leak)",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "seconds": 0.3
+    },
+    {
+      "id": "h2-part-a-in-full-masks-shorter-draft-second-reader-and-save-ledger-against-the-doubles-every-request-recorded",
+      "title": "H2 part A in full: masks, Shorter, draft, second reader and Save ledger against the doubles, every request recorded",
+      "tasks": [
+        "egress-check 23",
+        "egress-check 13 (replaced)",
+        "second-reader 9"
+      ],
+      "status": "passed",
+      "detail": {
+        "total": 17,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "outsideThePage": 0,
+        "nonGet": 0,
+        "withABody": 0,
+        "toCloudModelHost": 0
+      },
+      "seconds": 1.3
+    },
+    {
+      "id": "second-reader-mask-through-a-quote-ask-again-two-ledger-entries-redaction-line",
+      "title": "Second reader: mask through a quote, ask again, two ledger entries, redaction line",
+      "tasks": [
+        "second-reader 8"
+      ],
+      "status": "passed",
+      "detail": {
+        "redactedLine": "The reader produced a name from your list. It is shown as its tag.",
+        "quoteMasked": "Mould in the back bedroom, worse by the window",
+        "ledgerEntries": 2
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "l2-the-three-clear-controls-each-ask-once-escape-cancels-and-the-store-is-read",
+      "title": "L2: the three clear controls each ask once, Escape cancels, and the store is read",
+      "tasks": [
+        "shell-and-offline 56"
+      ],
+      "status": "passed",
+      "detail": {
+        "keysBeforeClearEverything": [
+          "kept",
+          "ledger"
+        ],
+        "keysAfter": [],
+        "asksOnce": true,
+        "escapeKeepsData": true,
+        "visitClearKeepsList": true,
+        "listClearSurvivesReload": true
+      },
+      "seconds": 6.2
+    },
+    {
+      "id": "l4-across-the-whole-journey-with-data-kept-no-request-carries-a-listed-name-or-kept-text",
+      "title": "L4: across the whole journey with data kept, no request carries a listed name or kept text",
+      "tasks": [
+        "shell-and-offline 57"
+      ],
+      "status": "passed",
+      "detail": {
+        "requests": 21,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "nonGet": 0,
+        "outsideThePage": 0,
+        "leaks": 0,
+        "keptLinesChecked": 19
+      },
+      "seconds": 0.7
+    },
+    {
+      "id": "l8-after-a-send-with-the-folds-closed-zones-2-and-3-hold-no-paragraph-over-two-lines-and-each-fold-works-from-the-keyboard",
+      "title": "L8: after a send with the folds closed, zones 2 and 3 hold no paragraph over two lines, and each fold works from the keyboard",
+      "tasks": [
+        "shell-and-offline 60"
+      ],
+      "status": "failed",
+      "reason": "Error: paragraphs over two lines in zones 2 and 3  expect(received).toEqual(expected) // deep equality  - Expected  -  1 + Received  + 32",
+      "detail": {
+        "paragraphsChecked": 9,
+        "longest": 5,
+        "overTwoLines": [
+          {
+            "zone": "leaves",
+            "lines": 3,
+            "text": "Not connected. Nothing is sent to the cloud, and a test doub"
+          },
+          {
+            "zone": "leaves",
+            "lines": 4,
+            "text": "One line per send: counts, hashes and times only. No text an"
+          },
+          {
+            "zone": "leaves",
+            "lines": 5,
+            "text": "0 of 20 listed names in the text sent. Checked on the bytes."
+          },
+          {
+            "zone": "leaves",
+            "lines": 3,
+            "text": "Each listed name was also checked by its single parts of 3 l"
+          },
+          {
+            "zone": "leaves",
+            "lines": 3,
+            "text": "Not connected: no request was made. This check ran on the te"
+          },
+          {
+            "zone": "leaves",
+            "lines": 3,
+            "text": "This checks listed names and masked values only. Other detai"
+          }
+        ],
+        "keyboard": {
+          "scans": "opens and closes with Enter and with Space",
+          "reader": "opens and closes with Enter and with Space"
+        }
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "installable-offline-after-first-load-cache-holds-only-allowed-files",
+      "title": "Installable, offline after first load, cache holds only allowed files",
+      "tasks": [
+        "shell-and-offline 27",
+        "shell-and-offline 55"
+      ],
+      "status": "passed",
+      "detail": {
+        "keptAcrossReloadOffline": {
+          "chips": 4,
+          "noteChars": 441,
+          "listChars": 384,
+          "outgoingChars": 573,
+          "step": "send"
+        },
+        "installabilityErrors": 0,
+        "manifestErrors": 0,
+        "allowedFiles": 10,
+        "cachedFiles": 10,
+        "stray": 0
+      },
+      "seconds": 0.9
+    },
+    {
+      "id": "masking-offline-with-no-model-exact-near-tap-enter-and-the-live-region",
+      "title": "Masking offline with no model: exact, near, tap, Enter and the live region",
+      "tasks": [
+        "masking 16"
+      ],
+      "status": "passed",
+      "detail": {
+        "exactChips": 2,
+        "nearChips": 1,
+        "announcementAfterTap": "Masked: Detail 1",
+        "announcementAfterEnter": "Unmasked: Mould",
+        "networkOff": true
+      },
+      "seconds": 0.3
+    }
+  ]
+}

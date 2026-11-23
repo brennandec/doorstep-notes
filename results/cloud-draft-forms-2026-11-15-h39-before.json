@@ -1,0 +1,1389 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T13:22:40.441Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "abf9d7a",
+  "status": "pass",
+  "what": "The same invented record drafted in the cloud 20 times. The forms of each reply and shown note are measured; nothing about the model is asserted. The reply text is never kept.",
+  "note": "The word:Role defect was not reproduced in the 40 measured cloud drafts (0 of 20 drafts showed a visible mark before, and 0 of 20 drafts showed a visible mark after). The repair is proven by unit tests on the exact text of take h37-2, not by this 40-draft sample.",
+  "cloudCalls": {
+    "generateContent": 20,
+    "cap": 25,
+    "stoppedAtCap": false
+  },
+  "observed": {
+    "recordLabel": "on this device",
+    "suggestionsAccepted": 4
+  },
+  "totals": {
+    "draftsAsked": 20,
+    "draftsBack": 20,
+    "tokensNamingThePreviousTag": {
+      "total": 12,
+      "byRole": {
+        "he": 1,
+        "she": 4,
+        "they": 1,
+        "him": 1,
+        "her": 3,
+        "them": 0,
+        "his": 0,
+        "hers": 0,
+        "their": 2
+      },
+      "draftsWithOne": 9
+    },
+    "repliesRead": 20,
+    "repliesWithAGroup": 19,
+    "groupsInReplies": 185,
+    "rawRepliesWithBareColonMark": 0,
+    "bareColonMarksInReplies": 0,
+    "pronounsOutsideGroups": {
+      "he": 0,
+      "she": 0,
+      "him": 0,
+      "her": 0,
+      "his": 0,
+      "hers": 0,
+      "himself": 0,
+      "herself": 0
+    },
+    "repliesWithAPronounOutsideGroups": 0,
+    "replyLength": {
+      "min": 616,
+      "max": 815,
+      "mean": 676
+    },
+    "shownSheetsWithABracketCharacter": 0,
+    "bracketCharactersInShownSheets": 0,
+    "shownSheetsWithColonMark": 0,
+    "colonMarksInShownSheets": 0,
+    "shownSheetsWithShownPronoun": 0,
+    "shownSheetsWithAnyVisibleMark": 0,
+    "draftsWithUnreadMarkLine": 2,
+    "draftsWithABracketCharacterUnderTheNote": 0,
+    "draftsWithPronounWrongPersonLine": 1,
+    "labelsInTheCloud": 20
+  },
+  "drafts": [
+    {
+      "draft": 1,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 1",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{him:Person 1}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 12,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 648
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 631,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 6
+    },
+    {
+      "draft": 2,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 2",
+        "readable": true,
+        "groups": [],
+        "groupCount": 0,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 684
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 684,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [
+        "The draft used no pronoun tokens, so no pronouns were changed.",
+        "The draft left out a place (Place 1) that was sent. Check the note.",
+        "The draft left out a name (Person 1) that was sent. Check the note.",
+        "The draft left out a name (Person 2) that was sent. Check the note.",
+        "The draft left out a date (Date 1) that was sent. Check the note.",
+        "The draft left out a name (Person 3) that was sent. Check the note.",
+        "The draft left out a place (Place 2) that was sent. Check the note."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4.2
+    },
+    {
+      "draft": 3,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 3",
+        "readable": true,
+        "groups": [
+          "[Visit date]",
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "{she:Person 1}",
+          "[Person 3]",
+          "[Person 2]",
+          "{him:Person 1}",
+          "{her:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 14,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 815
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 2,
+        "byRole": {
+          "he": 0,
+          "she": 1,
+          "they": 0,
+          "him": 0,
+          "her": 1,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 781,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": true,
+      "linesUnderTheNote": [
+        "The model left a mark the app could not read. Read the note before you copy."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 8.8
+    },
+    {
+      "draft": 4,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 4",
+        "readable": true,
+        "groups": [
+          "{him:Person 1}",
+          "{her:Person 1}"
+        ],
+        "groupCount": 2,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 666
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 1,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 644,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [
+        "The draft left out a place (Place 1) that was sent. Check the note.",
+        "The draft left out a name (Person 2) that was sent. Check the note.",
+        "The draft left out a date (Date 1) that was sent. Check the note.",
+        "The draft left out a name (Person 3) that was sent. Check the note.",
+        "The draft left out a place (Place 2) that was sent. Check the note."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 7.6
+    },
+    {
+      "draft": 5,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 5",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "{she:Person 1}",
+          "[Person 3]",
+          "[Place 2]"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 616
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 1,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 620,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4
+    },
+    {
+      "draft": 6,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 6",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{her:Person 1}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 12,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 633
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 616,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 5.6
+    },
+    {
+      "draft": 7,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 7",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "{their:Person 3}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 11,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 642
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 1
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 630,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4
+    },
+    {
+      "draft": 8,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 8",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 3}",
+          "[Place 2]"
+        ],
+        "groupCount": 10,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 742
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 1,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 755,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [
+        "Check this sentence: a pronoun may point at the wrong person. Tomas Brandvold, who is a neighbour and also on the list of the author of this note, offered to he"
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 5.4
+    },
+    {
+      "draft": 9,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 9",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "{she:Person 1}",
+          "[Person 3]",
+          "[Place 2]"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 710
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 1,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 714,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4.8
+    },
+    {
+      "draft": 10,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 10",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{her:Person 1}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 12,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 622
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 605,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4.6
+    },
+    {
+      "draft": 11,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 11",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "{she:Person 1}",
+          "[Person 3]",
+          "[Place 2]"
+        ],
+        "groupCount": 8,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 657
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 652,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 6.2
+    },
+    {
+      "draft": 12,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 12",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 651
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 655,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 5.2
+    },
+    {
+      "draft": 13,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 13",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 1}",
+          "{her:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 10,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 675
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 1,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 668,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4
+    },
+    {
+      "draft": 14,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 14",
+        "readable": true,
+        "groups": [
+          "[Visit date]",
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{her:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 10,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 753
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 755,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": true,
+      "linesUnderTheNote": [
+        "The model left a mark the app could not read. Read the note before you copy."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 7.6
+    },
+    {
+      "draft": 15,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 15",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "{he:Person 2}",
+          "{she:Person 2}",
+          "{they:Person 2}",
+          "[Person 1]",
+          "[Person 3]",
+          "[Place 2]"
+        ],
+        "groupCount": 13,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 751
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 3,
+        "byRole": {
+          "he": 1,
+          "she": 1,
+          "they": 1,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 706,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [
+        "No pronouns are on the list for Bea, so they/them was used."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 5
+    },
+    {
+      "draft": 16,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 16",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 1]",
+          "[Person 3]",
+          "{him:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 9,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 697
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 701,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 6
+    },
+    {
+      "draft": 17,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 17",
+        "readable": true,
+        "groups": [
+          "{her:Person 1}"
+        ],
+        "groupCount": 1,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 635
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 624,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [
+        "The draft left out a place (Place 1) that was sent. Check the note.",
+        "The draft left out a name (Person 2) that was sent. Check the note.",
+        "The draft left out a date (Date 1) that was sent. Check the note.",
+        "The draft left out a name (Person 3) that was sent. Check the note.",
+        "The draft left out a place (Place 2) that was sent. Check the note."
+      ],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 7
+    },
+    {
+      "draft": 18,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 18",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "{their:Person 3}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 11,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 642
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 1,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 1
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 630,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4.8
+    },
+    {
+      "draft": 19,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 19",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{her:Person 1}",
+          "[Place 2]"
+        ],
+        "groupCount": 11,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 639
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 629,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 5.4
+    },
+    {
+      "draft": 20,
+      "repliesInStep": 1,
+      "reply": {
+        "step": "draft 20",
+        "readable": true,
+        "groups": [
+          "[Place 1]",
+          "[Person 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Date 1]",
+          "[Person 2]",
+          "[Person 1]",
+          "[Person 3]",
+          "[Person 2]",
+          "{her:Person 1}",
+          "[Person 2]",
+          "[Place 2]"
+        ],
+        "groupCount": 12,
+        "pronouns": {
+          "he": 0,
+          "she": 0,
+          "him": 0,
+          "her": 0,
+          "his": 0,
+          "hers": 0,
+          "himself": 0,
+          "herself": 0
+        },
+        "length": 644
+      },
+      "replyBareColonMarks": [],
+      "tokensNamingThePreviousTag": {
+        "total": 0,
+        "byRole": {
+          "he": 0,
+          "she": 0,
+          "they": 0,
+          "him": 0,
+          "her": 0,
+          "them": 0,
+          "his": 0,
+          "hers": 0,
+          "their": 0
+        }
+      },
+      "label": "in the cloud",
+      "sheetLength": 627,
+      "sheetBrackets": {
+        "[": 0,
+        "]": 0,
+        "{": 0,
+        "}": 0
+      },
+      "sheetBracketTotal": 0,
+      "sheetColonMarks": [],
+      "sheetColonMarkTotal": 0,
+      "sheetHasShownPronoun": false,
+      "sheetHasAnyVisibleMark": false,
+      "hasUnreadMarkLine": false,
+      "linesUnderTheNote": [],
+      "linesUnderTheNoteBracketTotal": 0,
+      "outgoingChars": 794,
+      "seconds": 4.2
+    }
+  ],
+  "problems": [],
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-Dl88SjaI.js",
+    "buildTime": "2026-11-15T13:20:20.941Z"
+  }
+}

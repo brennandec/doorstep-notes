@@ -1,0 +1,388 @@
+{
+  "kind": "BUNDLED",
+  "date": "2026-11-13",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "playwright": "1.65.0",
+  "headless": true,
+  "deviceModel": "not used",
+  "summary": {
+    "passed": 20,
+    "failed": 1,
+    "missed": 1,
+    "total": 22
+  },
+  "checks": [
+    {
+      "id": "seeded-leak-the-line-fails-in-the-failure-colour-in-words-with-the-crossed-octagon",
+      "title": "Seeded leak: the line fails in the failure colour, in words, with the crossed octagon",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "detail": {
+        "text": "Egress check failed. Found 1 of 20 listed names in the text sent: Priya Halloran. Mask them before you send again. 0 of 2 masked values in the text sent. Each listed name was also checked by its single parts of 3 letters or more. Not connected: no request was made. This check ran on the text built for the test double. This checks listed names and masked values only. Other details in the text can still identify a person. Scanned: the address and the body of each request, each listed name whole, its other names, and its single parts of 3 letters or more. A listed value of 5 letters or more is also found inside a longer word.",
+        "colours": {
+          "headline": "rgb(179, 38, 30)",
+          "masked": "rgb(179, 38, 30)",
+          "icon": "rgb(179, 38, 30)"
+        }
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "without-the-seed-the-same-run-passes-the-control-for-the-seeded-leak",
+      "title": "Without the seed the same run passes (the control for the seeded leak)",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "seconds": 0.3
+    },
+    {
+      "id": "h2-part-a-draft-and-second-reader-against-the-doubles-every-request-recorded",
+      "title": "H2 part A: draft and second reader against the doubles, every request recorded",
+      "tasks": [
+        "egress-check 13 (draft and second reader)",
+        "second-reader 9"
+      ],
+      "status": "passed",
+      "detail": {
+        "total": 17,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "outsideThePage": 0,
+        "nonGet": 0,
+        "toCloudModelHost": 0
+      },
+      "seconds": 0.7
+    },
+    {
+      "id": "h2-part-a-rewrite-and-ledger-save",
+      "title": "H2 part A: rewrite and ledger save",
+      "tasks": [
+        "egress-check 13 (rewrite and ledger save)"
+      ],
+      "status": "missed",
+      "reason": "Not run. \"Shorter\", \"Plainer\" and \"Save ledger\" are now on the screen (session C02), but H2 part A has not been run again with them; the V6 checks cover the presses, not the full request record.",
+      "seconds": 0
+    },
+    {
+      "id": "second-reader-mask-through-a-quote-ask-again-two-ledger-entries-redaction-line",
+      "title": "Second reader: mask through a quote, ask again, two ledger entries, redaction line",
+      "tasks": [
+        "second-reader 8"
+      ],
+      "status": "passed",
+      "detail": {
+        "redactedLine": "The reader produced a name from your list. It is shown as its tag.",
+        "quoteMasked": "Mould in the back bedroom, worse by the window",
+        "ledgerEntries": 2
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "no-device-model-the-invented-visit-one-press-per-step",
+      "title": "No device model: the invented visit, one press per step",
+      "tasks": [
+        "shell-and-offline 28",
+        "drafting 13"
+      ],
+      "status": "passed",
+      "detail": {
+        "deviceModelState": "downloadable",
+        "chips": 3,
+        "label": "in the cloud + not connected",
+        "egressLine": "0 of 20 listed names in the text sent. Checked on the bytes. Near variants that were not masked are not checked. 0 of 2 masked values in the text sent. Each listed name was also checked by its single parts of 3 letters or more. Not connected: no request was made. This check ran on the text built for the test double. This checks listed names and masked values only. Other details in the text can still identify a person. Scanned: the address and the body of each request, each listed name whole, its other names, and its single parts of 3 letters or more. A listed value of 5 letters or more is also found inside a longer word.",
+        "browserName": "chromium"
+      },
+      "seconds": 0.7
+    },
+    {
+      "id": "capture-sends-nothing-typing-a-photo-the-invented-visit",
+      "title": "Capture sends nothing: typing, a photo, the invented visit",
+      "tasks": [
+        "capture-and-record 14"
+      ],
+      "status": "passed",
+      "detail": {
+        "requests": 15,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "nonGet": 0,
+        "photoBase64Length": 27380,
+        "piecesChecked": 571
+      },
+      "seconds": 0.8
+    },
+    {
+      "id": "no-model-hand-entry-builds-a-full-record-and-the-prepared-record-loads-with-one-press",
+      "title": "No model: hand entry builds a full record and the prepared record loads with one press",
+      "tasks": [
+        "capture-and-record 15"
+      ],
+      "status": "passed",
+      "detail": {
+        "deviceModelState": "downloadable",
+        "handEntryChips": 2
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "offline-with-no-model-the-online-draft-works-the-offline-case-shows-the-no-model-line",
+      "title": "Offline with no model: the online draft works, the offline case shows the no-model line",
+      "tasks": [
+        "drafting 14"
+      ],
+      "status": "passed",
+      "detail": {
+        "noDraftLine": "No draft can be made right now. Your masked record is kept."
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "installable-offline-after-first-load-cache-holds-only-allowed-files",
+      "title": "Installable, offline after first load, cache holds only allowed files",
+      "tasks": [
+        "shell-and-offline 27"
+      ],
+      "status": "failed",
+      "reason": "Error: expect(locator).toBeVisible() failed  Locator: locator('[data-mask-view] [data-chip]').first() Expected: visible Timeout: 5000ms Error: element(s) not found",
+      "seconds": 5.4
+    },
+    {
+      "id": "masking-offline-with-no-model-exact-near-tap-enter-and-the-live-region",
+      "title": "Masking offline with no model: exact, near, tap, Enter and the live region",
+      "tasks": [
+        "masking 16"
+      ],
+      "status": "passed",
+      "detail": {
+        "exactChips": 2,
+        "nearChips": 1,
+        "announcementAfterTap": "Masked: Detail 1",
+        "announcementAfterEnter": "Unmasked: Mould",
+        "networkOff": true
+      },
+      "seconds": 0.3
+    },
+    {
+      "id": "interface-rules-colours-type-controls-targets-focus-motion",
+      "title": "Interface rules: colours, type, controls, targets, focus, motion",
+      "tasks": [
+        "shell-and-offline 26"
+      ],
+      "status": "passed",
+      "detail": {
+        "distinctColoursNoError": [
+          "rgb(250, 248, 243)",
+          "rgb(217, 212, 199)",
+          "rgb(28, 27, 25)",
+          "rgb(94, 90, 82)",
+          "rgb(227, 235, 229)",
+          "rgb(30, 107, 82)",
+          "rgb(241, 238, 230)"
+        ],
+        "buttonsMeasured": 10,
+        "computedBorderAtScale1": [
+          "1px"
+        ],
+        "declaredBorder": "1.5px solid var(--ink)",
+        "targetsListed": 81,
+        "tabStopsChecked": 23,
+        "longestTransitionMsNormal": 0,
+        "reducedMotionDurations": [
+          "0s"
+        ]
+      },
+      "seconds": 0.6
+    },
+    {
+      "id": "layout-zones-boundary-and-stacking",
+      "title": "Layout: zones, boundary and stacking",
+      "tasks": [
+        "shell-and-offline 25"
+      ],
+      "status": "passed",
+      "detail": {
+        "at1440": {
+          "noteX": 27,
+          "leavesX": 605.078125,
+          "finishedX": 951.328125,
+          "noteWidth": 577.078125,
+          "leavesWidth": 346.25,
+          "finishedWidth": 461.65625
+        },
+        "at1000": {
+          "noteY": 82,
+          "boundaryY": 1074.78125,
+          "leavesY": 1137.78125,
+          "finishedY": 1693.171875
+        },
+        "zone2": {
+          "family": "ui-monospace, Menlo, Consolas, monospace",
+          "background": "rgb(241, 238, 230)",
+          "border": "dashed",
+          "lastIsEgress": true,
+          "noticeBeforeSend": true
+        },
+        "zone3": {
+          "family": "Georgia, \"Times New Roman\", serif",
+          "shadow": "rgba(28, 27, 25, 0.16) 0px 2px 8px 0px",
+          "copy": true
+        }
+      },
+      "seconds": 0.1
+    },
+    {
+      "id": "screenshot-stacked-at-1024-by-768",
+      "title": "Screenshot: stacked at 1024 by 768",
+      "tasks": [
+        "look-and-layout: screenshot 07"
+      ],
+      "status": "passed",
+      "seconds": 0.2
+    },
+    {
+      "id": "the-test-hooks-are-not-in-the-production-build",
+      "title": "The test hooks are not in the production build",
+      "tasks": [
+        "egress-check 12 (production build has no hook)"
+      ],
+      "status": "passed",
+      "seconds": 0.4
+    },
+    {
+      "id": "first-screen-and-the-invented-visit",
+      "title": "first screen and the invented visit",
+      "tasks": [],
+      "status": "passed",
+      "seconds": 0.2
+    },
+    {
+      "id": "v3-after-hand-entry-and-a-send-the-journey-is-in-view-together-at-1440-by-900",
+      "title": "V3: after hand entry and a send, the journey is in view together at 1440 by 900",
+      "tasks": [
+        "shell-and-offline 35"
+      ],
+      "status": "passed",
+      "detail": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "scrollY": 0,
+        "steps": {
+          "top": 183,
+          "bottom": 241,
+          "left": 27,
+          "right": 577,
+          "height": 59
+        },
+        "chip": {
+          "top": 811,
+          "bottom": 855,
+          "left": 104,
+          "right": 291,
+          "height": 44
+        },
+        "outgoing": {
+          "top": 142,
+          "bottom": 412,
+          "left": 632,
+          "right": 924,
+          "height": 270
+        },
+        "egress": {
+          "top": 241,
+          "bottom": 900,
+          "left": 632,
+          "right": 924,
+          "height": 659
+        },
+        "finished": {
+          "top": 188,
+          "bottom": 539,
+          "left": 975,
+          "right": 1389,
+          "height": 351
+        },
+        "finishedLineHeight": 27,
+        "outOfView": []
+      },
+      "seconds": 0.3
+    },
+    {
+      "id": "v4-send-this-name-on-purpose-is-not-in-the-document-until-a-listed-chip-is-pressed",
+      "title": "V4: 'Send this name on purpose' is not in the document until a listed chip is pressed",
+      "tasks": [
+        "masking 19"
+      ],
+      "status": "passed",
+      "detail": {
+        "listedChips": 3
+      },
+      "seconds": 0.2
+    },
+    {
+      "id": "v5-no-device-model-the-likely-names-line-lists-bea-and-one-press-masks-her",
+      "title": "V5: no device model, the likely-names line lists Bea and one press masks her",
+      "tasks": [
+        "masking 24"
+      ],
+      "status": "passed",
+      "detail": {
+        "deviceModelState": "downloadable",
+        "lineBefore": "1 word looks like a name and is not on your list: Bea. This is a guess by capital letters.",
+        "lineAfter": "",
+        "outgoingHasBea": false
+      },
+      "seconds": 0.2
+    },
+    {
+      "id": "v6-ledger-after-a-send-save-ledger-shows-its-entries-as-text-and-a-press-writes-to-the-test-double",
+      "title": "V6 (ledger): after a send, 'Save ledger' shows its entries as text, and a press writes to the test double",
+      "tasks": [
+        "egress-check 21"
+      ],
+      "status": "passed",
+      "detail": {
+        "entries": "2026-11-13T10:19:09.122Z | job draft | mode PREFER_IN_CLOUD | source IN_CLOUD | connected false | outcome answered | listed names found 0 of 20 | masked values found 0 of 2 | on purpose 0 | bytes 627 | sha256 d50fa7815faecac2c0c15ead532cede9ad14f833f7c40e874327d4e1c26ac8fd",
+        "message": "Written to the test double. Not connected.",
+        "requestsOutsideThePage": 0
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "v6-rewrite-shorter-calls-the-rewrite-double-shows-a-label-and-the-masker-runs-before-the-sentence-is-replaced",
+      "title": "V6 (rewrite): 'Shorter' calls the rewrite double, shows a label, and the masker runs before the sentence is replaced",
+      "tasks": [
+        "drafting 21"
+      ],
+      "status": "passed",
+      "detail": {
+        "label": "in the cloud not connected Sentence replaced. Names and tags were checked first.",
+        "original": "Mould in the back bedroom, worse by the window.",
+        "replacedWith": "Seen: [Person 1] saw mould near the window.; Letter about the benefits form on the table."
+      },
+      "seconds": 0.3
+    },
+    {
+      "id": "y5-with-a-record-present-at-1440-by-900-the-first-chip-is-inside-the-viewport",
+      "title": "Y5: with a record present at 1440 by 900, the first chip is inside the viewport",
+      "tasks": [
+        "shell-and-offline 43"
+      ],
+      "status": "passed",
+      "detail": {
+        "viewportHeight": 900,
+        "viewportWidth": 1440,
+        "scrollY": 0,
+        "firstChipTop": 811,
+        "firstChipBottom": 855
+      },
+      "seconds": 0.2
+    }
+  ]
+}

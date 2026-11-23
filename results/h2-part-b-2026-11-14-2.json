@@ -1,0 +1,255 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:27:26.449Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "dcdadeb",
+  "status": "fail",
+  "check": "H2 part B: a full run against the real cloud service with invented people, every request recorded.",
+  "hybridRun": "results/hybrid-run-2026-11-14-2.json",
+  "assertions": {
+    "noListedNameOtherNameSurfaceFormMaskedOriginalNoteLineOrImageByteInAnyRequest": true,
+    "zeroOutsideRequestsWhileOffline": true,
+    "everyOutsideHostOnTheAllowList": true,
+    "noMarkdownTagOrTokenInEitherDraft": false,
+    "cloudDraftAnsweredInTheCloud": true
+  },
+  "leakChecks": [
+    {
+      "step": 3,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 6,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 8,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    },
+    {
+      "step": 9,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "problems": [
+    "step 4: Shorter offline was labelled \"not shown\", not on this device.",
+    "step 5: the device draft holds a tag",
+    "step 8: the cloud draft holds a tag",
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed"
+  ],
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeDebugToken",
+        "bodyBytes": 54,
+        "sha256": "a51235b9ee700675c4df311f2bef9f2b13c9117fbf3259c44bb5d01f4f8a57dc",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api2/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1439,
+        "sha256": "94c0b8cfedca9a77be58377842055f1c7387bd5537c2d225b3d0068ab19ed0ad",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.8-flash:generateContent",
+        "bodyBytes": 1446,
+        "sha256": "e8a78d2b0b5a6fcbba93354fbe820c8fcdfcf56e10e71cb40797ec1d3289b56a",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 880,
+        "sha256": "21c85161a0978c8e4067a76c4b47e1e8fd81885ae3fe64436e6956eac9a858a8",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 27,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 3,
+    "appCheckExchanges": 1,
+    "stoppedAtCap": false
+  },
+  "cloudCalls": {
+    "generateContent": 3,
+    "appCheckExchanges": 1
+  }
+}

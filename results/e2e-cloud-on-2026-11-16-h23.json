@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-16T00:01:30.914Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs, counted in this file, on the day in date, with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 100,
+  "capInForce": "RELEASE_DAY_CLOUD_CALL_BUDGET (100)",
+  "total": 96,
+  "appCheckExchanges": 36,
+  "stoppedAtBudget": false,
+  "specs": {
+    "scripts/measureN3CloudDrafts.ts": {
+      "calls": 72,
+      "tests": {
+        "Order H42b N3 measurement (12 cloud drafts)": 36,
+        "Order H42c N3 pre-deploy measurement (12 cloud drafts)": 36
+      }
+    },
+    "cloudDraft.spec.ts": {
+      "calls": 2,
+      "tests": {
+        "One real cloud draft: status 200, not the test double": 2
+      }
+    },
+    "secondReaderLoop.spec.ts": {
+      "calls": 4,
+      "tests": {
+        "Second reader loop against the real service: a guess is gone after she masks its words": 4
+      }
+    },
+    "secondReaderReal.spec.ts": {
+      "calls": 2,
+      "tests": {
+        "Second reader against the real service: bytes left, status 200, in the cloud, shown on the screen": 2
+      }
+    },
+    "shorterReal.spec.ts": {
+      "calls": 2,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 2
+      }
+    },
+    "desk-walk-release-12 (05:40Z production pane)": {
+      "calls": 2,
+      "tests": {
+        "second reader": 1,
+        "draft": 1
+      },
+      "kind": "cloud-path"
+    },
+    "hybridRun.spec.ts": {
+      "calls": 6,
+      "tests": {
+        "A1.2 hybridRun on dist-e2e": 6
+      }
+    },
+    "filmRun.spec.ts": {
+      "calls": 6,
+      "tests": {
+        "film walk h42-2 (local dist-e2e A1.3)": 3,
+        "film walk h42-3 (local dist-e2e A1.3)": 3
+      }
+    }
+  }
+}

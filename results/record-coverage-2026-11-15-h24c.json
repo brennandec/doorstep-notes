@@ -1,0 +1,380 @@
+{
+  "status": "fail",
+  "date": "2026-11-15",
+  "time": "2026-11-15T00:11:43.757Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "38733f45378bca4b828fc7e192a4866112b5ac93",
+  "check": "H24c command R: ten presses of the invented visit, at most two device calls each. Measures the date of birth kept in the record, not proposed by the device pass. Invented people only.",
+  "modelAvailable": true,
+  "generateContent": 0,
+  "nonLocalAborts": 0,
+  "nonLocalThrough": 0,
+  "presses": [
+    {
+      "k": 1,
+      "seconds": 16.5,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        },
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11\"]}",
+      "firstMissing": [
+        "Landlord not replied to 2 emails.",
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87."
+      ],
+      "adoptedMissing": [],
+      "triesAttr": "2",
+      "keptAttr": "second",
+      "retryLine": "second",
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": false,
+      "dobAdopted": true
+    },
+    {
+      "k": 2,
+      "seconds": 0.2,
+      "outcome": "failed:record line: The device model could not make the record. You can fill it in by hand.",
+      "calls": [],
+      "firstReply": null,
+      "retryReply": null,
+      "firstMissing": null,
+      "adoptedMissing": null,
+      "triesAttr": null,
+      "keptAttr": null,
+      "retryLine": null,
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": false,
+      "silentFactsGated": [],
+      "silentFactsKnown": [],
+      "dobFirst": false,
+      "dobAdopted": false
+    },
+    {
+      "k": 3,
+      "seconds": 7.5,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        },
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "firstMissing": [
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87.",
+        "Tomas Brandvald (neighbour, also on my list) offered to help with the form."
+      ],
+      "adoptedMissing": [
+        "Landlord not replied to 2 emails."
+      ],
+      "triesAttr": "2",
+      "keptAttr": "second",
+      "retryLine": "second",
+      "lineCount": 1,
+      "listedLines": [
+        "Landlord not replied to 2 emails."
+      ],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": false,
+      "dobAdopted": true
+    },
+    {
+      "k": 4,
+      "seconds": 4.5,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": null,
+      "firstMissing": [],
+      "adoptedMissing": [],
+      "triesAttr": "1",
+      "keptAttr": null,
+      "retryLine": null,
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": true,
+      "dobAdopted": true
+    },
+    {
+      "k": 5,
+      "seconds": 0.2,
+      "outcome": "failed:record line: The device model could not make the record. You can fill it in by hand.",
+      "calls": [],
+      "firstReply": null,
+      "retryReply": null,
+      "firstMissing": null,
+      "adoptedMissing": null,
+      "triesAttr": null,
+      "keptAttr": null,
+      "retryLine": null,
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": false,
+      "silentFactsGated": [],
+      "silentFactsKnown": [],
+      "dobFirst": false,
+      "dobAdopted": false
+    },
+    {
+      "k": 6,
+      "seconds": 7.5,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        },
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "firstMissing": [
+        "Landlord not replied to 2 emails.",
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87."
+      ],
+      "adoptedMissing": [],
+      "triesAttr": "2",
+      "keptAttr": "second",
+      "retryLine": "second",
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": false,
+      "dobAdopted": true
+    },
+    {
+      "k": 7,
+      "seconds": 4,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": null,
+      "firstMissing": [],
+      "adoptedMissing": [],
+      "triesAttr": "1",
+      "keptAttr": null,
+      "retryLine": null,
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": true,
+      "dobAdopted": true
+    },
+    {
+      "k": 8,
+      "seconds": 7.6,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        },
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "firstMissing": [
+        "Landlord not replied to 2 emails.",
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87."
+      ],
+      "adoptedMissing": [],
+      "triesAttr": "2",
+      "keptAttr": "second",
+      "retryLine": "second",
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": false,
+      "dobAdopted": true
+    },
+    {
+      "k": 9,
+      "seconds": 7,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        },
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "firstMissing": [
+        "Landlord not replied to 2 emails.",
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87."
+      ],
+      "adoptedMissing": [],
+      "triesAttr": "2",
+      "keptAttr": "second",
+      "retryLine": "second",
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": false,
+      "dobAdopted": true
+    },
+    {
+      "k": 10,
+      "seconds": 4,
+      "outcome": "dob-kept",
+      "calls": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record, as one JSON object with these fields: ",
+          "output": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+        }
+      ],
+      "firstReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "retryReply": null,
+      "firstMissing": [],
+      "adoptedMissing": [],
+      "triesAttr": "1",
+      "keptAttr": null,
+      "retryLine": null,
+      "lineCount": 0,
+      "listedLines": [],
+      "listMatchesCheck": true,
+      "silentFactsGated": [],
+      "silentFactsKnown": [
+        "14:00",
+        "flat 3",
+        "Alder Court",
+        "sister"
+      ],
+      "dobFirst": true,
+      "dobAdopted": true
+    }
+  ],
+  "headed": false,
+  "modelState": "available",
+  "summary": {
+    "presses": 10,
+    "dobFirst": "3/10",
+    "dobFirstRecordedBefore": {
+      "original": "7/11",
+      "withH22f": "8/12"
+    },
+    "dobAdopted": "8/10",
+    "seenLossBefore": {
+      "pressesWithAny": 5,
+      "sentences": 15
+    },
+    "seenLossAfter": {
+      "pressesWithAny": 1,
+      "sentences": 1
+    },
+    "retries": "5/10",
+    "keptSecond": 5,
+    "silentFactsGated": 0,
+    "silentFactsKnown": 32,
+    "medianSecondsWithRetry": 7.5,
+    "medianSecondsWithoutRetry": 4,
+    "medianDeltaSeconds": 3.5,
+    "maxSeconds": 16.5
+  },
+  "gate": {
+    "passed": false,
+    "modelAvailable": true,
+    "tenPressesRan": false,
+    "generateContentZero": true,
+    "nonLocalThroughZero": true,
+    "callsAtMostTwo": true,
+    "listMatchesCheckEveryPress": false,
+    "silentFactsGatedZero": true,
+    "retryLineMatchesKept": true,
+    "dobAdoptedAtLeastEight": true,
+    "dobAdoptedAtLeastDobFirst": true
+  },
+  "elapsedS": 64
+}

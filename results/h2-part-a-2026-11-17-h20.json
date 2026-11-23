@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-17",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "status": "pass",
+  "part": "A, in full, against the test doubles. The cloud is not connected.",
+  "steps": [
+    "load of the invented visit (record by hand entry with the prepared record)",
+    "masking: listed and near chips, and one word masked by a tap",
+    "draft through the double",
+    "\"Shorter\" on one sentence through the rewrite double",
+    "send of the draft, egress check on the bytes",
+    "ledger fold: entries as text, no save control",
+    "second reader through the double"
+  ],
+  "requestRecord": "every request seen by the browser context, which includes the page and any service worker",
+  "requests": {
+    "total": 23,
+    "hosts": [
+      "127.0.0.1:4311"
+    ],
+    "outsideThePage": 0,
+    "nonGet": 0,
+    "withABody": 0,
+    "toCloudModelHost": 0
+  },
+  "leaks": 0,
+  "ledgerJobs": [
+    "rewrite",
+    "draft",
+    "secondReader"
+  ],
+  "note": "Part B (the real cloud service) has not run. Not yet checked against the real service."
+}

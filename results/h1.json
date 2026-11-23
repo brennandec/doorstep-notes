@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T07:54:30.608Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "network": "off for the whole run after the first load",
+  "inventedVisit": true,
+  "networkWords": "offline",
+  "recordSeconds": 10.4,
+  "recordLabel": "on this device",
+  "recordPeople": 2,
+  "recordDate": "2023-12-11",
+  "observation": "The record date was \"2023-12-11\". The note gives no year, so any year in it was chosen by the model.",
+  "recordSeenLines": 4,
+  "maskSeconds": 2.3,
+  "chips": {
+    "listed": 3,
+    "near": 1,
+    "proposed": 5,
+    "manual": 0,
+    "masked": 0
+  },
+  "devicePassLine": "The device pass suggests more things to mask on this device.",
+  "proposalLabel": "on this device",
+  "allLabels": [
+    "on this device",
+    "on this device"
+  ],
+  "requestsAfterNetworkOff": {
+    "total": 0,
+    "outsideThePage": 0,
+    "toCloudModelHost": 0
+  }
+}

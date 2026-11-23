@@ -1,0 +1,12 @@
+{
+  "conditions": [],
+  "parameters": {
+    "draft_model": { "defaultValue": { "value": "gemini-3.5-flash-lite" } },
+    "reader_model": { "defaultValue": { "value": "gemini-3.8-flash" } },
+    "cloud_enabled": { "defaultValue": { "value": "true" } },
+    "session_cloud_cap": { "defaultValue": { "value": "40" } },
+    "appcheck_limited_use": { "defaultValue": { "value": "false" } },
+    "mask_policy": { "defaultValue": { "value": "{\"name\":\"compiled\",\"version\":1,\"categories\":[\"name\",\"place\",\"dob\",\"phrase\"]}" } }
+  },
+  "parameterGroups": {}
+}

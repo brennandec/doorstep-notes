@@ -1,0 +1,122 @@
+{
+  "order": "H45 item 4",
+  "issue": "firebase-js-sdk #10635 (ONLY_ON_DEVICE falls back to the cloud when the LanguageModel API is missing)",
+  "date": "2026-11-17",
+  "headWhenRun": "6a476e0",
+  "build": "npm run build:e2e (dist-e2e), served by tests/e2e/fixtures/staticServer.ts",
+  "cloudCallsMade": 0,
+  "cloudCallsEnvVarsSet": {
+    "E2E_CLOUD_BUDGET": null,
+    "DOORSTEP_RELEASE_DAY": null
+  },
+  "cloudHostsWatchedAndBlocked": [
+    "firebasevertexai.googleapis.com",
+    "generativelanguage.googleapis.com",
+    "aiplatform.googleapis.com",
+    "firebaseml.googleapis.com"
+  ],
+  "noteTypedHadListedName": "Zephyra Quillfeather",
+  "limits": [
+    "Walks A0 and A: the app's own state gate (device.state() says not usable) stops both jobs before the SDK is reached, so they show the shipped behaviour, not the guard. Playwright's Chromium 158 has no LanguageModel only in an insecure page; on the localhost page it has the API with availability 'downloadable', so walk A deletes it at page start.",
+    "Walk B reaches the SDK: the stand-in model made the page read 'ready', the API was deleted, and the structure press ended with the page's device-model-absent line, which only the guard's refusal produces on that path. Whether the propose-masks job also reached the SDK in walk B is not shown by this record (the mask view shows no device suggestions).",
+    "The stand-in LanguageModel in walk B is a test double, not a real device model; no model output was produced."
+  ],
+  "walks": {
+    "walkA0_asShipped": {
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "api": {
+        "inGlobalThis": true,
+        "type": "function",
+        "availability": "downloadable"
+      },
+      "state": {
+        "device": "can be downloaded",
+        "makeRecordLabel": "Enter the record by hand"
+      },
+      "structure": {
+        "label": "Enter the record by hand",
+        "pressed": true,
+        "note": "Your note Everything here stays in this browser, on this device. Clear this visit Clear my list Note done Record done Step 3 of 5: Masks Send Finished Note: 1 line. Edit Client list: 2 names. Edit Record Masking Mask Date Present client worker other Add person Seen Agreed Risks Next steps Make the record Add a photo Get the device model Making the record needs the device model. You can fill in the"
+      },
+      "propose": {
+        "maskStepEntered": true,
+        "line": "1 word looks like a name and is not on your list: Bea. This is a guess by capital letters. Keep Bea Visit date: 2026-11-12 Present: [Person 1] on your list Seen: [Person 1] on your list said the back lock is broken and Bea let me in. Agreed: none Risks: Mould in the back bedroom. Next steps: none"
+      },
+      "requests": {
+        "total": 21,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "toCloudHosts": 0,
+        "outsideThePageOrigin": [],
+        "withAnyPartOfTheNote": 0,
+        "blockedAtContext": 0
+      }
+    },
+    "walkA_apiAbsentFromStart": {
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "languageModelInGlobalThis": false,
+      "state": {
+        "device": "not on this computer",
+        "makeRecordLabel": "Enter the record by hand"
+      },
+      "structure": {
+        "label": "Enter the record by hand",
+        "pressed": true,
+        "note": "Your note Everything here stays in this browser, on this device. Clear this visit Clear my list Note done Record done Step 3 of 5: Masks Send Finished Note: 1 line. Edit Client list: 2 names. Edit Record Masking Mask Date Present client worker other Add person Seen Agreed Risks Next steps Make the record Add a photo Making the record needs the device model. You can fill in the record by hand. What"
+      },
+      "propose": {
+        "maskStepEntered": true,
+        "line": "1 word looks like a name and is not on your list: Bea. This is a guess by capital letters. Keep Bea Visit date: 2026-11-12 Present: [Person 1] on your list Seen: [Person 1] on your list said the back lock is broken and Bea let me in. Agreed: none Risks: Mould in the back bedroom. Next steps: none"
+      },
+      "requests": {
+        "total": 21,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "toCloudHosts": 0,
+        "outsideThePageOrigin": [],
+        "withAnyPartOfTheNote": 0,
+        "blockedAtContext": 0
+      }
+    },
+    "walkB_staleAvailableThenApiGone": {
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+      "languageModelAtPageStart": "stand-in: availability() 'available', create() answers the tiny probe",
+      "languageModelInGlobalThisAtPress": false,
+      "stateBefore": {
+        "device": "ready",
+        "makeRecordLabel": "Make the record"
+      },
+      "structure": {
+        "label": "Make the record",
+        "pressed": true,
+        "note": "Your note Everything here stays in this browser, on this device. Clear this visit Clear my list Note done Step 2 of 5: Record Masks Send Finished Make the record Add a photo The device model would turn rough notes into a record, suggest more things to mask, and write a short draft offline. It is not on this computer. How this was measured Fill in by hand"
+      },
+      "propose": {
+        "maskStepEntered": true,
+        "line": "Visit date: 2026-11-12 Present: [Person 1] on your list Seen: [Person 1] on your list said the back lock is broken and Bea let me in. Agreed: none Risks: Mould in the back bedroom. Next steps: none"
+      },
+      "requestsAfterStructure": {
+        "total": 21,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "toCloudHosts": 0,
+        "outsideThePageOrigin": [],
+        "withAnyPartOfTheNote": 0,
+        "blockedAtContext": 0
+      },
+      "requests": {
+        "total": 21,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "toCloudHosts": 0,
+        "outsideThePageOrigin": [],
+        "withAnyPartOfTheNote": 0,
+        "blockedAtContext": 0
+      }
+    }
+  }
+}

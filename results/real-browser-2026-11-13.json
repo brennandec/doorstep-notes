@@ -1,0 +1,270 @@
+{
+  "kind": "BUNDLED",
+  "date": "2026-11-13",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "playwright": "1.65.0",
+  "headless": true,
+  "deviceModel": "not used",
+  "summary": {
+    "passed": 15,
+    "failed": 0,
+    "missed": 1,
+    "total": 16
+  },
+  "checks": [
+    {
+      "id": "seeded-leak-the-line-fails-in-the-failure-colour-in-words-with-the-crossed-octagon",
+      "title": "Seeded leak: the line fails in the failure colour, in words, with the crossed octagon",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "detail": {
+        "text": "Egress check failed. Found 1 of 20 listed names in the text sent: Priya Halloran. Mask them before you send again. 0 of 3 masked values in the text sent. Each listed name was also checked by its single parts of 3 letters or more. Not connected: no request was made. This check ran on the text built for the test double. This checks listed names and masked values only. Other details in the text can still identify a person.",
+        "colours": {
+          "headline": "rgb(179, 38, 30)",
+          "masked": "rgb(179, 38, 30)",
+          "icon": "rgb(179, 38, 30)"
+        }
+      },
+      "seconds": 0.3
+    },
+    {
+      "id": "without-the-seed-the-same-run-passes-the-control-for-the-seeded-leak",
+      "title": "Without the seed the same run passes (the control for the seeded leak)",
+      "tasks": [
+        "egress-check 12"
+      ],
+      "status": "passed",
+      "seconds": 0.3
+    },
+    {
+      "id": "h2-part-a-draft-and-second-reader-against-the-doubles-every-request-recorded",
+      "title": "H2 part A: draft and second reader against the doubles, every request recorded",
+      "tasks": [
+        "egress-check 13 (draft and second reader)",
+        "second-reader 9"
+      ],
+      "status": "passed",
+      "detail": {
+        "total": 17,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "outsideThePage": 0,
+        "nonGet": 0,
+        "toCloudModelHost": 0
+      },
+      "seconds": 0.7
+    },
+    {
+      "id": "h2-part-a-rewrite-and-ledger-save",
+      "title": "H2 part A: rewrite and ledger save",
+      "tasks": [
+        "egress-check 13 (rewrite and ledger save)"
+      ],
+      "status": "missed",
+      "reason": "No control on the screen calls the rewrite, and the Save ledger part is not placed on the screen. Neither could be run in a browser.",
+      "seconds": 0
+    },
+    {
+      "id": "second-reader-mask-through-a-quote-ask-again-two-ledger-entries-redaction-line",
+      "title": "Second reader: mask through a quote, ask again, two ledger entries, redaction line",
+      "tasks": [
+        "second-reader 8"
+      ],
+      "status": "passed",
+      "detail": {
+        "redactedLine": "The reader produced a name from your list. It is shown as its tag.",
+        "quoteMasked": "Mould in the back bedroom, worse by the window",
+        "ledgerEntries": 2
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "no-device-model-the-invented-visit-one-press-per-step",
+      "title": "No device model: the invented visit, one press per step",
+      "tasks": [
+        "shell-and-offline 28",
+        "drafting 13"
+      ],
+      "status": "passed",
+      "detail": {
+        "deviceModelState": "downloadable",
+        "chips": 3,
+        "label": "in the cloud + not connected",
+        "egressLine": "0 of 20 listed names in the text sent. Checked on the bytes. Near variants that were not masked are not checked. 0 of 3 masked values in the text sent. Each listed name was also checked by its single parts of 3 letters or more. Not connected: no request was made. This check ran on the text built for the test double. This checks listed names and masked values only. Other details in the text can still identify a person.",
+        "browserName": "chromium"
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "capture-sends-nothing-typing-a-photo-the-invented-visit",
+      "title": "Capture sends nothing: typing, a photo, the invented visit",
+      "tasks": [
+        "capture-and-record 14"
+      ],
+      "status": "passed",
+      "detail": {
+        "requests": 15,
+        "hosts": [
+          "127.0.0.1:4311"
+        ],
+        "nonGet": 0,
+        "photoBase64Length": 27380,
+        "piecesChecked": 571
+      },
+      "seconds": 0.7
+    },
+    {
+      "id": "no-model-hand-entry-builds-a-full-record-and-the-prepared-record-loads-with-one-press",
+      "title": "No model: hand entry builds a full record and the prepared record loads with one press",
+      "tasks": [
+        "capture-and-record 15"
+      ],
+      "status": "passed",
+      "detail": {
+        "deviceModelState": "downloadable",
+        "handEntryChips": 2
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "offline-with-no-model-the-online-draft-works-the-offline-case-shows-the-no-model-line",
+      "title": "Offline with no model: the online draft works, the offline case shows the no-model line",
+      "tasks": [
+        "drafting 14"
+      ],
+      "status": "passed",
+      "detail": {
+        "noDraftLine": "No draft can be made right now. Your masked record is kept."
+      },
+      "seconds": 0.6
+    },
+    {
+      "id": "installable-offline-after-first-load-cache-holds-only-allowed-files",
+      "title": "Installable, offline after first load, cache holds only allowed files",
+      "tasks": [
+        "shell-and-offline 27"
+      ],
+      "status": "passed",
+      "detail": {
+        "installabilityErrors": 0,
+        "manifestErrors": 0,
+        "allowedFiles": 10,
+        "cachedFiles": 10,
+        "stray": 0
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "masking-offline-with-no-model-exact-near-tap-enter-and-the-live-region",
+      "title": "Masking offline with no model: exact, near, tap, Enter and the live region",
+      "tasks": [
+        "masking 16"
+      ],
+      "status": "passed",
+      "detail": {
+        "exactChips": 2,
+        "nearChips": 1,
+        "announcementAfterTap": "Masked: Detail 1",
+        "announcementAfterEnter": "Unmasked: Maria Okonkwo-Reyes",
+        "networkOff": true
+      },
+      "seconds": 0.2
+    },
+    {
+      "id": "interface-rules-colours-type-controls-targets-focus-motion",
+      "title": "Interface rules: colours, type, controls, targets, focus, motion",
+      "tasks": [
+        "shell-and-offline 26"
+      ],
+      "status": "passed",
+      "detail": {
+        "distinctColoursNoError": [
+          "rgb(250, 248, 243)",
+          "rgb(217, 212, 199)",
+          "rgb(28, 27, 25)",
+          "rgb(94, 90, 82)",
+          "rgb(241, 238, 230)",
+          "rgb(227, 235, 229)",
+          "rgb(30, 107, 82)"
+        ],
+        "buttonsMeasured": 9,
+        "computedBorderAtScale1": [
+          "1px"
+        ],
+        "declaredBorder": "1.5px solid var(--ink)",
+        "targetsListed": 84,
+        "tabStopsChecked": 82,
+        "longestTransitionMsNormal": 0,
+        "reducedMotionDurations": [
+          "0s"
+        ]
+      },
+      "seconds": 0.5
+    },
+    {
+      "id": "layout-zones-boundary-and-stacking",
+      "title": "Layout: zones, boundary and stacking",
+      "tasks": [
+        "shell-and-offline 25"
+      ],
+      "status": "passed",
+      "detail": {
+        "at1440": {
+          "noteX": 27,
+          "leavesX": 605.078125,
+          "finishedX": 951.328125,
+          "noteWidth": 577.078125,
+          "leavesWidth": 346.25,
+          "finishedWidth": 461.65625
+        },
+        "at1000": {
+          "noteY": 82,
+          "boundaryY": 1229.46875,
+          "leavesY": 1292.46875,
+          "finishedY": 1786.359375
+        },
+        "zone2": {
+          "family": "ui-monospace, Menlo, Consolas, monospace",
+          "background": "rgb(241, 238, 230)",
+          "border": "dashed",
+          "lastIsEgress": true,
+          "noticeBeforeSend": true
+        },
+        "zone3": {
+          "family": "Georgia, \"Times New Roman\", serif",
+          "shadow": "rgba(28, 27, 25, 0.16) 0px 2px 8px 0px",
+          "copy": true
+        }
+      },
+      "seconds": 0.1
+    },
+    {
+      "id": "screenshot-stacked-at-1024-by-768",
+      "title": "Screenshot: stacked at 1024 by 768",
+      "tasks": [
+        "look-and-layout: screenshot 07"
+      ],
+      "status": "passed",
+      "seconds": 0.2
+    },
+    {
+      "id": "the-test-hooks-are-not-in-the-production-build",
+      "title": "The test hooks are not in the production build",
+      "tasks": [
+        "egress-check 12 (production build has no hook)"
+      ],
+      "status": "passed",
+      "seconds": 0.3
+    },
+    {
+      "id": "first-screen-and-the-invented-visit",
+      "title": "first screen and the invented visit",
+      "tasks": [],
+      "status": "passed",
+      "seconds": 0.2
+    }
+  ]
+}

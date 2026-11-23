@@ -1,0 +1,32 @@
+{
+  "note": "Thurs 12/11 visit, 2pm, flat 9\nPresent: Odalys Brennan-Webb, her sister Ione\nSaw: heating on now, post piled by the door\nAgreed: Odalys posts the benefits form Mon\nNext: I ring Fri to check it went",
+  "invented": true,
+  "people": [
+    "Odalys Brennan-Webb",
+    "Ione"
+  ],
+  "lines": [
+    "Thurs 12/11 visit, 2pm, flat 9",
+    "Present: Odalys Brennan-Webb, her sister Ione",
+    "Saw: heating on now, post piled by the door",
+    "Agreed: Odalys posts the benefits form Mon",
+    "Next: I ring Fri to check it went"
+  ],
+  "handwriting": {
+    "file": "handwriting-note.png",
+    "mimeType": "image/png",
+    "width": 1000,
+    "height": 520,
+    "sha256": "ef6191a70c3c0920faae2beb1e9439bf89aa5b3d86daf422bde9356b4dc6396b",
+    "how": "Drawn in a handwriting typeface (Bradley Hand, installed with macOS) in dark blue ink on lined paper, each word moved and tilted a little by a seeded random draw. It is a typeface, not a person's own hand."
+  },
+  "printed": {
+    "file": "printed-note.png",
+    "mimeType": "image/png",
+    "width": 1000,
+    "height": 520,
+    "sha256": "7e8c9e3b1486449c0d293ad7feee50264398c9d1963bee5e3c416a277ef44986",
+    "how": "The same words in printed type (Georgia, black) on the same lined paper, set straight. Printed, with no movement or tilt."
+  },
+  "comment": "Invented people only. Written by scripts/makeHandwritingFixture.ts; do not edit by hand."
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-17",
+  "time": "2026-11-17T00:43:36.494Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "2e28a76",
+  "status": "fail",
+  "what": "One run in Google Chrome with the built-in model and the real cloud, invented visit. On this device: record, masks, offline draft, Shorter. In the cloud: second reader, online draft. Invented people only.",
+  "problems": [
+    "The run stopped: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "what": "page load",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Device model: ready, Cloud: connected",
+      "presses": 0,
+      "seconds": 0,
+      "outsideRequests": 0
+    },
+    {
+      "step": 2,
+      "what": "network off, invented visit",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "invented example",
+      "presses": 1,
+      "seconds": 0.1,
+      "outsideRequests": 0
+    },
+    {
+      "step": 3,
+      "what": "record, masks, suggestions accepted",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "record: on this device; suggestions: on this device",
+      "presses": 4,
+      "seconds": 7.3,
+      "outsideRequests": 0,
+      "extra": {
+        "suggestionsAccepted": 2,
+        "suggestionsOffered": [
+          "Bea suggested",
+          "3/3/87 suggested"
+        ],
+        "beaProposed": true,
+        "whatLeavesHoldsBea": false
+      }
+    }
+  ],
+  "secondsFromInventedVisitToOfflineNote": null,
+  "secondsFromInventedVisitToCloudNote": null,
+  "observed": {
+    "statusBarAtLoad": {
+      "network": "online",
+      "deviceModel": "ready",
+      "cloud": "connected"
+    },
+    "cloudWordOffline": "unreachable"
+  },
+  "requests": {
+    "outside": [],
+    "sameOriginRequests": 26,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 0,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 4,
+    "appCheckExchanges": 0,
+    "note": "App Check exchanges are counted apart from the cloud model calls."
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-SDEkJmC7.js",
+    "buildTime": "2026-11-17T00:42:48.947Z"
+  }
+}

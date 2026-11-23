@@ -1,0 +1,210 @@
+{
+  "status": "pass",
+  "run": 3,
+  "date": "2026-11-15",
+  "time": "2026-11-15T01:24:58.793Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "acfebcbdc9c92ffbdf064f8312b5b7fd603efdd8",
+  "mainChunkSha256": "2e98742fbe8698c74725581d1ca1f610df77be586eae8b559aabe7f55f6968e6",
+  "check": "H29: the press with the network off. Device only. The modules are loaded at page start. Invented people only.",
+  "generateContent": 0,
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 0
+  },
+  "nonLocalAborts": 0,
+  "nonLocalThrough": 0,
+  "presses": [
+    {
+      "k": 1,
+      "seconds": 13.5,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 525,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 2,
+      "seconds": 4.5,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 525,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 3,
+      "seconds": 6,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 639,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 4,
+      "seconds": 4.6,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 525,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 5,
+      "seconds": 3,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 341,
+          "dobInReply": false
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 6,
+      "seconds": 3.8,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 392,
+          "dobInReply": false
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 7,
+      "seconds": 3.5,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 392,
+          "dobInReply": false
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 8,
+      "seconds": 4.5,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 525,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 9,
+      "seconds": 4.5,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 525,
+          "dobInReply": true
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    },
+    {
+      "k": 10,
+      "seconds": 3.7,
+      "modulesReady": true,
+      "outcome": "record-shown",
+      "calls": 1,
+      "callList": [
+        {
+          "head": "[{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"value\":\"Make the visit record from the note below. Reply with only the record",
+          "outputChars": 392,
+          "dobInReply": false
+        }
+      ],
+      "newAssetEntries": [],
+      "sameOriginRequestsDuringPress": [],
+      "zeroCallStop": false
+    }
+  ],
+  "modelState": "available",
+  "summary": {
+    "pressesRun": 10,
+    "withCall": 10,
+    "zeroCallStops": 0,
+    "modulesReady": 10,
+    "assetFetchesDuringPresses": 0,
+    "medianSeconds": 4.5,
+    "maxSeconds": 13.5
+  },
+  "gate": {
+    "passed": true,
+    "modelAvailable": true,
+    "pressesRun": 10,
+    "withCall": 10,
+    "modulesReady": 10,
+    "assetFetches": 0,
+    "zeroCallStops": 0
+  },
+  "elapsedS": 52
+}

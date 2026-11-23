@@ -1,0 +1,100 @@
+{
+  "status": "pass",
+  "at": "2026-11-20T19:23:37.875Z",
+  "ledger": "results/e2e-cloud-on-2026-11-21-h23.json",
+  "ledgerTotal": 7,
+  "ledgerBudget": 40,
+  "calls": 7,
+  "shownByDevice": 23,
+  "shownByCloud": 5,
+  "spelledOut": 2,
+  "inventedOnScreen": 0,
+  "namesLeft": 0,
+  "deviceSameAsExpansion": 1,
+  "medianMs": {
+    "device": 577,
+    "cloud": 1149,
+    "spelled": 1526
+  },
+  "cloudNotes": [
+    9,
+    10,
+    19,
+    21,
+    23,
+    26,
+    29
+  ],
+  "answers": [
+    {
+      "n": 9,
+      "source": "IN_CLOUD",
+      "cloudMs": 1525,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "[Person 1] sent a message that the document was sent last week and no answer yet."
+    },
+    {
+      "n": 10,
+      "source": "IN_CLOUD",
+      "cloudMs": 1036,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "[Person 2] was out, a card was left at [Place 2], and the return visit is Friday 9am."
+    },
+    {
+      "n": 19,
+      "source": "IN_CLOUD",
+      "cloudMs": 1149,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "[Person 3] did not get the information letter, and a copy goes out this week."
+    },
+    {
+      "n": 21,
+      "source": "SPELLED",
+      "cloudMs": 824,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "Follow-up with [Person 1] on the apartment leak. The building office asked for a call Friday."
+    },
+    {
+      "n": 23,
+      "source": "SPELLED",
+      "cloudMs": 880,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "Message left for [Person 3] about the year form. Return visit at [Place 1] on Thursday."
+    },
+    {
+      "n": 26,
+      "source": "IN_CLOUD",
+      "cloudMs": 1599,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "The document for [Person 2] is due in 1 week, and information is in the apartment file."
+    },
+    {
+      "n": 29,
+      "source": "IN_CLOUD",
+      "cloudMs": 848,
+      "http": [
+        200
+      ],
+      "invented": 0,
+      "value": "[Person 1] left a message because the apartment door sticks, and visit [Place 2] on Tuesday."
+    }
+  ]
+}

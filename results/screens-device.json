@@ -1,0 +1,48 @@
+{
+  "10": {
+    "date": "2026-11-14T01:29:24.704Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollY": 0,
+    "file": "docs/screens/10-whole-journey-device.png",
+    "kind": "DEVICE MODEL"
+  },
+  "date": "2026-11-14",
+  "time": "2026-11-14T01:29:24.706Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "recordLabel": "on this device",
+  "proposalLabel": "on this device",
+  "08": {
+    "date": "2026-11-14T01:29:23.168Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollY": 529,
+    "file": "docs/screens/08-device-record.png",
+    "kind": "DEVICE MODEL"
+  },
+  "09": {
+    "date": "2026-11-14T01:29:23.249Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollY": 529,
+    "file": "docs/screens/09-device-masks.png",
+    "kind": "DEVICE MODEL"
+  },
+  "inViewAt10": {
+    "steps": "in view",
+    "firstChip": "in view",
+    "outgoing": "in view",
+    "egressLine": "in view",
+    "finishedNote": "in view"
+  }
+}

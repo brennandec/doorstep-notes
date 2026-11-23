@@ -1,0 +1,8 @@
+{
+ "apiKey": "invented-api-key-for-tests-only",
+ "authDomain": "invented-project.example.test",
+ "projectId": "invented-project",
+ "storageBucket": "invented-project.example.test",
+ "messagingSenderId": "000000000000",
+ "appId": "1:000000000000:web:invented"
+}

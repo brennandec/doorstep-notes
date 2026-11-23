@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-14T16:16:41.567Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs in the session of chain H11 (2026-11-14), with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 2,
+  "total": 2,
+  "appCheckExchanges": 2,
+  "stoppedAtBudget": false,
+  "specs": {
+    "cloudDraft.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "One real cloud draft: status 200, not the test double": 1
+      }
+    },
+    "shorterReal.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 1
+      }
+    }
+  }
+}

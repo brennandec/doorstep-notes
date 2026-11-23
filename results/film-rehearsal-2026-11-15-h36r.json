@@ -1,0 +1,216 @@
+{
+  "status": "pass",
+  "date": "2026-11-15",
+  "time": "2026-11-15T07:48:53.471Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "a975931391e9ee4deec7681138b72fbb4de75325",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "check": "H36b rehearsal on the hosted page. Device only, filmed at 1920x1080, 0 cloud calls. Invented people only.",
+  "generateContent": 0,
+  "cloudCalls": {
+    "generateContent": 0,
+    "appCheck": 0,
+    "recaptcha": 0,
+    "cap": 0
+  },
+  "nonLocalAborts": 0,
+  "nonLocalThrough": 0,
+  "preflight": {
+    "configStatus200": true,
+    "configParses": true,
+    "sixKeys": true,
+    "siteKeyServed": true,
+    "indexHtmlSha256": "f209751f71a585c92d0b64a34398608ebc48bdfe1b4a478aeb1ca0fa3ea36085",
+    "swJsSha256": "37cdaf51a579849fcf2c99d01511d772dddd1c2d532fecb4f42ccf32e606bde4"
+  },
+  "debugTokenGlobal": "undefined",
+  "serviceWorker": {
+    "registered": true,
+    "active": true,
+    "cachedFiles": 11,
+    "note": "registered",
+    "build": "production"
+  },
+  "maxAttemptS": 9.6,
+  "attempts": [
+    {
+      "k": 1,
+      "startS": 1,
+      "endS": 10.6,
+      "durationS": 9.6,
+      "recordText": "Record on this device Masking Mask Date: 12/11 Edit read as 12 November 2026, assumed Confirm Correct Present: Maria O-R, Bea Edit Seen: Mould in back bedroom again, worse by the window.; Landlord not replied to 2 emails.; Maria missed the benefits form deadline last wk, letter on the table.; DOB on form 3/3/87. Edit Agreed: I ring landlord Mon.; Maria posts form Fri.; Tomas Brandvald (neighbour, also on my list) offered to help with the form. Edit Risks: rent arrears if form is late. Edit Next steps: revisit 26/11. Edit",
+      "maskRaw": "Visit date: 12/11 Present: [Person 1] on your list , Bea suggested Seen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] on your list missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87 suggested . Agreed: I ring landlord Mon; [Person 1] on your list posts form Fri; [Person 3] near a listed name (neighbour, also on my list) offered to help with the form. Risks: rent arrears if form is late. Next steps: revisit 26/11 suggested .",
+      "seenCase": "present-with-dob",
+      "recordHasDob": true,
+      "recordHasDobFrom": "recordText",
+      "proposed": [
+        "Bea suggested",
+        "3/3/87 suggested",
+        "26/11 suggested"
+      ],
+      "modelCandidates": [
+        "Maria O-R",
+        "Maria",
+        "Bea",
+        "Tomas Brandvald",
+        "Mon",
+        "Fri",
+        "26/11",
+        "3/3/87"
+      ],
+      "beaByModel": true,
+      "dobByModel": true,
+      "outcome": "success",
+      "structureReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "proposalReplies": [
+        "{\"candidates\": [{\"text\": \"Maria O-R\", \"kind\": \"name\"}, {\"text\": \"Maria\", \"kind\": \"name\"}, {\"text\": \"Bea\", \"kind\": \"name\"}, {\"text\": \"Tomas Brandvald\", \"kind\": \"name\"}, {\"text\": \"Mon\", \"kind\": \"place\"}, {\"text\": \"Fri\", \"kind\": \"place\"}, {\"text\": \"26/11\", \"kind\": \"place\"}, {\"text\": \"3/3/87\", \"kind\": \"dob\"}]}"
+      ]
+    },
+    {
+      "k": 2,
+      "startS": 10.6,
+      "endS": 19.6,
+      "durationS": 9,
+      "recordText": "Record on this device Masking Mask Date: 12/11 Edit read as 12 November 2026, assumed Confirm Correct Present: Maria O-R, Bea Edit Seen: Mould in back bedroom again, worse by the window. Landlord not replied to 2 emails. Maria missed the benefits form deadline last wk, letter on the table. DOB on form 3/3/87. Edit Agreed: I ring landlord Mon. Maria posts form Fri. Tomas Brandvald (neighbour, also on my list) offered to help with the form. Edit Risks: rent arrears if form is late. Edit Next steps: revisit 26/11. Edit",
+      "maskRaw": "Visit date: 12/11 Present: [Person 1] on your list , Bea suggested Seen: Mould in back bedroom again, worse by the window. Landlord not replied to 2 emails. [Person 1] on your list missed the benefits form deadline last wk, letter on the table. DOB on form 3/3/87 suggested . Agreed: I ring landlord Mon. [Person 1] on your list posts form Fri. [Person 3] near a listed name (neighbour, also on my list) offered to help with the form. Risks: rent arrears if form is late. Next steps: revisit 26/11.",
+      "seenCase": "present-with-dob",
+      "recordHasDob": true,
+      "recordHasDobFrom": "recordText",
+      "proposed": [
+        "Bea suggested",
+        "3/3/87 suggested"
+      ],
+      "modelCandidates": [
+        "Maria O-R",
+        "Bea",
+        "Maria",
+        "3/3/87",
+        "Mon",
+        "Fri",
+        "Tomas Brandvald",
+        "neighbour"
+      ],
+      "beaByModel": true,
+      "dobByModel": true,
+      "outcome": "success",
+      "structureReply": "{\"visitDate\":\"12/11\",\"present\":[{\"label\":\"Maria O-R\",\"role\":\"client\"}, {\"label\":\"Bea\",\"role\":\"other\"}],\"seen\":[\"Mould in back bedroom again, worse by the window. Landlord not replied to 2 emails. Maria missed the benefits form deadline last wk, letter on the table. DOB on form 3/3/87.\"],\"agreed\":[\"I ring landlord Mon. Maria posts form Fri. Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"],\"risks\":[\"rent arrears if form is late.\"],\"nextSteps\":[\"revisit 26/11.\"]}",
+      "proposalReplies": [
+        "{\"candidates\": [\n  {\n    \"text\": \"Maria O-R\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Bea\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Maria\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"3/3/87\",\n    \"kind\": \"dob\"\n  },\n  {\n    \"text\": \"Mon\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"Fri\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"Tomas Brandvald\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"neighbour\",\n    \"kind\": \"phrase\"\n  }\n]}"
+      ]
+    },
+    {
+      "k": 3,
+      "startS": 19.6,
+      "endS": 28.8,
+      "durationS": 9.2,
+      "recordText": "Record on this device Masking Mask Date: 12/11 Edit read as 12 November 2026, assumed Confirm Correct Present: Maria O-R, Bea Edit Seen: Mould in back bedroom again, worse by the window.; Landlord not replied to 2 emails.; Maria missed the benefits form deadline last wk, letter on the table.; DOB on form 3/3/87. Edit Agreed: I ring landlord Mon.; Maria posts form Fri.; Tomas Brandvald (neighbour, also on my list) offered to help with the form. Edit Risks: rent arrears if form is late. Edit Next steps: revisit 26/11. Edit",
+      "maskRaw": "Visit date: 12/11 Present: [Person 1] on your list , Bea suggested Seen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; [Person 1] on your list missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87 suggested . Agreed: I ring landlord Mon; [Person 1] on your list posts form Fri; [Person 3] near a listed name (neighbour, also on my list) offered to help with the form. Risks: rent arrears if form is late. Next steps: revisit 26/11 suggested .",
+      "seenCase": "present-with-dob",
+      "recordHasDob": true,
+      "recordHasDobFrom": "recordText",
+      "proposed": [
+        "Bea suggested",
+        "3/3/87 suggested",
+        "26/11 suggested"
+      ],
+      "modelCandidates": [
+        "Maria O-R",
+        "Bea",
+        "Tomas Brandvald",
+        "Mon",
+        "Fri",
+        "26/11",
+        "3/3/87"
+      ],
+      "beaByModel": true,
+      "dobByModel": true,
+      "outcome": "success",
+      "structureReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Maria missed the benefits form deadline last wk, letter on the table.\", \"DOB on form 3/3/87.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}",
+      "proposalReplies": [
+        "{\"candidates\": [\n  {\n    \"text\": \"Maria O-R\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Bea\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Tomas Brandvald\",\n    \"kind\": \"name\"\n  },\n  {\n    \"text\": \"Mon\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"Fri\",\n    \"kind\": \"phrase\"\n  },\n  {\n    \"text\": \"26/11\",\n    \"kind\": \"dob\"\n  },\n  {\n    \"text\": \"3/3/87\",\n    \"kind\": \"dob\"\n  }\n]}"
+      ]
+    }
+  ],
+  "videoCheck": {
+    "frames": [
+      {
+        "atS": 1,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 15.2,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 30,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      }
+    ],
+    "fills": true,
+    "checkerAborted": 0,
+    "durationS": 30.3
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoSize": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoDir": "<local>/doorstep-film-h/rehearsal-h36r",
+  "instrumentation": {
+    "outputLogger": "a LanguageModel output logger installed as an init script. It logs each session.prompt output and changes nothing.",
+    "networkOff": "network off = Playwright context.setOffline (emulated) after SW ready/controller + ready + connected",
+    "launchSequence": "preflight and SW cache warm-up on initial page, then walk = context.newPage(), initial closed and its video deleted."
+  },
+  "headed": false,
+  "walkVideo": "<local>/doorstep-film-h/rehearsal-h36r/page@5dd2b27f67bc26a65f2e8eebc24e7914.webm",
+  "videoFiles": [
+    "page@5dd2b27f67bc26a65f2e8eebc24e7914.webm"
+  ],
+  "attemptsRun": 3,
+  "successes": 3,
+  "gate": {
+    "passed": true,
+    "successes": 3,
+    "attemptsRun": 3,
+    "minSuccesses": 2,
+    "videoFills": true,
+    "zeroCloud": true,
+    "videoCount": 1
+  },
+  "outcomes": [
+    {
+      "k": 1,
+      "outcome": "success"
+    },
+    {
+      "k": 2,
+      "outcome": "success"
+    },
+    {
+      "k": 3,
+      "outcome": "success"
+    }
+  ],
+  "elapsedS": 50,
+  "servedBundle": {
+    "folder": "hosted",
+    "mainChunk": "assets/index-V6BH6mfe.js",
+    "buildTime": "2026-11-15T07:24:30.000Z"
+  }
+}

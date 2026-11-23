@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T07:56:18.397Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "watchedHost": "firebasevertexai.googleapis.com",
+  "jobsRun": [
+    "structure (make the record)",
+    "propose masks",
+    "device draft"
+  ],
+  "requestsRecorded": 0,
+  "requestsOutsideThePage": 0,
+  "requestsToCloudModelHost": 0,
+  "pathsAskedFor": [],
+  "labels": {
+    "record": "on this device",
+    "proposals": "on this device",
+    "draft": "on this device"
+  }
+}

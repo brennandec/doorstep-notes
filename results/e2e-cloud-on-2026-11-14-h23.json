@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-14T19:02:35.994Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs in the session of chain H11 (2026-11-14), with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 3,
+  "total": 3,
+  "appCheckExchanges": 2,
+  "stoppedAtBudget": false,
+  "specs": {
+    "shorterReal.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 1
+      },
+      "outcome": "passed",
+      "kind": "cloud-path"
+    },
+    "secondReaderLoop.spec.ts": {
+      "calls": 2,
+      "tests": {
+        "Second reader loop against the real service: a guess is gone after she masks its words": 2
+      },
+      "outcome": "passed",
+      "kind": "no-cloud"
+    }
+  }
+}

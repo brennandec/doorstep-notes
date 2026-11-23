@@ -1,0 +1,65 @@
+{
+  "order": "R17 session B item 5 (H51g)",
+  "date": "2026-11-19T11:36:41.962Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "what": "One cloud draft of the invented visit in the same page after the get-model press. The browser's model was a stand-in LanguageModel (availability downloadable, then available after create). Invented people only.",
+  "sequence": [
+    "get-model press (device-only app getAI, stand-in model)",
+    "cloud draft (default app getAI, real service)"
+  ],
+  "deviceStateBeforePress": "can be downloaded",
+  "deviceStateAfterPress": "ready",
+  "cloudCallsBeforeTheDraft": 0,
+  "generateContentCalls": 1,
+  "appCheckExchanges": 1,
+  "callStatuses": [
+    200
+  ],
+  "calls": [
+    {
+      "status": 200,
+      "model": "gemini-3.5-flash-lite",
+      "body": {
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "On 12/11, [Person 1], Bea, and the worker were present. Mould was seen in the back bedroom, worse by the window, and a letter about the benefits form was on the table. It was agreed that the worker rings the landlord on Mon, [Person 1] posts the form on Fri, and [Person 3] offered to help [Person 1] with the form. Rent arrears are risks if the form is late. Next steps are to revisit on 26/11.",
+                  "thoughtSignature": "EnsKeQFpFH0Tn9S+EzCakEC0Erz6AUPNgQ1gCLOwpnW7E7tdR8/ZK9t9DSmpVl4/qLXQxV5Q54zXSCBH+UwiPEMWTk00YvJGsF3fAbOK75XR39x13EQI+EB9e67AYvQr4EqEsGZhPJ/+mEx0RE8wkuDvUNAzj5vXoxZHjno="
+                }
+              ],
+              "role": "model"
+            },
+            "finishReason": "STOP",
+            "index": 0
+          }
+        ],
+        "usageMetadata": {
+          "promptTokenCount": 620,
+          "candidatesTokenCount": 110,
+          "totalTokenCount": 730,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 620
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "modelVersion": "gemini-3.5-flash-lite",
+        "responseId": "SN_-aqTtI_rmodAP-52pgQw"
+      }
+    }
+  ],
+  "finishedNoteShown": true,
+  "finishedNote": "On 12/11, Maria Okonkwo-Reyes, Bea, and the worker were present. Mould was seen in the back bedroom, worse by the window, and a letter about the benefits form was on the table. It was agreed that the worker rings the landlord on Mon, Maria Okonkwo-Reyes posts the form on Fri, and Tomas Brandvold offered to help Maria Okonkwo-Reyes with the form. Rent arrears are risks if the form is late. Next steps are to revisit on 26/11.",
+  "label": "in the cloud + names put back on this device",
+  "egressLine": "No listed name left this device: 0 of 20. Masked values in the text sent 0 of 2 Single name parts of 3 letters or more checked, none found The request sent to firebasevertexai.googleapis.com · answered 200 This checks listed names and masked values only. Other details in the text can still identify a person. What this check scans Egress ledger (1 entry)",
+  "pageTextWhenNoFinishedNote": "",
+  "hostsOutsideThePage": [
+    "content-firebaseappcheck.googleapis.com",
+    "firebasevertexai.googleapis.com"
+  ],
+  "leakedListedNames": []
+}

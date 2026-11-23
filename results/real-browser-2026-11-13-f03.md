@@ -1,0 +1,40 @@
+# Real-browser checks, bundled browser, 2026-11-13
+
+Browser: Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless). Headless. No device model. The cloud is not connected, so cloud steps ran against the test double.
+
+29 passed, 0 failed, 0 missed, of 29 checks.
+
+| Check | Tasks | Result |
+|---|---|---|
+| Seeded leak: the line fails in the failure colour, in words, with the crossed octagon | egress-check 12; shell-and-offline 72 | passed |
+| P1: after a send the verdict is one line, the table has three rows and the card holds no paragraph | egress-check 28 | passed |
+| Without the seed the same run passes (the control for the seeded leak) | egress-check 12 | passed |
+| H2 part A in full: masks, Shorter, draft, second reader and Save ledger against the doubles, every request recorded | egress-check 23; egress-check 13 (replaced); second-reader 9 | passed |
+| Second reader: mask through a quote, ask again, two ledger entries, redaction line | second-reader 8 | passed |
+| P3: nothing is cut at 1440 x 900, online and offline | shell-and-offline 67 | passed |
+| P3: nothing is cut at 1280 x 800, online and offline | shell-and-offline 67 | passed |
+| P5: the example mark stands once in zone 1, the step line is one line, and the keep-line is single | shell-and-offline 70 | passed |
+| P2: at 1440 px zone 2 is at least 400 px and the widths are 5 : 4 : 4; at 1000 px the zones are stacked in order | shell-and-offline 64 | passed |
+| No device model: the invented visit, one press per step | shell-and-offline 28; drafting 13 | passed |
+| Capture sends nothing: typing, a photo, the invented visit | capture-and-record 14 | passed |
+| No model: hand entry builds a full record and the prepared record loads with one press | capture-and-record 15 | passed |
+| Offline with no model: the online draft works, the offline case shows the no-model line | drafting 14 | passed |
+| L2: the three clear controls each ask once, Escape cancels, and the store is read | shell-and-offline 56 | passed |
+| L4: across the whole journey with data kept, no request carries a listed name or kept text | shell-and-offline 57 | passed |
+| L8: after a send with the folds closed, zones 2 and 3 hold no paragraph over two lines, and each fold works from the keyboard | shell-and-offline 60 | passed |
+| Installable, offline after first load, cache holds only allowed files | shell-and-offline 27; shell-and-offline 55 | passed |
+| Masking offline with no model: exact, near, tap, Enter and the live region | masking 16 | passed |
+| Interface rules: colours, type, controls, targets, focus, motion | shell-and-offline 26 | passed |
+| Layout: zones, boundary and stacking | shell-and-offline 25 | passed |
+| Screenshot: stacked at 1024 by 768 | look-and-layout: screenshot 07 | passed |
+| The test hooks are not in the production build | egress-check 12 (production build has no hook) | passed |
+| first screen and the invented visit |  | passed |
+| V3: after hand entry and a send, the journey is in view together at 1440 by 900 | shell-and-offline 35 | passed |
+| V4: 'Send this name on purpose' is not in the document until a listed chip is pressed | masking 19 | passed |
+| V5: no device model, the likely-names line lists Bea and one press masks her | masking 24 | passed |
+| V6 (ledger): after a send, 'Save ledger' shows its entries as text, and a press writes to the test double | egress-check 21 | passed |
+| V6 (rewrite): 'Shorter' calls the rewrite double, shows a label, and the masker runs before the sentence is replaced | drafting 21 | passed |
+| Y5: with a record present at 1440 by 900, the first chip is inside the viewport | shell-and-offline 43 | passed |
+
+The device model checks are not part of this file. They run in Google Chrome in a later session.
+H2 part B (the real cloud service) has not run. Until it does, the page and README say "not yet checked against the real service".

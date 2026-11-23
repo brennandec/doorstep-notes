@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-17T00:05:46.204Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "noticeShown": "This project runs on the paid tier of the Gemini Developer API, through Firebase AI Logic. Google says it does not use prompts or responses on the paid tier to improve its products. It keeps them for a limited period to detect misuse. This demo uses invented people only.",
+  "what": "One loop of the second reader on the invented visit, through the page and the real service: ask and send, mask the words of one guess, ask again and send. Invented people only. Hosts and counts only; no URL is written.",
+  "job": "second reader",
+  "mode": "ONLY_IN_CLOUD",
+  "readerModelAsked": "gemini-3.8-flash",
+  "generateContentCalls": 2,
+  "stoppedAtCap": false,
+  "capOfThisSession": 4,
+  "maskedByHerBetweenPasses": "Bea",
+  "guessesQuotingThoseWordsInPass1": [
+    "A household member, friend, or relative present during the visit"
+  ],
+  "guessesQuotingThoseWordsInPass2": [],
+  "passes": [
+    {
+      "pass": 1,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1357,
+      "modelCallSha256": "06b21bfe333bc28169f65c56ab705bc6080a8970e993e17c9174e217b295d726",
+      "requestsByHost": {
+        "127.0.0.1:4311": 3,
+        "content-firebaseappcheck.googleapis.com": 1,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A household member, friend, or relative present during the visit",
+          "why": "Named directly as present in the home during the visit.",
+          "kind": "name",
+          "quotes": [
+            "Bea"
+          ],
+          "chips": [
+            "Bea"
+          ]
+        },
+        {
+          "description": "The resident living in rented housing who is receiving support with benefits and housing maintenance",
+          "why": "Identified through their need to resolve mould issues, deal with the landlord, and submit benefits forms to prevent rent arrears.",
+          "kind": "role",
+          "quotes": [
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 2
+      },
+      "source": "in the cloud",
+      "readerError": null
+    },
+    {
+      "pass": 2,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1364,
+      "modelCallSha256": "9ed8cec4fec42049e9358594446b4d5c40dfabb33bd5c1a287cac80f81ce1163",
+      "requestsByHost": {
+        "127.0.0.1:4311": 1,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A resident living in rented accommodation who is dealing with housing conditions and benefit paperwork.",
+          "why": "The individual is dealing with property maintenance issues handled by a landlord and relies on timely benefits to avoid falling behind on rent.",
+          "kind": "role",
+          "quotes": [
+            "Mould in the back bedroom, worse by the window",
+            "Letter about the benefits form on the table",
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "Mould in the back bedroom, worse by the window",
+            "Letter about the benefits form on the table",
+            "landlord",
+            "Rent arrears"
+          ]
+        },
+        {
+          "description": "A community or housing support worker assisting the tenant.",
+          "why": "The individual attends home visits, liaises with the landlord on behalf of the client, and schedules follow-up visits.",
+          "kind": "role",
+          "quotes": [
+            "worker",
+            "Worker rings the landlord on Mon",
+            "Revisit on 26/11"
+          ],
+          "chips": [
+            "worker",
+            "Worker rings the landlord on Mon",
+            "Revisit on 26/11"
+          ]
+        },
+        {
+          "description": "A private or social housing landlord responsible for the accommodation.",
+          "why": "The worker plans to contact them regarding housing repairs and damp issues in the property.",
+          "kind": "role",
+          "quotes": [
+            "landlord"
+          ],
+          "chips": [
+            "landlord"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 3
+      },
+      "source": "in the cloud",
+      "readerError": null
+    }
+  ],
+  "checks": {
+    "noticeIsPaid": true,
+    "everyCallAnswered200": true,
+    "modelWasTheReadersModel": true,
+    "maskedWordsNotQuotedInPass2": true,
+    "maskedWordsNotSentInPass2": true,
+    "cardCountsMaskedValue": true,
+    "noListedNameInAnyRequest": true
+  },
+  "miss": null,
+  "observation": "Both passes answered 200 and no guess in pass 2 quotes the words she masked."
+}

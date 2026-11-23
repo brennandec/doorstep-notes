@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-13T14:53:53.584Z",
+  "browser": "Node v22.23.2 (no browser)",
+  "script": "scripts/listNotNeeded.ts",
+  "scriptVersion": "1",
+  "status": "pass",
+  "source": "results/misses.json, falseMasks.device",
+  "runDate": "2026-11-13T13:41:21.516Z",
+  "runBrowser": "Google Chrome 157.0.8103.79",
+  "total": 61,
+  "kindMeanings": {
+    "common word": "lower-case words with no digit and no capital after the first word, such as a role word",
+    "first name nobody in the note": "one capitalised first name from the invented lists that is not an identifier in that note",
+    "place word": "a word for a kind of place, such as clinic or house, with no digit",
+    "number": "has a digit and is not a date or a time",
+    "date word": "a date, a time, a weekday, a month, a relative day or a span such as weeks",
+    "other": "none of the above"
+  },
+  "kinds": [
+    {
+      "kind": "date word",
+      "count": 34,
+      "strings": [
+        {
+          "text": "two weeks",
+          "count": 4
+        },
+        {
+          "text": "2pm slot",
+          "count": 2
+        },
+        {
+          "text": "01/12",
+          "count": 1
+        },
+        {
+          "text": "03/03",
+          "count": 1
+        },
+        {
+          "text": "03/07",
+          "count": 1
+        },
+        {
+          "text": "04/02",
+          "count": 1
+        },
+        {
+          "text": "05/09",
+          "count": 1
+        },
+        {
+          "text": "06/09",
+          "count": 1
+        },
+        {
+          "text": "12/02",
+          "count": 1
+        },
+        {
+          "text": "12/11",
+          "count": 1
+        },
+        {
+          "text": "14/03",
+          "count": 1
+        },
+        {
+          "text": "15/10",
+          "count": 1
+        },
+        {
+          "text": "17/02 11.00",
+          "count": 1
+        },
+        {
+          "text": "17/03",
+          "count": 1
+        },
+        {
+          "text": "17/04",
+          "count": 1
+        },
+        {
+          "text": "17/07",
+          "count": 1
+        },
+        {
+          "text": "21/08",
+          "count": 1
+        },
+        {
+          "text": "22/03",
+          "count": 1
+        },
+        {
+          "text": "23/12",
+          "count": 1
+        },
+        {
+          "text": "28/06",
+          "count": 1
+        },
+        {
+          "text": "28/08",
+          "count": 1
+        },
+        {
+          "text": "2pm slot at the clinic",
+          "count": 1
+        },
+        {
+          "text": "last month",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 02/01",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 02/11",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 03/09",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 03/10",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 08/10",
+          "count": 1
+        },
+        {
+          "text": "Missed appt 13/02",
+          "count": 1
+        },
+        {
+          "text": "Third missed appointment this year",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "kind": "common word",
+      "count": 16,
+      "strings": [
+        {
+          "text": "relative",
+          "count": 5
+        },
+        {
+          "text": "the neighbour",
+          "count": 5
+        },
+        {
+          "text": "a relative",
+          "count": 4
+        },
+        {
+          "text": "grace",
+          "count": 1
+        },
+        {
+          "text": "Missed appt",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "kind": "number",
+      "count": 10,
+      "strings": [
+        {
+          "text": "30th",
+          "count": 9
+        },
+        {
+          "text": "sections 3 and 4",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "kind": "place word",
+      "count": 1,
+      "strings": [
+        {
+          "text": "the clinic",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

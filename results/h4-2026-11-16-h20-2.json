@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-16",
+  "time": "2026-11-16T06:27:46.516Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "111f0f3",
+  "status": "fail",
+  "check": "H4: the draft online (the cloud) and offline (this device), in one Google Chrome session with the model and the real cloud.",
+  "hybridRun": "results/hybrid-run-2026-11-16-h20.json",
+  "offline": {
+    "network": "off",
+    "modeChosenByTheApp": "ONLY_ON_DEVICE (the browser reported offline)",
+    "status": "fail",
+    "reason": "the step did not run"
+  },
+  "online": {
+    "network": "on",
+    "modeChosenByTheApp": "PREFER_IN_CLOUD",
+    "status": "fail",
+    "reason": "the step did not run"
+  },
+  "servedBundle": {
+    "folder": "dist-e2e",
+    "mainChunk": "assets/index-tYxTMKRp.js",
+    "buildTime": "2026-11-16T06:26:40.774Z"
+  }
+}

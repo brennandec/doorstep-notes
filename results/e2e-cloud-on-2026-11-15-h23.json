@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-15T19:14:02.894Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by bundled specs, device runners, hosted runners, and cloud scripts, counted in this file, on the UTC day in date. Invented people only. Reconciled with 12 unledgered calls from results/h42-n3-cloud-drafts-2026-11-15.json (39 + 12 = 51 / 40).",
+  "budget": 40,
+  "total": 51,
+  "appCheckExchanges": 31,
+  "stoppedAtBudget": true,
+  "specs": {
+    "secondReaderLoop.spec.ts": {
+      "calls": 16,
+      "tests": {
+        "Second reader loop against the real service: a guess is gone after she masks its words": 16
+      }
+    },
+    "secondReaderReal.spec.ts": {
+      "calls": 8,
+      "tests": {
+        "Second reader against the real service: bytes left, status 200, in the cloud, shown on the screen": 8
+      }
+    },
+    "shorterReal.spec.ts": {
+      "calls": 8,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 8
+      }
+    },
+    "cloudDraft.spec.ts": {
+      "calls": 7,
+      "tests": {
+        "One real cloud draft: status 200, not the test double": 7
+      }
+    },
+    "scripts/measureN3CloudDrafts.ts": {
+      "calls": 12,
+      "tests": {
+        "Order H42 N3 pre-deploy measurement (19:14Z reconciled from results/h42-n3-cloud-drafts-2026-11-15.json)": 12
+      }
+    }
+  }
+}

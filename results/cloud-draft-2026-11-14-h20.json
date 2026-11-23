@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-14T16:16:43.366Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "what": "One real cloud draft of the invented visit, made through the page. Invented people only. The text sent is the masked outgoing text.",
+  "status": 200,
+  "callStatuses": [
+    200
+  ],
+  "generateContentCalls": 1,
+  "model": "gemini-3.5-flash-lite",
+  "requestBytes": 798,
+  "draftText": "On 12/11, a home visit was conducted with [Person 1] and Bea present. During the visit, mould was observed in the back bedroom, and it was noted to be worse by the window. A letter regarding the benefits form was seen on the table. It was agreed that the worker will ring the landlord on Monday, [Person 1] will post the form on Friday, and [Person 2] offered to help {him:Person 2} with the form. The identified risk is that rent arrears may occur if the form is late. The next step is to revisit on 26/11.",
+  "finishedNote": "On 12/11, a home visit was conducted with Maria Okonkwo-Reyes and Bea present. During the visit, mould was observed in the back bedroom, and it was noted to be worse by the window. A letter regarding the benefits form was seen on the table. It was agreed that the worker will ring the landlord on Monday, Maria Okonkwo-Reyes will post the form on Friday, and Tomas Brandvold offered to help him with the form. The identified risk is that rent arrears may occur if the form is late. The next step is to revisit on 26/11.",
+  "label": "in the cloud",
+  "egressLine": "No listed name left this device: 0 of 20. Masked values in the text sent 0 of 2 Single name parts of 3 letters or more checked, none found The request sent to firebasevertexai.googleapis.com · answered 200 This checks listed names and masked values only. Other details in the text can still identify a person. What this check scans Egress ledger (1 entry)",
+  "hostsOutsideThePage": [
+    "content-firebaseappcheck.googleapis.com",
+    "firebasevertexai.googleapis.com"
+  ]
+}

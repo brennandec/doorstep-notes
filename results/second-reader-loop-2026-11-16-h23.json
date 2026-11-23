@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-16T05:29:12.348Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "noticeShown": "This project runs on the paid tier of the Gemini Developer API, through Firebase AI Logic. Google says it does not use prompts or responses on the paid tier to improve its products. It keeps them for a limited period to detect misuse. This demo uses invented people only.",
+  "what": "One loop of the second reader on the invented visit, through the page and the real service: ask and send, mask the words of one guess, ask again and send. Invented people only. Hosts and counts only; no URL is written.",
+  "job": "second reader",
+  "mode": "ONLY_IN_CLOUD",
+  "readerModelAsked": "gemini-3.8-flash",
+  "generateContentCalls": 2,
+  "stoppedAtCap": false,
+  "capOfThisSession": 4,
+  "maskedByHerBetweenPasses": "Bea",
+  "guessesQuotingThoseWordsInPass1": [
+    "A household member or resident present during the home visit"
+  ],
+  "guessesQuotingThoseWordsInPass2": [],
+  "passes": [
+    {
+      "pass": 1,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1357,
+      "modelCallSha256": "06b21bfe333bc28169f65c56ab705bc6080a8970e993e17c9174e217b295d726",
+      "requestsByHost": {
+        "127.0.0.1:4311": 3,
+        "content-firebaseappcheck.googleapis.com": 1,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A household member or resident present during the home visit",
+          "why": "She is mentioned by her first name as being present in the home during the visit.",
+          "kind": "name",
+          "quotes": [
+            "Bea"
+          ],
+          "chips": [
+            "Bea"
+          ]
+        },
+        {
+          "description": "A visiting professional or social care worker assisting the household",
+          "why": "The professional conducting the home visit and handling communication with the landlord.",
+          "kind": "role",
+          "quotes": [
+            "worker"
+          ],
+          "chips": [
+            "worker"
+          ]
+        },
+        {
+          "description": "The property owner or housing provider responsible for repairs",
+          "why": "Identified as the person responsible for the property who needs to be contacted regarding the mould.",
+          "kind": "role",
+          "quotes": [
+            "landlord"
+          ],
+          "chips": [
+            "landlord"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 2
+      },
+      "source": "in the cloud",
+      "readerError": null
+    },
+    {
+      "pass": 2,
+      "status": 200,
+      "callStatuses": [
+        200
+      ],
+      "model": "gemini-3.8-flash",
+      "host": "firebasevertexai.googleapis.com",
+      "modelCallBytes": 1364,
+      "modelCallSha256": "9ed8cec4fec42049e9358594446b4d5c40dfabb33bd5c1a287cac80f81ce1163",
+      "requestsByHost": {
+        "127.0.0.1:4311": 1,
+        "firebasevertexai.googleapis.com": 1
+      },
+      "guessesShown": [
+        {
+          "description": "A local resident in rented accommodation struggling with property conditions and benefit applications",
+          "why": "The record details a home visit discussing housing maintenance issues, housing benefits, and risks of falling into arrears with the landlord.",
+          "kind": "role",
+          "quotes": [
+            "Mould in the back bedroom",
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "Mould in the back bedroom",
+            "benefits form",
+            "landlord",
+            "Rent arrears"
+          ]
+        },
+        {
+          "description": "A local community support worker or housing officer visiting the resident",
+          "why": "The record notes a professional worker attending the home, agreeing to contact the landlord on Monday, and scheduling a follow-up visit.",
+          "kind": "role",
+          "quotes": [
+            "worker",
+            "landlord"
+          ],
+          "chips": [
+            "worker",
+            "landlord"
+          ]
+        },
+        {
+          "description": "The local property owner or housing provider letting the property",
+          "why": "The record explicitly refers to the landlord who is being contacted regarding property issues and who collects rent.",
+          "kind": "role",
+          "quotes": [
+            "landlord",
+            "Rent arrears"
+          ],
+          "chips": [
+            "landlord",
+            "Rent arrears"
+          ]
+        }
+      ],
+      "hiddenLine": null,
+      "maskedOnCard": {
+        "found": 0,
+        "of": 3
+      },
+      "source": "in the cloud",
+      "readerError": null
+    }
+  ],
+  "checks": {
+    "noticeIsPaid": true,
+    "everyCallAnswered200": true,
+    "modelWasTheReadersModel": true,
+    "maskedWordsNotQuotedInPass2": true,
+    "maskedWordsNotSentInPass2": true,
+    "cardCountsMaskedValue": true,
+    "noListedNameInAnyRequest": true
+  },
+  "miss": null,
+  "observation": "Both passes answered 200 and no guess in pass 2 quotes the words she masked."
+}

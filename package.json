@@ -1,0 +1,44 @@
+{
+  "name": "doorstep-notes",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "build:e2e": "vite build --mode e2e --outDir dist-e2e",
+    "preview": "vite preview",
+    "e2e:bundled": "vite build --mode e2e --outDir dist-e2e && WRITE_REAL_BROWSER_RESULTS=1 perl -e \"alarm 300; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=bundled \"bundled/(?!shorterReal\\.spec|cloudDraft\\.spec|secondReaderReal\\.spec|secondReaderLoop\\.spec|h51gCloudAfterDevice\\.spec).*\\.spec\\.ts\"",
+    "e2e:device": "perl -e \"alarm 300; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model",
+    "e2e:hosted": "perl -e \"alarm 300; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/hostedRun.spec.ts",
+    "measure:set": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/buildSet.ts",
+    "measure:exact": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/measureExact.ts",
+    "measure:notneeded": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/listNotNeeded.ts",
+    "measure:readme": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/writeReadme.ts",
+    "claims:check": "perl -e \"alarm 120; exec @ARGV\" node scripts/run.mjs scripts/claimsCheck.ts",
+    "claims:self-red": "perl -e \"alarm 120; exec @ARGV\" node scripts/run.mjs scripts/claimsCheck.ts --self-red",
+    "measure:device": "perl -e \"alarm 1200; exec @ARGV\" node scripts/run.mjs scripts/measureDevice.ts",
+    "measure:cold-start": "perl -e \"alarm 300; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/coldStart.spec.ts",
+    "measure:misses": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/recordMisses.ts",
+    "measure:order": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/runOrder.ts",
+    "measure:cloud-draft": "perl -e \"alarm 600; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/cloudDraftForms.spec.ts",
+    "build:hosted": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/buildHosted.ts",
+    "notices": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/notices.ts",
+    "fixture:handwriting": "perl -e \"alarm 300; exec @ARGV\" node scripts/run.mjs scripts/makeHandwritingFixture.ts",
+    "e2e:offline-press": "perl -e \"alarm 420; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/offlinePress.spec.ts",
+    "e2e:handwriting": "perl -e \"alarm 300; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/handwriting.spec.ts",
+    "e2e:film-story": "perl -e \"alarm 660; exec @ARGV\" playwright test -c tests/e2e/playwright.config.ts --project=device-model tests/e2e/device/filmStoryTake.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "happy-dom": "21.0.4",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "dependencies": {
+    "firebase": "13.4.0"
+  }
+}

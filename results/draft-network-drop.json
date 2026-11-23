@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-13T08:11:11.138Z",
+  "browser": "not run",
+  "script": "scripts/recordMisses.ts",
+  "scriptVersion": "1",
+  "status": "miss",
+  "check": "Drafting: the network drops in the middle of a cloud draft call; what the SDK did is recorded.",
+  "reason": "The cloud is not connected. The project is refused the provider's unpaid tier, and the product owner has not set up billing. Until the cloud service answers, this check cannot run, and the page and README keep saying \"not yet checked against the real service\"."
+}

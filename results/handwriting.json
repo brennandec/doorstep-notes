@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T01:34:52.674Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "fixture": {
+    "file": "handwriting-note.png",
+    "sha256": "ef6191a70c3c0920faae2beb1e9439bf89aa5b3d86daf422bde9356b4dc6396b",
+    "how": "Drawn in a handwriting typeface (Bradley Hand, installed with macOS) in dark blue ink on lined paper, each word moved and tilted a little by a seeded random draw. It is a typeface, not a person's own hand.",
+    "width": 1000,
+    "height": 520
+  },
+  "input": "the picture only; nothing typed, the invented visit not loaded",
+  "path": "camera control, then Make the record, through src/firebase/structureSdk.ts (ONLY_ON_DEVICE)",
+  "handwriting": {
+    "shown": true,
+    "label": "on this device",
+    "seconds": 11.4,
+    "wordsRead": [
+      "odalys",
+      "brennan",
+      "heating",
+      "benefits",
+      "post",
+      "door"
+    ],
+    "wordsOnPageChecked": [
+      "odalys",
+      "brennan",
+      "ione",
+      "heating",
+      "benefits",
+      "post",
+      "door",
+      "flat"
+    ],
+    "record": "Record on this device Masking Mask On 200 invented notes her list alone found 509 of 1,141 identifying details (2026-11-13, Node v22.23.2 (no browser)). With the model on this device: 1,032 of 1,141, on 200 of 200 invented notes (2026-11-13, Google Chrome 157.0.8103.79). Measured on the author's computer. The model on this device also suggested 61 things that were not needed (on 200 of 200 invented notes, 2026-11-13, Google Chrome 157.0.8103.79). These figures describe a set of invented notes. They do not describe real notes, and they do not predict real use. Date: 12/11 Edit read as 11 December 2026, assumedConfirmCorrect Fold Present Odalys Brennan-webb (added by the model) x her sister lone x client worker other Add person Added by the model: Odalys Brennan-webb, Mon, Fri. Not in your note or your list. In the finished note it stays a tag until you press to put it back. Fold Seen Fold Agreed Risks Next steps: I ring Fri to check it went Edit heating on now post piled by the door Odalys posts the benefits form Mon",
+    "errorOnPage": null,
+    "requests": {
+      "total": 0,
+      "outsideThePage": 0,
+      "toCloudModelHost": 0
+    }
+  },
+  "printedForComparison": {
+    "kind": "printed",
+    "shown": true,
+    "label": "on this device",
+    "seconds": 11.4,
+    "recordText": "Record on this device Masking Mask On 200 invented notes her list alone found 509 of 1,141 identifying details (2026-11-13, Node v22.23.2 (no browser)). With the model on this device: 1,032 of 1,141, on 200 of 200 invented notes (2026-11-13, Google Chrome 157.0.8103.79). Measured on the author's computer. The model on this device also suggested 61 things that were not needed (on 200 of 200 invented notes, 2026-11-13, Google Chrome 157.0.8103.79). These figures describe a set of invented notes. They do not describe real notes, and they do not predict real use. Date: Thurs 12/11 Edit read as 11 December 2026, assumedConfirmCorrect Fold Present Odalys Brennan-Webb (added by the model) x her sister Ione x client worker other Add person Added by the model: Odalys Brennan-Webb, Mon, Fri. Not in your note or your list. In the finished note it stays a tag until you press to put it back. Fold Seen Fold Agreed Risks Next steps: I ring Fri to check it went Edit heating on, post piled by the door Odalys posts the benefits form Mon",
+    "wordsRead": [
+      "odalys",
+      "brennan",
+      "ione",
+      "heating",
+      "benefits",
+      "post",
+      "door"
+    ],
+    "errorOnPage": null,
+    "requests": {
+      "total": 0,
+      "outsideThePage": 0,
+      "toCloudModelHost": 0
+    },
+    "browser": "Google Chrome 157.0.8103.79",
+    "pageErrors": []
+  },
+  "screen": "docs/screens/15-handwriting-record.png (1440 x 900, record title scrolled to the top)",
+  "limit": "The handwriting is a handwriting typeface with each word moved and tilted, not a person's own hand. One page, one run, one invented text."
+}

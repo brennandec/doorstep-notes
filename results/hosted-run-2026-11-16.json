@@ -1,0 +1,818 @@
+{
+  "date": "2026-11-16",
+  "time": "2026-11-16T05:30:16.846Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "111f0f3",
+  "status": "fail",
+  "what": "One run against the hosted page in Google Chrome with the built-in model and the real cloud, invented visit",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "served": {
+    "indexHtmlSha256": "66b88081448ed2a2ce79cf7d8b1ae94655a140c2ff4337fab46b752be2d3e328",
+    "swJsSha256": "1530655650564dd0864e0bee2d78106cc5abe62a15193574c8457226f0f6376e",
+    "configServed": true,
+    "siteKeyServed": true
+  },
+  "debugTokenGlobal": "undefined",
+  "navigationToReadyS": 5.2,
+  "deviceHeaderWordsSeen": [
+    "starting",
+    "ready"
+  ],
+  "serviceWorker": {
+    "registered": true,
+    "active": true,
+    "cachedFiles": 11,
+    "note": "registered",
+    "build": "production"
+  },
+  "loadedScript": "assets/index-CrruwVrg.js",
+  "networkScript": "assets/index-CrruwVrg.js",
+  "loadedRelease": {
+    "loadedScript": "assets/index-CrruwVrg.js",
+    "networkScript": "assets/index-CrruwVrg.js",
+    "reloaded": false,
+    "matches": true
+  },
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": true,
+    "exchanges": [
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 403,
+        "responseBodyBytes": 114
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 403,
+        "responseBodyBytes": 114
+      }
+    ]
+  },
+  "cloudCalls": {
+    "generateContent": 0,
+    "cap": 4,
+    "stoppedAtCap": false
+  },
+  "cloudReplies": [],
+  "cloudReplyTokensNamingThePreviousTag": [],
+  "steps": [
+    {
+      "step": 1,
+      "what": "page load",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "Device model: ready, Cloud: connected",
+      "presses": 0,
+      "seconds": 5.2,
+      "outsideRequests": 0
+    },
+    {
+      "step": 2,
+      "what": "Make the record, Mask, accept every device suggestion",
+      "mode": "ONLY_ON_DEVICE",
+      "inferenceSource": "ON_DEVICE",
+      "label": "on this device",
+      "presses": 6,
+      "seconds": 9.3,
+      "outsideRequests": 0
+    },
+    {
+      "step": 3,
+      "what": "Ask a second reader, Send",
+      "mode": "ONLY_IN_CLOUD",
+      "inferenceSource": "not shown",
+      "label": "not shown",
+      "presses": 2,
+      "seconds": 1.9,
+      "outsideRequests": 13
+    },
+    {
+      "step": 4,
+      "what": "Draft, Send",
+      "mode": "PREFER_IN_CLOUD",
+      "inferenceSource": "ON_DEVICE",
+      "label": "on this device",
+      "presses": 2,
+      "seconds": 4.9,
+      "outsideRequests": 0
+    },
+    {
+      "step": 5,
+      "what": "end state",
+      "mode": "none",
+      "inferenceSource": "none",
+      "label": "online; ready; connected",
+      "presses": 0,
+      "seconds": 0,
+      "outsideRequests": 0
+    }
+  ],
+  "observed": {
+    "network": "online",
+    "device": "ready",
+    "cloud": "connected"
+  },
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/webworker.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10487,
+        "sha256": "7f7ffee1dcf227e06db0c459035697210cc729919854bb1568073b7b194eb62f",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2370,
+        "sha256": "f600396bdf1385a231092a3c24ed2792259a1304df72fad3db1e5c1fa2b4f731",
+        "status": 403,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1938,
+        "sha256": "5f1c99f271af3e75b65b59c4a4e16928c80e7098b604e88c17c380beb773ef8b",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10990,
+        "sha256": "eff5969d84612edf29725b5943de1aecb62ad0fcab79be9c2467b125b3986ac7",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2394,
+        "sha256": "79886909f4ff161627cc4e07d65293ab145b66011c8e352dfa38b9c2930eaa9c",
+        "status": 403,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1888,
+        "sha256": "2b03e5afca01e36dd37a38a4222d1eaef4f8f06e239511ca0cb4c0ebefb4c104",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      }
+    ],
+    "sameOriginRequests": 27,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 0,
+    "appCheckExchanges": 2,
+    "stoppedAtCap": false
+  },
+  "refusedOutsideRequests": [],
+  "leakChecks": [
+    {
+      "step": 2,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 3,
+      "result": {
+        "stops": [],
+        "observations": [
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 1239,
+            "runClass": "opaque",
+            "runLength": 1721,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 6962,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8631,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 18,
+            "valueLength": 4,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 2544,
+            "runClass": "opaque",
+            "runLength": 4557,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 3856,
+            "runClass": "opaque",
+            "runLength": 4557,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "D",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7153,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7217,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7324,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8419,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8443,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8714,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9399,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9419,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 8,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7572,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 47,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "maskedOriginal"
+            ]
+          },
+          {
+            "requestIndex": 9,
+            "host": "content-firebaseappcheck.googleapis.com",
+            "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+            "field": "body",
+            "byteOffset": 1839,
+            "runClass": "opaque",
+            "runLength": 2318,
+            "valueIndex": 14,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 10,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/clr",
+            "field": "body",
+            "byteOffset": 1255,
+            "runClass": "opaque",
+            "runLength": 1721,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 1239,
+            "runClass": "opaque",
+            "runLength": 1721,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7467,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9136,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 18,
+            "valueLength": 4,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7658,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7722,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 7829,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8924,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8948,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9219,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9904,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 9924,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 19,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          },
+          {
+            "requestIndex": 11,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/reload",
+            "field": "body",
+            "byteOffset": 8077,
+            "runClass": "opaque",
+            "runLength": 3748,
+            "valueIndex": 47,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "maskedOriginal"
+            ]
+          },
+          {
+            "requestIndex": 13,
+            "host": "www.google.com",
+            "path": "/recaptcha/enterprise/clr",
+            "field": "body",
+            "byteOffset": 1255,
+            "runClass": "opaque",
+            "runLength": 1721,
+            "valueIndex": 15,
+            "valueLength": 3,
+            "beforeClass": "L",
+            "afterClass": "L",
+            "kind": "observation",
+            "categories": [
+              "otherName",
+              "namePart"
+            ]
+          }
+        ],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    },
+    {
+      "step": 4,
+      "result": {
+        "stops": [],
+        "observations": [],
+        "noteLinesFound": [],
+        "noteLineRemainderCount": 0,
+        "imageBytesFound": false,
+        "checkedCount": 52,
+        "maskedOriginalsCheckedCount": 6
+      }
+    }
+  ],
+  "problems": [
+    "step 3: the reader showed an error.",
+    "step 3: no guess was shown.",
+    "step 3: the reader was labelled \"not shown\".",
+    "step 4: the finished note was labelled \"on this device\".",
+    "the App Check token exchange was missing or not status 200.",
+    "generateContent calls were 0, not between 2 and 4.",
+    "step 3 was not in the cloud.",
+    "step 4 was not in the cloud."
+  ],
+  "servedBundle": {
+    "folder": "hosted",
+    "mainChunk": "assets/index-CrruwVrg.js",
+    "buildTime": "2026-11-16T05:29:31.000Z"
+  }
+}

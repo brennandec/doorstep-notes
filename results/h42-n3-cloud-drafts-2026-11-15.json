@@ -1,0 +1,213 @@
+{
+  "date": "2026-11-15",
+  "time": "2026-11-15T19:14:02.894Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "54284b4",
+  "status": "pass",
+  "purpose": "Order H42 N3 pre-deploy measurement: 12 real cloud drafts across 4 fixture notes x 3 drafts each (temperature: 0).",
+  "fixtures": [
+    {
+      "id": "inventedVisit",
+      "label": "inventedVisit"
+    },
+    {
+      "id": "handwriting-manifest",
+      "label": "tests/fixtures/handwriting/manifest.json"
+    },
+    {
+      "id": "synthetic-n001",
+      "label": "results/synthetic-set.json#n001"
+    },
+    {
+      "id": "synthetic-n002",
+      "label": "results/synthetic-set.json#n002"
+    }
+  ],
+  "summary": {
+    "totalDrafts": 12,
+    "n4LabelFreeCount": 12,
+    "n5InventedAttributionCount": 6,
+    "n6HedgedPronounPairCount": 0,
+    "n7RestoredPairAndTokenLeakCounts": {
+      "hedgedPronounPairs": 0,
+      "tokenSyntaxLeaks": 0
+    }
+  },
+  "samples": [
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present during a visit. Mould was observed in the back bedroom again and was worse by the window. It was agreed that the worker will ring the landlord on Mon, {she:Person 1} posts the form Fri, and [Person 3], who is a neighbour and also on the worker's list, offered to help with the form. The identified risk is rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "restoredDraft": "On 12/11, Maria Okonkwo-Reyes and Bea were present during a visit. Mould was observed in the back bedroom again and was worse by the window. It was agreed that the worker will ring the landlord on Mon, she posts the form Fri, and Tomas Brandvold, who is a neighbour and also on the worker's list, offered to help with the form. The identified risk is rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "worker's list",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "A visit took place on 12/11, attended by [Person 1] and [Person 2]. The inspection revealed mould in the back bedroom again, which was worse by the window. It was agreed that the worker would ring the landlord on Monday, and {he:Person 1} would post the form on Friday, with [Person 3], who is a neighbour also on the worker's list, having offered to help with the form. Risks include rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "restoredDraft": "A visit took place on 12/11, attended by Maria Okonkwo-Reyes and Bea. The inspection revealed mould in the back bedroom again, which was worse by the window. It was agreed that the worker would ring the landlord on Monday, and she would post the form on Friday, with Tomas Brandvold, who is a neighbour also on the worker's list, having offered to help with the form. Risks include rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "worker's list",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "inventedVisit",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window.\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit 26/11.\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, a visit was conducted with [Person 1] and [Person 2] present. During the visit, mould was observed in the back bedroom again, and it was worse by the window. It was agreed that the worker would ring the landlord on Mon, [Person 1] would post the form on Fri, and [Person 3], who is a neighbour also on the worker's list, offered to help {him:Person 3} with the form. The identified risks include rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "restoredDraft": "On 12/11, a visit was conducted with Maria Okonkwo-Reyes and Bea present. During the visit, mould was observed in the back bedroom again, and it was worse by the window. It was agreed that the worker would ring the landlord on Mon, Maria Okonkwo-Reyes would post the form on Fri, and Tomas Brandvold, who is a neighbour also on the worker's list, offered to help him with the form. The identified risks include rent arrears if the form is late. The next steps are to revisit on 26/11.",
+      "sheetNotes": [
+        "Check this sentence: a pronoun may point at the wrong person. It was agreed that the worker would ring the landlord on Mon, Maria Okonkwo-Reyes would post the form on Fri, and Tomas Brandvold, who is a neighbour also on the worker's list, offered to help him with the form."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "worker's list",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present. It was observed that the heating was on now and post was piled by the door. It was agreed that [Person 1] posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "restoredDraft": "On 12/11, Odalys Brennan-Webb and Ione were present. It was observed that the heating was on now and post was piled by the door. It was agreed that Odalys Brennan-Webb posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "A home visit was conducted on 12/11 and was attended by [Person 1] and [Person 2]. During the visit, the heating was on now and post was piled by the door. It was agreed that [Person 1] posts the benefits form Mon. There were no risks identified. The next step is that I ring Fri to check it went.",
+      "restoredDraft": "A home visit was conducted on 12/11 and was attended by Odalys Brennan-Webb and Ione. During the visit, the heating was on now and post was piled by the door. It was agreed that Odalys Brennan-Webb posts the benefits form Mon. There were no risks identified. The next step is that I ring Fri to check it went.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "handwriting-manifest",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: heating on now; post piled by the door\nAgreed: [Person 1] posts the benefits form Mon\nRisks: none\nNext steps: I ring Fri to check it went\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 12/11, [Person 1] and [Person 2] were present. It was observed that the heating was on now and post was piled by the door. It was agreed that {she:Person 1} posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "restoredDraft": "On 12/11, Odalys Brennan-Webb and Ione were present. It was observed that the heating was on now and post was piled by the door. It was agreed that she posts the benefits form Mon. There were no risks. The next steps are that I ring Fri to check it went.",
+      "sheetNotes": [],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 06/01\nPresent: [Person 1], [Person 2]\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rang twice, no answer; told by [Detail 1] that they had gone to [Detail 2] for a few days; Left a card; will pass on the new time; Left the leaflet about the bus pass with [Place 2]; Checked DOB [Date 1] before rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On visit date 06/01, [Person 1] and [Person 2] visited [Place 1] and observed the curtains shut. There were no agreements made and no risks identified. The worker rang twice with no answer, and was told by [Detail 1] that {they:Detail 1} had gone to [Detail 2] for a few days. A card was left, the new time will be passed on, the leaflet about the bus pass was left with [Place 2], and the date of birth [Date 1] was checked before rebooking.",
+      "restoredDraft": "On visit date 06/01, Beatrice Delacroix and Marta Adeyemi visited Flat 25, Eddlecombe House and observed the curtains shut. There were no agreements made and no risks identified. The worker rang twice with no answer, and was told by his old friend from the allotment that they had gone to a relative for a few days. A card was left, the new time will be passed on, the leaflet about the bus pass was left with the neighbour, and the date of birth 16/12/1998 was checked before rebooking.",
+      "sheetNotes": [
+        "No pronouns are on the list for his old friend from the allotment, so they/them was used."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 06/01\nPresent: [Person 1], [Person 2]\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rang twice, no answer; told by [Detail 1] that they had gone to [Detail 2] for a few days; Left a card; will pass on the new time; Left the leaflet about the bus pass with [Place 2]; Checked DOB [Date 1] before rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On visit date 06/01, [Person 1] and [Person 2] visited [Place 1], where the curtains were shut. There were no agreements made and no risks identified. During the next steps, the worker rang twice with no answer and was told by [Detail 1] that {they:Detail 1} had gone to [Detail 2] for a few days. The worker left a card, will pass on the new time, left the leaflet about the bus pass with [Place 2], and checked DOB [Date 1] before rebooking.",
+      "restoredDraft": "On visit date 06/01, Beatrice Delacroix and Marta Adeyemi visited Flat 25, Eddlecombe House, where the curtains were shut. There were no agreements made and no risks identified. During the next steps, the worker rang twice with no answer and was told by his old friend from the allotment that they had gone to a relative for a few days. The worker left a card, will pass on the new time, left the leaflet about the bus pass with the neighbour, and checked DOB 16/12/1998 before rebooking.",
+      "sheetNotes": [
+        "No pronouns are on the list for his old friend from the allotment, so they/them was used."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n001",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 06/01\nPresent: [Person 1], [Person 2]\nSeen: [Place 1], curtains shut\nAgreed: none\nRisks: none\nNext steps: Rang twice, no answer; told by [Detail 1] that they had gone to [Detail 2] for a few days; Left a card; will pass on the new time; Left the leaflet about the bus pass with [Place 2]; Checked DOB [Date 1] before rebooking\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On visit date 06/01, [Person 1] and [Person 2] visited [Place 1] where the curtains were shut. There were no agreements made and no risks identified. During the next steps, the worker rang twice with no answer and was told by [Detail 1] that {they:Detail 1} had gone to [Detail 2] for a few days. The worker left a card, will pass on the new time, left the leaflet about the bus pass with [Place 2], and checked DOB [Date 1] before rebooking.",
+      "restoredDraft": "On visit date 06/01, Beatrice Delacroix and Marta Adeyemi visited Flat 25, Eddlecombe House where the curtains were shut. There were no agreements made and no risks identified. During the next steps, the worker rang twice with no answer and was told by his old friend from the allotment that they had gone to a relative for a few days. The worker left a card, will pass on the new time, left the leaflet about the bus pass with the neighbour, and checked DOB 16/12/1998 before rebooking.",
+      "sheetNotes": [
+        "No pronouns are on the list for his old friend from the allotment, so they/them was used."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": null,
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 1,
+      "outgoingSent": "Visit date: 13/06\nPresent: [Person 1]\nSeen: none\nAgreed: none\nRisks: none\nNext steps: Missed appt; Left the leaflet about the bus pass with the neighbour; Went to [Place 1], curtains shut, left a card; Rebooked for Thursday; Text sent to confirm; Third missed appointment this year, noted for the team meeting\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 13/06, [Person 1] was present for a visit, but none were seen and none were agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. [She:Person 1] went to [Place 1], where the curtains were shut, and left a card. The appointment was rebooked for Thursday, and a text was sent to confirm. This is the third missed appointment this year, which was noted for the team meeting.",
+      "restoredDraft": "On 13/06, Eilidh was present for a visit, but none were seen and none were agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. They went to Flat 23, Eddlecombe House, where the curtains were shut, and left a card. The appointment was rebooked for Thursday, and a text was sent to confirm. This is the third missed appointment this year, which was noted for the team meeting.",
+      "sheetNotes": [
+        "No pronouns are on the list for Eilidh, so they/them was used."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "noted",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 2,
+      "outgoingSent": "Visit date: 13/06\nPresent: [Person 1]\nSeen: none\nAgreed: none\nRisks: none\nNext steps: Missed appt; Left the leaflet about the bus pass with the neighbour; Went to [Place 1], curtains shut, left a card; Rebooked for Thursday; Text sent to confirm; Third missed appointment this year, noted for the team meeting\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 13/06, [Person 1] was present. No one was seen and nothing was agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. [Person 1] went to [Place 1], the curtains were shut, and a card was left. It was rebooked for Thursday. A text was sent to confirm. This is the third missed appointment this year and it was noted for the team meeting.",
+      "restoredDraft": "On 13/06, Eilidh was present. No one was seen and nothing was agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. Eilidh went to Flat 23, Eddlecombe House, the curtains were shut, and a card was left. It was rebooked for Thursday. A text was sent to confirm. This is the third missed appointment this year and it was noted for the team meeting.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "noted",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    },
+    {
+      "fixtureId": "synthetic-n002",
+      "attempt": 3,
+      "outgoingSent": "Visit date: 13/06\nPresent: [Person 1]\nSeen: none\nAgreed: none\nRisks: none\nNext steps: Missed appt; Left the leaflet about the bus pass with the neighbour; Went to [Place 1], curtains shut, left a card; Rebooked for Thursday; Text sent to confirm; Third missed appointment this year, noted for the team meeting\n\nInstructions: Write a formal case note from the record above in plain prose sentences. Do not copy field labels such as Visit date:, Present:, Seen:, Agreed:, Risks:, or Next steps:. No Markdown: no asterisks, no # headings, no lists. Keep every date, number, and tag such as [Date 1] and [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a single token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}; never write hedged pronoun pairs joined by or, /, or and/or, and never repeat an action with an alternative pronoun clause. Treat 'I' or 'my' in the record as the worker, never as a tagged [Person N]. Use only facts in the record: never invent a speaker or owner, never add reporting verbs such as reported, stated, noted, said, explained, advised, mentioned, or confirmed unless stated, and never turn 'my list' or 'the form' into a tagged person's possessive or 'sent by' attribution.",
+      "rawCloudReply": "On 13/06, [Person 1] was present. No one was seen and nothing was agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. [Person 1] went to [Place 1], curtains shut, left a card. It was rebooked for Thursday. A text was sent to confirm. This is the third missed appointment this year, noted for the team meeting.",
+      "restoredDraft": "On 13/06, Eilidh was present. No one was seen and nothing was agreed. There were no risks. Regarding next steps, it was a missed appointment. The leaflet about the bus pass was left with the neighbour. Eilidh went to Flat 23, Eddlecombe House, curtains shut, left a card. It was rebooked for Thursday. A text was sent to confirm. This is the third missed appointment this year, noted for the team meeting.",
+      "sheetNotes": [
+        "The draft used no pronoun tokens, so no pronouns were changed."
+      ],
+      "finishedLabel": "in the cloud",
+      "n4CopiedLabelFail": false,
+      "n5AttributionHit": "noted",
+      "n6PronounHedgeHit": null,
+      "n7TokenLeakHit": null
+    }
+  ]
+}

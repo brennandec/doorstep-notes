@@ -1,0 +1,436 @@
+{
+  "date": "2026-11-13T08:10:27.740Z",
+  "browser": "Node v22.23.2 (no browser)",
+  "script": "scripts/measureExact.ts",
+  "scriptVersion": "1",
+  "setSize": 200,
+  "seed": 20261113,
+  "exact": {
+    "caught": 462,
+    "total": 1141,
+    "falseMasks": 17,
+    "byKind": {
+      "listedName": {
+        "caught": 462,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 0,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 0,
+        "total": 47
+      },
+      "place": {
+        "caught": 0,
+        "total": 235
+      },
+      "dob": {
+        "caught": 0,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 0,
+        "total": 129
+      }
+    }
+  },
+  "near": {
+    "caught": 47,
+    "total": 1141,
+    "falseMasks": 0,
+    "byKind": {
+      "listedName": {
+        "caught": 0,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 0,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 47,
+        "total": 47
+      },
+      "place": {
+        "caught": 0,
+        "total": 235
+      },
+      "dob": {
+        "caught": 0,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 0,
+        "total": 129
+      }
+    }
+  },
+  "exactAndNear": {
+    "caught": 509,
+    "total": 1141,
+    "falseMasks": 17,
+    "byKind": {
+      "listedName": {
+        "caught": 462,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 0,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 47,
+        "total": 47
+      },
+      "place": {
+        "caught": 0,
+        "total": 235
+      },
+      "dob": {
+        "caught": 0,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 0,
+        "total": 129
+      }
+    }
+  },
+  "device": {
+    "date": "2026-11-13T14:53:09.940Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "script": "scripts/measureDevice.ts",
+    "scriptVersion": "1",
+    "n": 200,
+    "attempted": 200,
+    "failedNotes": 0,
+    "caught": 927,
+    "total": 1141,
+    "falseMasks": 37,
+    "byKind": {
+      "listedName": {
+        "caught": 383,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 127,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 38,
+        "total": 47
+      },
+      "place": {
+        "caught": 216,
+        "total": 235
+      },
+      "dob": {
+        "caught": 130,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 33,
+        "total": 129
+      }
+    },
+    "notesPerMinute": 26.95,
+    "elapsedSeconds": 445,
+    "limitMinutes": 15,
+    "stoppedAtLimit": false,
+    "outsideRequests": 0
+  },
+  "merged": {
+    "date": "2026-11-13T14:53:09.940Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "script": "scripts/measureDevice.ts",
+    "scriptVersion": "1",
+    "n": 200,
+    "attempted": 200,
+    "failedNotes": 0,
+    "caught": 1015,
+    "total": 1141,
+    "falseMasks": 53,
+    "byKind": {
+      "listedName": {
+        "caught": 462,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 127,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 47,
+        "total": 47
+      },
+      "place": {
+        "caught": 216,
+        "total": 235
+      },
+      "dob": {
+        "caught": 130,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 33,
+        "total": 129
+      }
+    }
+  },
+  "exactOnDeviceNotes": {
+    "date": "2026-11-13T14:53:09.940Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "script": "scripts/measureDevice.ts",
+    "scriptVersion": "1",
+    "n": 200,
+    "attempted": 200,
+    "failedNotes": 0,
+    "caught": 462,
+    "total": 1141,
+    "falseMasks": 17,
+    "byKind": {
+      "listedName": {
+        "caught": 462,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 0,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 0,
+        "total": 47
+      },
+      "place": {
+        "caught": 0,
+        "total": 235
+      },
+      "dob": {
+        "caught": 0,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 0,
+        "total": 129
+      }
+    }
+  },
+  "exactAndNearOnDeviceNotes": {
+    "date": "2026-11-13T14:53:09.940Z",
+    "browser": "Google Chrome 157.0.8103.79",
+    "script": "scripts/measureDevice.ts",
+    "scriptVersion": "1",
+    "n": 200,
+    "attempted": 200,
+    "failedNotes": 0,
+    "caught": 509,
+    "total": 1141,
+    "falseMasks": 17,
+    "byKind": {
+      "listedName": {
+        "caught": 462,
+        "total": 462
+      },
+      "otherName": {
+        "caught": 0,
+        "total": 137
+      },
+      "nearVariant": {
+        "caught": 47,
+        "total": 47
+      },
+      "place": {
+        "caught": 0,
+        "total": 235
+      },
+      "dob": {
+        "caught": 0,
+        "total": 131
+      },
+      "phrase": {
+        "caught": 0,
+        "total": 129
+      }
+    }
+  },
+  "deviceRuns": [
+    {
+      "label": "first run, before the prompt change",
+      "n": 200,
+      "N": 200,
+      "date": "2026-11-13T08:09:30.363Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "caught": 945,
+      "total": 1141,
+      "falseMasks": 97,
+      "notesPerMinute": 25.28,
+      "byKind": {
+        "listedName": {
+          "caught": 383,
+          "total": 462
+        },
+        "otherName": {
+          "caught": 130,
+          "total": 137
+        },
+        "nearVariant": {
+          "caught": 38,
+          "total": 47
+        },
+        "place": {
+          "caught": 226,
+          "total": 235
+        },
+        "dob": {
+          "caught": 131,
+          "total": 131
+        },
+        "phrase": {
+          "caught": 37,
+          "total": 129
+        }
+      },
+      "merged": {
+        "caught": 1033,
+        "total": 1141,
+        "falseMasks": 113
+      }
+    },
+    {
+      "label": "second run, after the prompt change",
+      "n": 200,
+      "N": 200,
+      "date": "2026-11-13T09:14:33.426Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "caught": 927,
+      "total": 1141,
+      "falseMasks": 66,
+      "notesPerMinute": 26.51,
+      "elapsedSeconds": 453,
+      "stoppedAtLimit": false,
+      "byKind": {
+        "listedName": {
+          "caught": 379,
+          "total": 462
+        },
+        "otherName": {
+          "caught": 130,
+          "total": 137
+        },
+        "nearVariant": {
+          "caught": 38,
+          "total": 47
+        },
+        "place": {
+          "caught": 221,
+          "total": 235
+        },
+        "dob": {
+          "caught": 131,
+          "total": 131
+        },
+        "phrase": {
+          "caught": 28,
+          "total": 129
+        }
+      },
+      "merged": {
+        "caught": 1019,
+        "total": 1141,
+        "falseMasks": 82
+      }
+    },
+    {
+      "label": "third run, after the list of words not needed",
+      "n": 200,
+      "N": 200,
+      "date": "2026-11-13T13:41:21.516Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "caught": 946,
+      "total": 1141,
+      "falseMasks": 61,
+      "notesPerMinute": 26.14,
+      "elapsedSeconds": 459,
+      "stoppedAtLimit": false,
+      "byKind": {
+        "listedName": {
+          "caught": 384,
+          "total": 462
+        },
+        "otherName": {
+          "caught": 131,
+          "total": 137
+        },
+        "nearVariant": {
+          "caught": 39,
+          "total": 47
+        },
+        "place": {
+          "caught": 221,
+          "total": 235
+        },
+        "dob": {
+          "caught": 131,
+          "total": 131
+        },
+        "phrase": {
+          "caught": 40,
+          "total": 129
+        }
+      },
+      "merged": {
+        "caught": 1032,
+        "total": 1141,
+        "falseMasks": 77
+      }
+    },
+    {
+      "label": "fourth run, after the date-word rule",
+      "n": 200,
+      "N": 200,
+      "date": "2026-11-13T14:53:09.940Z",
+      "browser": "Google Chrome 157.0.8103.79",
+      "caught": 927,
+      "total": 1141,
+      "falseMasks": 37,
+      "notesPerMinute": 26.95,
+      "elapsedSeconds": 445,
+      "stoppedAtLimit": false,
+      "byKind": {
+        "listedName": {
+          "caught": 383,
+          "total": 462
+        },
+        "otherName": {
+          "caught": 127,
+          "total": 137
+        },
+        "nearVariant": {
+          "caught": 38,
+          "total": 47
+        },
+        "place": {
+          "caught": 216,
+          "total": 235
+        },
+        "dob": {
+          "caught": 130,
+          "total": 131
+        },
+        "phrase": {
+          "caught": 33,
+          "total": 129
+        }
+      },
+      "merged": {
+        "caught": 1015,
+        "total": 1141,
+        "falseMasks": 53
+      },
+      "stands": false,
+      "rule": "date-word rule (masking R19), taken out again because dates of birth found dropped below the third run"
+    }
+  ]
+}

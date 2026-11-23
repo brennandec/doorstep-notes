@@ -1,0 +1,480 @@
+{
+  "status": "fail",
+  "date": "2026-11-15",
+  "time": "2026-11-15T09:52:40.922Z",
+  "takeSuffix": "h36-4",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "effe787da70c2d892a24f69d4563655294c1f996",
+  "hostedOrigin": "https://doorstep-notes.web.app",
+  "check": "H36b F: hosted page walk at 1920x1080 with the built-in model, real cloud, and reCAPTCHA Enterprise App Check. Invented people only.",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoSize": {
+    "width": 1920,
+    "height": 1080
+  },
+  "problems": [
+    "fail-fast: A6 FailFast: Tomas sentence holds female pronoun: \"Tomas Brandvold, a neighbour who is also on the caseload list, offered to help her with the form.\"",
+    "generateContent count 1 is not 3 or 4."
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "label": "Opening: hosted page ready and connected",
+      "time": "2026-11-15T09:52:58.202Z",
+      "secondsFromStart": 4,
+      "inferenceSource": "none",
+      "shown": {
+        "boundary": "this device the cloud",
+        "zones": [
+          "Your note",
+          "What leaves",
+          "Finished note"
+        ],
+        "statusBar": {
+          "network": "online",
+          "deviceModel": "ready",
+          "cloud": "connected"
+        }
+      }
+    },
+    {
+      "step": 2,
+      "label": "Shot A: offline invented visit, record, and proposed chips",
+      "time": "2026-11-15T09:53:18.774Z",
+      "secondsFromStart": 24.5,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "recordLabel": "on this device",
+        "chipsLabel": "on this device",
+        "shotAPath": "added-to-seen",
+        "addedLines": [
+          "Maria missed the benefits form deadline last wk, letter on the table.",
+          "DOB on form 3/3/87."
+        ],
+        "network": "offline",
+        "chipsShown": [
+          "Bea suggested",
+          "3/3/87 suggested",
+          "26/11 suggested"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "label": "Shot A: chips accepted and offline Draft completed on this device",
+      "time": "2026-11-15T09:53:34.297Z",
+      "secondsFromStart": 40.1,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "finishedLabel": "on this device",
+        "whatLeavesHoldsBea": false,
+        "whatLeavesHoldsDob": false
+      }
+    },
+    {
+      "step": 4,
+      "label": "Shot B: scroll top offline honesty, then network online and cloud connected",
+      "time": "2026-11-15T09:53:38.512Z",
+      "secondsFromStart": 44.3,
+      "inferenceSource": "none",
+      "shown": {
+        "network": "online",
+        "cloud": "connected"
+      }
+    },
+    {
+      "step": 5,
+      "label": "Shot C.1: online Draft, rewrite shorter PREFER_ON_DEVICE on this device",
+      "time": "2026-11-15T09:53:43.002Z",
+      "secondsFromStart": 48.8,
+      "inferenceSource": "ON_DEVICE",
+      "shown": {
+        "chosenChars": 73,
+        "rewriteLabel": "on this device"
+      }
+    },
+    {
+      "step": 6,
+      "label": "Shot C.2 (D5): Try to send a listed name blocked, chip pressed, Send back",
+      "time": "2026-11-15T09:53:47.595Z",
+      "secondsFromStart": 53.3,
+      "inferenceSource": "none",
+      "shown": {
+        "lineText": "Not sent: 1 listed name is in the text. Mask it, then send. Maria Okonkwo-Reyes not masked",
+        "chipNames": [
+          "Maria Okonkwo-Reyes"
+        ],
+        "goneSeconds": 0
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "k": 1,
+      "startS": 6,
+      "endS": 40.1,
+      "durationS": 34.1,
+      "recordText": "Record on this device Masking Mask Date: 12/11 Edit read as 12 November 2026, assumed Confirm Correct Present: Maria O-R, Bea Edit Seen: Mould in back bedroom again, worse by the window.; Landlord not replied to 2 emails.; Letter on the table.; Maria missed the benefits form deadline last wk, letter on the table.; DOB on form 3/3/87. Edit Agreed: I ring landlord Mon.; Maria posts form Fri.; Tomas Brandvald (neighbour, also on my list) offered to help with the form. Edit Risks: rent arrears if form is late. Edit Next steps: revisit 26/11. Edit",
+      "maskRaw": "Visit date: 12/11 Present: [Person 1] on your list , Bea suggested Seen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; Letter on the table; [Person 1] on your list missed the benefits form deadline last wk, letter on the table; DOB on form 3/3/87 suggested . Agreed: I ring landlord Mon; [Person 1] on your list posts form Fri; [Person 3] near a listed name (neighbour, also on my list) offered to help with the form. Risks: rent arrears if form is late. Next steps: revisit 26/11 suggested .",
+      "seenCase": "present-without-dob",
+      "recordHasDob": true,
+      "recordHasDobAfterRecovery": true,
+      "recordHasDobFrom": "recordText",
+      "shotAPath": "added-to-seen",
+      "addedLines": [
+        "Maria missed the benefits form deadline last wk, letter on the table.",
+        "DOB on form 3/3/87."
+      ],
+      "proposed": [
+        "Bea suggested",
+        "3/3/87 suggested",
+        "26/11 suggested"
+      ],
+      "modelCandidates": [
+        "Maria O-R",
+        "Maria",
+        "Bea",
+        "Tomas Brandvald",
+        "Mon",
+        "Fri",
+        "26/11",
+        "3/3/87"
+      ],
+      "beaByModel": true,
+      "dobByModel": true,
+      "outcome": "success",
+      "recordLabel": "on this device",
+      "chipsLabel": "on this device",
+      "networkOnAtStart": "online",
+      "structureReply": "{\"visitDate\": \"12/11\", \"present\": [{\"label\": \"Maria O-R\", \"role\": \"client\"}, {\"label\": \"Bea\", \"role\": \"other\"}], \"seen\": [\"Mould in back bedroom again, worse by the window.\", \"Landlord not replied to 2 emails.\", \"Letter on the table.\"], \"agreed\": [\"I ring landlord Mon.\", \"Maria posts form Fri.\", \"Tomas Brandvald (neighbour, also on my list) offered to help with the form.\"], \"risks\": [\"rent arrears if form is late.\"], \"nextSteps\": [\"revisit 26/11.\"]}"
+    }
+  ],
+  "filmAttempt": {
+    "k": 1,
+    "K": 1,
+    "startS": 6,
+    "endS": 40.1
+  },
+  "shotAPath": "added-to-seen",
+  "addedLines": [
+    "Maria missed the benefits form deadline last wk, letter on the table.",
+    "DOB on form 3/3/87."
+  ],
+  "buildMode": {
+    "header": "The device half runs in Google Chrome's built-in model. The cloud half is connected: drafts and rewrites use gemini-3.5-flash-lite, and the second reader uses gemini-3.8-flash.",
+    "network": "online",
+    "device": "ready",
+    "cloud": "connected"
+  },
+  "served": {
+    "indexHtmlSha256": "e979c1f5c1307b18d5f2f1f1dbf94d3bf611443586ca859c18e8b9ca89ff50a9",
+    "swJsSha256": "7435c5c7944b2df3ace7b16755ae3801591a95cf4817e2b3d9b252b05e7758ce",
+    "configServed": true,
+    "siteKeyServed": true
+  },
+  "debugTokenGlobal": "undefined",
+  "serviceWorker": {
+    "registered": true,
+    "active": true,
+    "cachedFiles": 11,
+    "note": "registered",
+    "build": "production"
+  },
+  "appCheck": {
+    "provider": "reCAPTCHA Enterprise",
+    "scriptLoaded": true,
+    "exchanges": [
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 993
+      },
+      {
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "status": 200,
+        "responseBodyBytes": 992
+      }
+    ]
+  },
+  "offlineDraft": {
+    "finishedLabel": "on this device",
+    "outgoingClean": true,
+    "whatLeavesChars": 811
+  },
+  "rewriteStep": {
+    "chosenSentence": "[Person 1] missed the benefits form deadline last wk, letter on the table",
+    "rewriteLabel": "on this device",
+    "generateContentAfter": 0
+  },
+  "step4": {
+    "lineText": "Not sent: 1 listed name is in the text. Mask it, then send. Maria Okonkwo-Reyes not masked",
+    "chipCount": 1,
+    "chipLabel": "Maria Okonkwo-Reyes",
+    "outgoingAtPress": "Visit date: 12/11\nPresent: Maria O-R, [Person 2]\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; Letter on the table; [Person 1] missed benefits form deadline; letter present; DOB on form [Date 1].\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit [Place 1].\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record.",
+    "goneSeconds": 0,
+    "sendEnabledWhileBlocked": false,
+    "sendEnabledAfter": true,
+    "outgoingAfter": "Visit date: 12/11\nPresent: [Person 1], [Person 2]\nSeen: Mould in back bedroom again, worse by the window; Landlord not replied to 2 emails; Letter on the table; [Person 1] missed benefits form deadline; letter present; DOB on form [Date 1].\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 3] (neighbour, also on my list) offered to help with the form.\nRisks: rent arrears if form is late.\nNext steps: revisit [Place 1].\n\nInstructions: Write a formal case note from the record above, in plain sentences. No Markdown: no asterisks, no # headings, no lists. Keep every tag such as [Person 1] exactly as written. For a pronoun that stands for a tagged person, write a token in curly braces, such as {she:Person 1}, {him:Person 1} or {their:Person 1}. Use only what is in the record."
+  },
+  "finishedText": "Visit date: 12/11. Present: Maria Okonkwo-Reyes, Bea. Maria Okonkwo-Reyes and Bea observed mould in the back bedroom again, noting that it is worse by the window. The landlord has not replied to two emails sent by her. A letter was present on the table. Maria Okonkwo-Reyes missed a benefits form deadline. A letter regarding this was present, showing the date of birth on the form as 3/3/87. It was agreed that Bea will ring the landlord on Monday. It was agreed that Maria Okonkwo-Reyes will post the form on Friday. Tomas Brandvold, a neighbour who is also on the caseload list, offered to help her with the form. Risks identified include potential rent arrears if the form is late. Next steps are to revisit 26/11.",
+  "pronounDoubles": [],
+  "cloudReplyTokensNamingThePreviousTag": [
+    {
+      "step": "draft",
+      "total": 0,
+      "byRole": {
+        "he": 0,
+        "she": 0,
+        "they": 0,
+        "him": 0,
+        "her": 0,
+        "them": 0,
+        "his": 0,
+        "hers": 0,
+        "their": 0
+      }
+    }
+  ],
+  "pass2Hold": null,
+  "readerType": null,
+  "ledgerType": null,
+  "pass2Descriptions": [],
+  "guessOfThatChip": null,
+  "pressedGuessRead": null,
+  "pass2SameKind": [],
+  "figures": {
+    "hash": null,
+    "byteCounts": [],
+    "pass1": null,
+    "pass2": null,
+    "egressCard": null
+  },
+  "cloudCalls": {
+    "generateContent": 1,
+    "cap": 4,
+    "appCheckExchanges": 2,
+    "countAtSendPress": 0,
+    "retryReason": ""
+  },
+  "videoCheck": {
+    "frames": [
+      {
+        "atS": 1,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 30.5,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      },
+      {
+        "atS": 60.6,
+        "width": 1920,
+        "height": 1080,
+        "rightGreyPct": 0,
+        "bottomGreyPct": 0,
+        "fills": true
+      }
+    ],
+    "fills": true,
+    "checkerAborted": 0,
+    "durationS": 60.9
+  },
+  "videos": [
+    {
+      "path": "<local>/doorstep-film-h/raw-h36-4/page@6ae61a442f33d2cbda71af12a00a8501.webm",
+      "sha256": "706f0717e7e15530a10094aec4c8cba2668ee24b1715698e3266bc5272328c7a",
+      "bytes": 12522953
+    }
+  ],
+  "instrumentation": {
+    "outputLogger": "a LanguageModel output logger installed as an init script. It logs each session.prompt output and changes nothing.",
+    "networkOff": "network off = Playwright context.setOffline (emulated) after preflight + SW ready/controller",
+    "readerZoom": {
+      "method": "an injected style .reader-panel { zoom: N }",
+      "value": null
+    },
+    "ledgerZoom": {
+      "method": "an injected style [data-details=\"ledger\"] { zoom: N }",
+      "value": null
+    },
+    "launchSequence": "preflight and SW cache warm-up on initial page, then walk page = context.newPage(), initial closed and its video deleted."
+  },
+  "headed": false,
+  "offlineOutsideRequests": 0,
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/enterprise/webworker.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 10499,
+        "sha256": "adb6db8ea024c3a6def96a3dee5192f18f6a2ed89e56550ee5a576899ea5c0ad",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2373,
+        "sha256": "c4f6e5eef95edc1985d4ed328ca0693aba6c3b674037c983280a938c78ba7590",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1943,
+        "sha256": "9dc0c77013e39b636557ae88e0d86ea70017a927543150bd8f4a68322598d06b",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/reload",
+        "bodyBytes": 11830,
+        "sha256": "ff618688d993e92ed6b971382cf595be3ae6898f7073dd961c627fc396e15e4a",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeRecaptchaEnterpriseToken",
+        "bodyBytes": 2477,
+        "sha256": "d3eabdda3d2ec6e3afa5625c3d3ce2f3aaddebee9fa094ef8615f6b2aaa65504",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.google.com",
+        "method": "POST",
+        "path": "/recaptcha/enterprise/clr",
+        "bodyBytes": 1908,
+        "sha256": "f63a6851fb9c25ff3330771a3a804509c22dbb10806a40f91ef437f8ceae162b",
+        "status": 200,
+        "passedBy": "reCAPTCHA call"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 895,
+        "sha256": "53bd7810a068387997ef1b6c9628d0a47c06362287872956098b659da39dbbe7",
+        "status": 200,
+        "passedBy": "host"
+      }
+    ],
+    "sameOriginRequests": 28,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 1,
+    "appCheckExchanges": 2,
+    "stoppedAtCap": false
+  },
+  "leakChecks": [
+    {
+      "step": 6,
+      "result": {
+        "listedNamesFound": [],
+        "otherNamesFound": [],
+        "namePartsFound": [],
+        "maskedOriginalsFound": [],
+        "noteLinesFound": [],
+        "noteLineRemainders": [],
+        "imageBytesFound": false,
+        "maskedOriginalsChecked": [
+          "Bea",
+          "3/3/87",
+          "14 Alder Court",
+          "Alder Court",
+          "Brandvald",
+          "Maria O-R"
+        ]
+      }
+    }
+  ],
+  "walkDurationS": 59.4,
+  "elapsedS": 73,
+  "servedBundle": {
+    "folder": "hosted",
+    "mainChunk": "assets/index-Dev5jFo_.js",
+    "buildTime": "2026-11-15T08:50:11.000Z"
+  }
+}

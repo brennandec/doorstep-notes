@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15T16:37:41.377Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "noticeShown": "This project runs on the paid tier of the Gemini Developer API, through Firebase AI Logic. Google says it does not use prompts or responses on the paid tier to improve its products. It keeps them for a limited period to detect misuse. This demo uses invented people only.",
+  "what": "One real Shorter press on one masked sentence of the invented visit, answered by the cloud model through the page. Invented people only.",
+  "job": "rewrite (Shorter)",
+  "mode": "PREFER_ON_DEVICE, no device model in this browser, so the cloud answers",
+  "status": 200,
+  "callStatuses": [
+    200
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "source": "in the cloud",
+  "lineShown": null,
+  "sentenceSent": "[Person 2] offered to help with the form.",
+  "sentenceSentChars": 41,
+  "sentenceReturned": "[Person 2] offered help with the form.",
+  "sentenceReturnedChars": 38,
+  "sentenceShown": "[Person 2] offered help with the form.",
+  "sentenceShownChars": 38,
+  "observation": "The sentence shown has fewer characters than the sentence sent."
+}

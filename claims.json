@@ -1,0 +1,841 @@
+{
+  "entries": [
+    {
+      "value": "0",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hybrid-run-2026-11-14-h20.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "590adcd5aa43933108e49c363b6d677c40f51e3077e31127207cc8bc784b0f44",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "1",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "01",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "1.65.0",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "2",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "02",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-d02.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "f740bc88ab469e4dd0b7cc809d81daad353ca42327c1096d724d375a05864f0a",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "3",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "03",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/screens.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "5805990d0076cb0dc93dd8a3702f6154e89769da272dac87102a17548ec46269",
+      "browser": "none"
+    },
+    {
+      "value": "3.5",
+      "unit": "version",
+      "n": 1,
+      "runFile": "results/hybrid-run-2026-11-14-h20.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "590adcd5aa43933108e49c363b6d677c40f51e3077e31127207cc8bc784b0f44",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "3.8",
+      "unit": "version",
+      "n": 1,
+      "runFile": "results/hybrid-run-2026-11-14-h20.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "590adcd5aa43933108e49c363b6d677c40f51e3077e31127207cc8bc784b0f44",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "4",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "4.0",
+      "unit": "GB",
+      "n": null,
+      "runFile": "src/constants.ts",
+      "date": "2026-11-21",
+      "sourceTreeHash": "fdc8b8e0ca2cf6ed898dec7e44e22d6b5054593f6875ccf9baeda5045f176b20",
+      "browser": "none"
+    },
+    {
+      "value": "04",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/screens.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "5805990d0076cb0dc93dd8a3702f6154e89769da272dac87102a17548ec46269",
+      "browser": "none"
+    },
+    {
+      "value": "05",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hybrid-run-2026-11-14-h20.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "590adcd5aa43933108e49c363b6d677c40f51e3077e31127207cc8bc784b0f44",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "5",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "5.1.0",
+      "unit": "version",
+      "n": null,
+      "runFile": "package.json",
+      "date": "2026-11-21",
+      "sourceTreeHash": "88568ab88443332e6ffdcace0aec3608946ea0aedd683722c7eb851a56f7fd8b",
+      "browser": "none"
+    },
+    {
+      "value": "6",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "7",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "07",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/screens.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "5805990d0076cb0dc93dd8a3702f6154e89769da272dac87102a17548ec46269",
+      "browser": "none"
+    },
+    {
+      "value": "7.0.2",
+      "unit": "version",
+      "n": null,
+      "runFile": "package.json",
+      "date": "2026-11-21",
+      "sourceTreeHash": "88568ab88443332e6ffdcace0aec3608946ea0aedd683722c7eb851a56f7fd8b",
+      "browser": "none"
+    },
+    {
+      "value": "8",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "08",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "8.3.8",
+      "unit": "version",
+      "n": null,
+      "runFile": "package.json",
+      "date": "2026-11-21",
+      "sourceTreeHash": "88568ab88443332e6ffdcace0aec3608946ea0aedd683722c7eb851a56f7fd8b",
+      "browser": "none"
+    },
+    {
+      "value": "09",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/screens.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "5805990d0076cb0dc93dd8a3702f6154e89769da272dac87102a17548ec46269",
+      "browser": "none"
+    },
+    {
+      "value": "10",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-d02.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "f740bc88ab469e4dd0b7cc809d81daad353ca42327c1096d724d375a05864f0a",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "11",
+      "unit": "line",
+      "n": null,
+      "runFile": "src/firebase/deviceInit.ts",
+      "date": "2026-11-20",
+      "sourceTreeHash": "cca5a2d3658f88a4f96c0ae1f54735edfcead5de80108198010cf064c3efb242",
+      "browser": "none"
+    },
+    {
+      "value": "12",
+      "unit": "line",
+      "n": null,
+      "runFile": "src/firebase/proposeSdk.ts",
+      "date": "2026-11-20",
+      "sourceTreeHash": "84c812b33525f08661da6615be20673d9b571047b25f1db4251e81db73fbc042",
+      "browser": "none"
+    },
+    {
+      "value": "13",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "13.4.0",
+      "unit": "version",
+      "n": null,
+      "runFile": "package.json",
+      "date": "2026-11-21",
+      "sourceTreeHash": "88568ab88443332e6ffdcace0aec3608946ea0aedd683722c7eb851a56f7fd8b",
+      "browser": "none"
+    },
+    {
+      "value": "14",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "15",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "16",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "17",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/second-reader-loop-2026-11-14.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "3f3f908394bfe37a6fab54ecf41bef03dd73fa70be159235a21d385c67939990",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "18",
+      "unit": "line",
+      "n": null,
+      "runFile": "src/firebase/rewriteSdk.ts",
+      "date": "2026-11-20",
+      "sourceTreeHash": "1000c7b9009b80688230b3ee9a8412e4f4d2257eb45c4a8221efb61f090f1cc6",
+      "browser": "none"
+    },
+    {
+      "value": "19",
+      "unit": "line",
+      "n": null,
+      "runFile": "src/firebase/draftSdk.ts",
+      "date": "2026-11-20",
+      "sourceTreeHash": "f909b1c93feec5f39dd6d5be614f6ed458a471f96a6cdba58160cb6950dc2d16",
+      "browser": "none"
+    },
+    {
+      "value": "20",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "21",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/ds-r8-return.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "de0bb0efdb22dc94fa05180148f2ea1fc2145d4ce177e2e86567968cc79e9880",
+      "browser": "none"
+    },
+    {
+      "value": "21.0.4",
+      "unit": "version",
+      "n": null,
+      "runFile": "package.json",
+      "date": "2026-11-21",
+      "sourceTreeHash": "88568ab88443332e6ffdcace0aec3608946ea0aedd683722c7eb851a56f7fd8b",
+      "browser": "none"
+    },
+    {
+      "value": "22",
+      "unit": "hash-prefix",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "22.23.2",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "23",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/ds-r8-return.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "de0bb0efdb22dc94fa05180148f2ea1fc2145d4ce177e2e86567968cc79e9880",
+      "browser": "none"
+    },
+    {
+      "value": "31.5",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "34",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hosted-run-2026-11-15-4.json",
+      "date": "2026-11-15",
+      "sourceTreeHash": "5a2115d11e9614a056eb54d7fd131eba52df62ad9757280502cdc92530db3061",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "36",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hosted-run-2026-11-15-8.json",
+      "date": "2026-11-15",
+      "sourceTreeHash": "32e0e4a5d1009314e93a178463a3e57ab19996a531b8efc555f71769bfa22d2a",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "37",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22f.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "2d13c645a0f48676599ef24d25de4d4f711cb2b7abda52bee44c114a0bfed044",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "37.875",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/ds-r8-return.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "de0bb0efdb22dc94fa05180148f2ea1fc2145d4ce177e2e86567968cc79e9880",
+      "browser": "none"
+    },
+    {
+      "value": "38",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "40",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/second-reader-loop-2026-11-14.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "3f3f908394bfe37a6fab54ecf41bef03dd73fa70be159235a21d385c67939990",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "41",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hosted-run-2026-11-15-8.json",
+      "date": "2026-11-15",
+      "sourceTreeHash": "32e0e4a5d1009314e93a178463a3e57ab19996a531b8efc555f71769bfa22d2a",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "47",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "55.762",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/e2e-cloud-on-2026-11-21-h23.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "ae8d23f25c5d876935901cd79ac0263e4e1779be8445ed8a5a981b9f1f0c0d21",
+      "browser": "Chromium (Playwright bundled, headless)"
+    },
+    {
+      "value": "60",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "61",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "66",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22c.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "5e5cf31f3cb41ce68903f2e7142bfcc3dfc52fc5c5d78fb7f5e2a6812c5a6263",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "77",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "97",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "129",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "130",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "131",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "137",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "157.0.8103.79",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "158.0.8127.18",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "193",
+      "unit": "line",
+      "n": null,
+      "runFile": "src/firebase/cloudService.ts",
+      "date": "2026-11-23",
+      "sourceTreeHash": "10367f471f755ed8fadda7b2dd340362dbdcbc081c270572cd7d11610f276a3c",
+      "browser": "none"
+    },
+    {
+      "value": "200",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/hybrid-run-2026-11-14-h20.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "590adcd5aa43933108e49c363b6d677c40f51e3077e31127207cc8bc784b0f44",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "221",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "235",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "256",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "288",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22c.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "5e5cf31f3cb41ce68903f2e7142bfcc3dfc52fc5c5d78fb7f5e2a6812c5a6263",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "400",
+      "unit": "px",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-g03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "bdc09de2d99e50d325ed168edd4ea319eda836dd4201cfee313cf8ddb80c3d20",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "462",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "509",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "927",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "945",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "946",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "1024",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/screens.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "5805990d0076cb0dc93dd8a3702f6154e89769da272dac87102a17548ec46269",
+      "browser": "none"
+    },
+    {
+      "value": "1032",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "1080",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "1100",
+      "unit": "px",
+      "n": null,
+      "runFile": "src/constants.ts",
+      "date": "2026-11-21",
+      "sourceTreeHash": "fdc8b8e0ca2cf6ed898dec7e44e22d6b5054593f6875ccf9baeda5045f176b20",
+      "browser": "none"
+    },
+    {
+      "value": "1141",
+      "unit": "count",
+      "n": 200,
+      "runFile": "results/catch-rate.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "ce0978ff153a096c1b2f97c45b8beb31a9c0d413eae01127328126f8cbe34542",
+      "browser": "Node v22.23.2 (no browser)"
+    },
+    {
+      "value": "1357",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/second-reader-loop-2026-11-14.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "3f3f908394bfe37a6fab54ecf41bef03dd73fa70be159235a21d385c67939990",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "1379",
+      "unit": "bytes",
+      "n": 20,
+      "runFile": "results/wo09-real-2026-11-22-h23.json",
+      "date": "2026-11-22",
+      "sourceTreeHash": "bdc9820427502e9d1d4f6ed8a15b01c8e953e2389d9a4197a7ca2cad9fc86224",
+      "browser": "Google Chrome for Testing 158.0.8127.18 (Playwright 1.65.0, headless, 1440x900)"
+    },
+    {
+      "value": "1411",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/second-reader-real-service-2026-11-15-h20-4.json",
+      "date": "2026-11-15",
+      "sourceTreeHash": "9a9e278ae2c2aeeffe2b953ab55fa2f8886c36c53a52041685914d03e5013153",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "1446",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22c.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "5e5cf31f3cb41ce68903f2e7142bfcc3dfc52fc5c5d78fb7f5e2a6812c5a6263",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "1920",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22d.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "daeedfd0dd2b31481a0f73a0c1775c0470a92804854eca602535ef79b08a9ff0",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "2024",
+      "unit": "citation",
+      "n": null,
+      "runFile": "docs/sources.md",
+      "date": "2026-11-20",
+      "sourceTreeHash": "6f5b49869af74cb5b7b159ee0c01aeb012436e849ca25c57b2d2075a6f3c5d3a",
+      "browser": "none"
+    },
+    {
+      "value": "2026",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/real-browser-2026-11-13-e03.json",
+      "date": "2026-11-13",
+      "sourceTreeHash": "abb31b4ac5559a5619bc282aec66ac9df40783e205739cd6941d7381ad868109",
+      "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)"
+    },
+    {
+      "value": "5246",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/film-run-2026-11-14-h22c.json",
+      "date": "2026-11-14",
+      "sourceTreeHash": "5e5cf31f3cb41ce68903f2e7142bfcc3dfc52fc5c5d78fb7f5e2a6812c5a6263",
+      "browser": "Google Chrome 157.0.8103.79"
+    },
+    {
+      "value": "9216",
+      "unit": "count",
+      "n": null,
+      "runFile": "results/device-model-probe-2026-11-13-raw-api.json",
+      "date": "2026-11-20",
+      "sourceTreeHash": "3f69064d8a895466659260df1c0e09317e3bfba6545a536f2508f7d76f364774",
+      "browser": "none"
+    },
+    {
+      "value": "20240924",
+      "unit": "citation",
+      "n": null,
+      "runFile": "docs/sources.md",
+      "date": "2026-11-20",
+      "sourceTreeHash": "6f5b49869af74cb5b7b159ee0c01aeb012436e849ca25c57b2d2075a6f3c5d3a",
+      "browser": "none"
+    },
+    {
+      "value": "27.815",
+      "unit": "clock",
+      "n": 12,
+      "runFile": "results/wo12-device-drafts-2026-11-22-r4.json",
+      "date": "2026-11-22",
+      "sourceTreeHash": "5211f6a0c0491f3945f484ae490b41e56b51570c555a999e849982f83a1e3a73",
+      "browser": "Google Chrome 158.0.8127.36"
+    },
+    {
+      "value": "57.268",
+      "unit": "clock",
+      "n": 12,
+      "runFile": "results/wo12-cloud-drafts-2026-11-22-r2.json",
+      "date": "2026-11-22",
+      "sourceTreeHash": "23bf52f5d023cc507a16074fbe73cfc5b86d3972fbbcab47e05b31d3743d7c06",
+      "browser": "Google Chrome 158.0.8127.36"
+    },
+    {
+      "value": "263",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/unit-clean-2026-11-23.json",
+      "date": "2026-11-23",
+      "sourceTreeHash": "a450c80ef316be2f19cb3c91478f59baaf4fd1be46970dcd68e828288c26b447",
+      "browser": "Vitest"
+    },
+    {
+      "value": "2975",
+      "unit": "count",
+      "n": 1,
+      "runFile": "results/unit-clean-2026-11-23.json",
+      "date": "2026-11-23",
+      "sourceTreeHash": "a450c80ef316be2f19cb3c91478f59baaf4fd1be46970dcd68e828288c26b447",
+      "browser": "Vitest"
+    }
+  ]
+}

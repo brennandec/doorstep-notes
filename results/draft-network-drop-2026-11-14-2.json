@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-14",
+  "time": "2026-11-14T13:25:31.394Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "machine": "darwin 27.2.0 (arm64), Apple M3 Ultra, 28 cores, 256 GB memory",
+  "buildCommit": "dcdadeb",
+  "status": "fail",
+  "what": "Online, the generateContent request of the draft is aborted by page.route (a simulated drop, route.abort), and the SDK's own fallback writes the note on this device. Invented people only.",
+  "simulatedDrop": "route.abort on the generateContent request; not a real network cut",
+  "modeAskedOfTheSdk": "PREFER_IN_CLOUD",
+  "inferenceSource": "ON_DEVICE",
+  "label": "on this device",
+  "textChars": 660,
+  "requestRow": "sent to firebasevertexai.googleapis.com · no answer, drafted on this device",
+  "statuses": [
+    {
+      "host": "www.google.com",
+      "method": "GET",
+      "path": "/recaptcha/api.js",
+      "status": 200
+    },
+    {
+      "host": "content-firebaseappcheck.googleapis.com",
+      "method": "POST",
+      "path": "/v1/projects/<project>/apps/<app>:exchangeDebugToken",
+      "status": 200
+    },
+    {
+      "host": "www.gstatic.com",
+      "method": "GET",
+      "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+      "status": 200
+    },
+    {
+      "host": "www.google.com",
+      "method": "GET",
+      "path": "/recaptcha/api2/anchor",
+      "status": 200
+    },
+    {
+      "host": "firebasevertexai.googleapis.com",
+      "method": "POST",
+      "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+      "status": "no answer"
+    },
+    {
+      "host": "www.gstatic.com",
+      "method": "GET",
+      "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+      "status": 200
+    },
+    {
+      "host": "www.gstatic.com",
+      "method": "GET",
+      "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+      "status": 200
+    }
+  ],
+  "problems": [
+    "the fallback draft holds a tag"
+  ],
+  "observed": {
+    "recordLabel": "on this device",
+    "secondsFromSendToTheNote": 6.4,
+    "label": "on this device",
+    "textChars": 660,
+    "card": {
+      "verdict": "No listed name left this device: 0 of 20.",
+      "rows": {
+        "Masked values in the text sent": "0 of 2",
+        "Single name parts of 3 letters or more": "checked, none found",
+        "The request": "sent to firebasevertexai.googleapis.com · no answer, drafted on this device"
+      },
+      "kind": "pass"
+    },
+    "requestRow": "sent to firebasevertexai.googleapis.com · no answer, drafted on this device",
+    "leakCheck": {
+      "listedNamesFound": [],
+      "otherNamesFound": [],
+      "namePartsFound": [],
+      "maskedOriginalsFound": [],
+      "noteLinesFound": [],
+      "noteLineRemainders": [
+        {
+          "line": "my list) offered to help with the form.",
+          "maskedContext": "enefits form deadline last wk, letter on the table; DOB on form 3/3/87.\\nAgreed: I ring landlord Mon; [Person 1] posts form Fri; [Person 4] (neighbour, also on my list) offered to help with the form.\\nRisks: rent arrears if form is late.\\nNext steps: revisit 26/11.\\n\\nInstructions: Write a formal case note from the record above, in plain sentences. No Markd"
+        }
+      ],
+      "imageBytesFound": false,
+      "maskedOriginalsChecked": [
+        "14 Alder Court",
+        "Alder Court",
+        "Brandvald",
+        "Maria O-R"
+      ]
+    }
+  },
+  "requests": {
+    "outside": [
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "content-firebaseappcheck.googleapis.com",
+        "method": "POST",
+        "path": "/v1/projects/<project>/apps/<app>:exchangeDebugToken",
+        "bodyBytes": 54,
+        "sha256": "a51235b9ee700675c4df311f2bef9f2b13c9117fbf3259c44bb5d01f4f8a57dc",
+        "status": 200,
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.google.com",
+        "method": "GET",
+        "path": "/recaptcha/api2/anchor",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "firebasevertexai.googleapis.com",
+        "method": "POST",
+        "path": "/v1beta/projects/<project>/models/gemini-3.5-flash-lite:generateContent",
+        "bodyBytes": 878,
+        "sha256": "437989b8538a55597de262d704f4f62636d4df2b6a67b82385ee72405642eeb5",
+        "status": "no answer",
+        "passedBy": "host"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/styles__ltr.css",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      },
+      {
+        "host": "www.gstatic.com",
+        "method": "GET",
+        "path": "/recaptcha/releases/4i3aN5wAweL7i3ADI7BSX4B-/recaptcha__en.js",
+        "bodyBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 200,
+        "passedBy": "App Check script"
+      }
+    ],
+    "sameOriginRequests": 21,
+    "sameOriginWithBody": 0,
+    "generateContentCalls": 1,
+    "appCheckExchanges": 1,
+    "stoppedAtCap": false
+  },
+  "cloudCalls": {
+    "generateContentAttempts": 1,
+    "cutByTheTest": 1,
+    "appCheckExchanges": 1
+  }
+}

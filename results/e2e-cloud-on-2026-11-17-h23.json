@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-17T00:01:30.218Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "script": "tests/e2e/fixtures/cloudCalls.ts",
+  "scriptVersion": "1",
+  "what": "Real calls to the cloud model made by the bundled real-browser specs, counted in this file, on the day in date, with the cloud switch on. Invented people only. A spec that tests the stand-in sets the stand-in and makes none.",
+  "budget": 40,
+  "capInForce": "CLOUD_CALL_BUDGET (40)",
+  "total": 32,
+  "appCheckExchanges": 12,
+  "stoppedAtBudget": false,
+  "specs": {
+    "scripts/measureN3CloudDrafts.ts": {
+      "calls": 12,
+      "tests": {
+        "Order H42c N3 pre-deploy measurement (12 cloud drafts)": 12
+      }
+    },
+    "cloudDraft.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "One real cloud draft: status 200, not the test double": 1
+      }
+    },
+    "secondReaderLoop.spec.ts": {
+      "calls": 2,
+      "tests": {
+        "Second reader loop against the real service: a guess is gone after she masks its words": 2
+      }
+    },
+    "secondReaderReal.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "Second reader against the real service: bytes left, status 200, in the cloud, shown on the screen": 1
+      }
+    },
+    "shorterReal.spec.ts": {
+      "calls": 1,
+      "tests": {
+        "Shorter against the real service: status 200, in the cloud, fewer characters": 1
+      }
+    },
+    "filmRun.spec.ts": {
+      "calls": 9,
+      "tests": {
+        "film walk h42-4 (local dist-e2e A1.3)": 3,
+        "film walk h42-5 (local dist-e2e A1.3)": 3,
+        "film walk h42-6 (local dist-e2e A1.3)": 3
+      }
+    },
+    "hybridSupport.openCloudDevice": {
+      "calls": 3,
+      "tests": {
+        "cloud run": 3
+      }
+    },
+    "filmStoryTake.spec.ts": {
+      "calls": 3,
+      "tests": {
+        "story take s1 (local dist-e2e)": 3
+      }
+    }
+  }
+}

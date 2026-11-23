@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14T12:08:43.844Z",
+  "browser": "Chromium 158.0.8127.18 (Playwright 1.65.0 bundled, headless)",
+  "what": "One real cloud draft of the invented visit, made through the page. Invented people only. The text sent is the masked outgoing text.",
+  "status": 200,
+  "callStatuses": [
+    200
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "requestBytes": 669,
+  "draftText": "**Case Note**\n\n**Date of Visit:** 12/11  \n**Present:** [Person 1], Bea (Worker)\n\n**Observations:**\nAn inspection of the property revealed the presence of mould in the back bedroom, which is more severe in the vicinity of the window. Additionally, a letter regarding a benefits form was observed on the table. \n\n**Agreed Actions:**\n* The worker will contact the landlord by telephone on Monday.\n* [Person 1] will post the completed benefits form on Friday.\n* [Person 2] has offered {his:Person 1} assistance in completing the form.\n\n**Identified Risks:**\nThere is a risk of rent arrears should the benefits form be submitted late.\n\n**Next Steps:**\nA follow-up visit is scheduled for 26/11.",
+  "finishedNote": "**Case Note**\n\n**Date of Visit:** 12/11  \n**Present:** Maria Okonkwo-Reyes, Bea (Worker)\n\n**Observations:**\nAn inspection of the property revealed the presence of mould in the back bedroom, which is more severe in the vicinity of the window. Additionally, a letter regarding a benefits form was observed on the table. \n\n**Agreed Actions:**\n* The worker will contact the landlord by telephone on Monday.\n* Maria Okonkwo-Reyes will post the completed benefits form on Friday.\n* Tomas Brandvold has offered her assistance in completing the form.\n\n**Identified Risks:**\nThere is a risk of rent arrears should the benefits form be submitted late.\n\n**Next Steps:**\nA follow-up visit is scheduled for 26/11.",
+  "label": "in the cloud",
+  "egressLine": "No listed name left this device: 0 of 20. Masked values in the text sent 0 of 2 Single name parts of 3 letters or more checked, none found The request sent to firebasevertexai.googleapis.com This checks listed names and masked values only. Other details in the text can still identify a person. What this check scans Egress ledger (1 entry)",
+  "hostsOutsideThePage": [
+    "content-firebaseappcheck.googleapis.com",
+    "firebasevertexai.googleapis.com",
+    "www.google.com",
+    "www.gstatic.com"
+  ]
+}

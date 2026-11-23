@@ -1,0 +1,155 @@
+{
+ "what": "First real cloud calls through the Firebase JS SDK 13.0.0 with App Check in debug mode, from real Chrome 157 headless. Invented, masked text only. Addresses are recorded without query strings; identifiers are replaced.",
+ "run_1": {
+  "started": "2026-11-13T06:25:25.477Z",
+  "requests": [
+   {
+    "url": "https://probe.test/",
+    "served": "probe page"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js",
+    "served": "local file firebase-app.js"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app-check.js",
+    "served": "local file firebase-app-check.js"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-ai.js",
+    "served": "local file firebase-ai.js"
+   },
+   {
+    "url": "https://www.google.com/recaptcha/api.js",
+    "method": "GET",
+    "bodyBytes": 0,
+    "served": "REFUSED"
+   },
+   {
+    "url": "https://content-firebaseappcheck.googleapis.com/v1/projects/doorstep-notes/apps/<appId>:exchangeDebugToken",
+    "method": "POST",
+    "bodyBytes": 54,
+    "served": "let through",
+    "status": 200
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 127,
+    "served": "let through",
+    "status": 200
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 390,
+    "served": "let through",
+    "status": 403
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 131,
+    "served": "let through",
+    "status": 403
+   }
+  ],
+  "result": {
+   "stage": "done",
+   "steps": {
+    "app check in debug mode": {
+     "started": true,
+     "ms": 2
+    },
+    "ONLY_IN_CLOUD one word": {
+     "text": "Ready.",
+     "source": "in_cloud",
+     "ms": 1528
+    },
+    "ONLY_IN_CLOUD draft from a masked record": {
+     "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent: [403 Forbidden] The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable. (AI/fetch-error)",
+     "ms": 332
+    },
+    "PREFER_IN_CLOUD one sentence": {
+     "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent: [403 Forbidden] The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable. (AI/fetch-error)",
+     "ms": 2566
+    }
+   }
+  },
+  "secondsAll": 4.4,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "finished": "2026-11-13T06:25:35.234Z"
+ },
+ "run_2": {
+  "started": "2026-11-13T06:26:28.767Z",
+  "requests": [
+   {
+    "url": "https://probe.test/",
+    "served": "probe page"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js",
+    "served": "local file firebase-app.js"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app-check.js",
+    "served": "local file firebase-app-check.js"
+   },
+   {
+    "url": "https://www.gstatic.com/firebasejs/13.0.0/firebase-ai.js",
+    "served": "local file firebase-ai.js"
+   },
+   {
+    "url": "https://www.google.com/recaptcha/api.js",
+    "method": "GET",
+    "bodyBytes": 0,
+    "served": "REFUSED"
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 127,
+    "served": "let through",
+    "status": 403
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 390,
+    "served": "let through",
+    "status": 403
+   },
+   {
+    "url": "https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent",
+    "method": "POST",
+    "bodyBytes": 131,
+    "served": "let through",
+    "status": 403
+   }
+  ],
+  "result": {
+   "stage": "done",
+   "steps": {
+    "app check in debug mode": {
+     "started": true,
+     "ms": 1
+    },
+    "ONLY_IN_CLOUD one word": {
+     "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent: [403 Forbidden] The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable. (AI/fetch-error)",
+     "ms": 460
+    },
+    "ONLY_IN_CLOUD draft from a masked record": {
+     "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent: [403 Forbidden] The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable. (AI/fetch-error)",
+     "ms": 240
+    },
+    "PREFER_IN_CLOUD one sentence": {
+     "error": "AI: Error fetching from https://firebasevertexai.googleapis.com/v1beta/projects/doorstep-notes/models/gemini-3.5-flash-lite:generateContent: [403 Forbidden] The Gemini API free tier is not available for this project. To use the Gemini API, please set up billing to upgrade to the paid tier at https://aistudio.google.com/billing. For more information, see https://ai.google.dev/gemini-api/docs/troubleshooting#project-unavailable. (AI/fetch-error)",
+     "ms": 1254
+    }
+   }
+  },
+  "secondsAll": 2,
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "finished": "2026-11-13T06:26:31.233Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-13",
+  "time": "2026-11-13T09:05:54.488Z",
+  "browser": "Google Chrome 157.0.8103.79",
+  "status": "pass",
+  "inventedVisit": true,
+  "recordSeconds": 8.9,
+  "recordLabel": "on this device",
+  "noteDateWords": "12/11",
+  "dateField": "12/11",
+  "deviceWroteDateLine": null,
+  "reading": "read as 11 December 2026, assumed",
+  "browserLocale": "en-US",
+  "currentYear": "2026",
+  "unmarkedYearsInRecordView": [],
+  "recordViewAuditLeavesOut": "the measured-figures block, which holds the dates of results files",
+  "recordViewLinesWithAYear": [
+    "read as 11 December 2026, assumedConfirmCorrect",
+    "read as 11 December 2026, assumedConfirmCorrect"
+  ],
+  "outgoingChars": 650,
+  "unmarkedYearsInOutgoingText": [],
+  "outgoingDateLines": [
+    "Visit date: 12/11",
+    "Seen: Mould in back bedroom again, worse by the window.; Landlord not replied to 2 emails.; [Person 1] missed the benefits form deadline last wk, letter on the table.; DOB on form 3/3/87.",
+    "Next steps: revisit 26/11."
+  ],
+  "requests": {
+    "outsideThePage": 0,
+    "toCloudModelHost": 0
+  }
+}
